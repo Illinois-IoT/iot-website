@@ -11,6 +11,7 @@ const IndexPage = () => {
       <title>Home Page</title>
       <Navigation />
       <MainHero hero_img={main_hero}/>
+      <MainHero hero_img={main_hero}/>
     </body>
   )
 }

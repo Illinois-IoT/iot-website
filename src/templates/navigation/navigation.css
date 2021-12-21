@@ -32,8 +32,8 @@
      z-index: 1001;
      border-bottom-left-radius: 10px;
      border-bottom-right-radius: 10px;
-     padding-right: 30px; 
-     color: var(--darkblue) !important;
+     padding-right: 10px; 
+     color: var(--illini-blue) !important;
      vertical-align: middle;
  }
  
@@ -44,8 +44,6 @@
      position: fixed;
      top: 0;
      left: 0;
-
-     background-color: var(--alma-mater--lightest);
  }
  
  .navbar-not-expanded{
@@ -75,7 +73,7 @@
      top: 0;
      left: 0;
      border-radius: 0;
-     background-color: var(--lightblue) !important;
+     background-color: var(--industrial-blue-lighter) !important;
  }
  
  .navbar-expanded #nav{
@@ -84,10 +82,10 @@
  }
  
  .navbar-expanded #navbar-item{
-     margin-left: 20vw;
+     /* margin-left: 20vw; */
      width: 50%;
      height: auto;
-     color:var(--darkblue) !important;
+     color:var(--illini-blue) !important;
      background-color: transparent;
  }
  .navbar-expanded #navbar-item:hover{
@@ -130,24 +128,23 @@
  }
  
  #navbar-item{
-     width: fit-content;
-     color: var(--darkblue) !important;
+     color: var(--illini-blue) !important;
      border-color: white;
-     vertical-align: middle;
      margin: auto;
+     vertical-align: middle;
      padding: auto;
  }
  
  #navbar-item:hover{ /* hovering over any navbar item */
-     color: var(--blue) !important;
+     color: var(--industrial-blue) !important;
  }
  
  .dropdown {
      border: white;
-     color: var(--darkblue) !important;
+     color: var(--illini-blue) !important;
  }
  .dropdown-menu{
-     color: var(--darkblue) !important;
+     color: var(--illini-blue) !important;
  }
  
  .dropdown:hover .dropdown-menu { /* hovering to open dropdown */
@@ -158,14 +155,14 @@
  .dropdown .dropdown-menu :hover { /*hovering over dropdown menu item */
      background-color: white;
      border: white;
-     color:var(--blue);
+     color:var(--industrial-blue);
  }
  .dropdown-item{
-     color:var(--darkblue);
+     color:var(--illini-blue);
  }
  
  #responsive-navbar-nav{
-     color:var(--darkblue);
+     color:var(--illini-blue);
      vertical-align: middle;
-     padding: 7px 25px;
+     padding: 7px 15px;
  }

@@ -78,10 +78,10 @@ export default class Navigation extends React.Component {
       if(window.innerWidth > 600 || (window.innerWidth >= 10000 && this.state.navbarClass==="navbar-primary") || this.state.navbarClass==="navbar-expanded"){
       } else {
             navLinks.push(
-                <Nav.Link href="/about"><h5 id="navbar-item" className="subscript">About</h5></Nav.Link>
+                <Nav.Link href="/about" style={{backgroundColor:"black"}}><h5 id="navbar-item" className="subscript">About</h5></Nav.Link>
             );
             navLinks.push(
-                <NavDropdown.Item  href="/welcome"><h5 id="navbar-item" className="subscript">&ndash; Welcome</h5></NavDropdown.Item>
+                <NavDropdown.Item  href="/welcome" id="navbar-item"><h5 id="navbar-item" className="subscript">&ndash; Welcome</h5></NavDropdown.Item>
             );
             navLinks.push(
                 <NavDropdown.Item href="/mission"><h5 id="navbar-item" className="subscript">&ndash; Mission</h5></NavDropdown.Item>
@@ -140,9 +140,9 @@ export default class Navigation extends React.Component {
     }
     render() {
         return(
-            <div className={this.state.navbarClass} >
+            <div className={this.state.navbarClass}>
               <a href="/"><img  id="logo-img" src={logo} alt="i-Jet logo" style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}/></a>
-              <Navbar collapseOnSelect expand='sm' id={this.state.navbarClass === "navbar-primary" ? "box-shadow" : ""} className="navbar" onToggle={()=> this.toggleExpand()}>
+              <Navbar collapseOnSelect expand='sm' className="navbar" onToggle={()=> this.toggleExpand()} id={this.state.navbarClass === "navbar-primary" ? "box-shadow" : ""}>
                   <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                   <Navbar.Collapse id="responsive-navbar-nav"> {/*navbar background*/}
                       <Nav className="mr-auto" id="nav"> {/*actual navbar*/}
