@@ -3,7 +3,6 @@
  * Author: Lily Li
  */
 
- @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
  @import './fonts.css';
 
  .custom-scroll-div::-webkit-scrollbar {
@@ -62,7 +61,8 @@
  }
  
  h1{ /* page heading */
-   font-family: Abel,sans-serif;
+   font-family: 'Montserrat';
+   font-weight: bold;
    text-align: center;
    color: var(--illini-blue);
    /* text-transform: uppercase; */
@@ -71,7 +71,8 @@
  }
  
  h2{ /* page subheading, overlaping card heading */
-   font-family: Abel,sans-serif;
+   font-family: 'Montserrat';
+   font-weight: bold;
    text-align: center;
    color: var(--illini-blue);
  }
@@ -368,4 +369,12 @@
  
  .flex-parent > *+* {
    margin: 4.5vw 0 0.5vw 0;
+ }
+
+ .cloud-color{
+     color: var(--cloud);
+ }
+
+ .text-align-left {
+     text-align: left;
  }

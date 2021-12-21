@@ -42,7 +42,7 @@
  #texture_img{
      height: 100%;
      width: 100%;
-     opacity: 0.2;
+     opacity: 0.08;
      z-index: 1;
      top: 0;
      left: 0;
@@ -64,22 +64,25 @@
      z-index: 100;
      top: 20vh;
      width: 100vw;
-     height: 20vh;
+     height: 100%;
      vertical-align: middle;
      display: flex;
      flex-direction: column;
      justify-content: center;
-     align-items: center;
+     align-items: flex-start;
+     background-color: var(--illini-blue);
  }
  
  #hero_img{
      position: absolute;
      object-position: 50% 28%;
-     top: 20vh;
      z-index: 101;
      width: 100vw;
-     height: 60vh;
+     height: 100%;
      object-fit: cover;
+     z-index: 100;
+     background-color: var(--illini-blue);
+     opacity: 0.2;
  }
  
  #subpage_heading_section{

@@ -87,7 +87,7 @@ export default class Navigation extends React.Component {
                 <NavDropdown.Item href="/mission"><h5 id="navbar-item" className="subscript">&ndash; Mission</h5></NavDropdown.Item>
             );
             navLinks.push(
-                <NavDropdown.Item href="/support"><h5 id="navbar-item" className="subscript">&ndash; Support</h5></NavDropdown.Item>
+                <NavDropdown.Item href="/support"><h5 id="navbar-item" className="subscript">&ndash; Support Us</h5></NavDropdown.Item>
             );
             navLinks.push(
                 <Nav.Link href="/caesar"><h5 id="navbar-item" className="subscript">Professor Caesar</h5></Nav.Link>
@@ -149,7 +149,7 @@ export default class Navigation extends React.Component {
                           <NavDropdown onClick={()=>this.open("/about")} href="/about" id="nav-dropdown" style={{whiteSpace:"nowrap"}} title={<p id="navbar-item">About &#11022;</p>} renderMenuOnMount={true} style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}>
                               <NavDropdown.Item  href="/welcome" className="dropdown-item"><p>Welcome</p></NavDropdown.Item>
                               <NavDropdown.Item href="/mission" className="dropdown-item"><p>Mission</p></NavDropdown.Item>
-                              <NavDropdown.Item href="/support" className="dropdown-item"><p>Support</p></NavDropdown.Item>
+                              <NavDropdown.Item href="/support" className="dropdown-item"><p>Support Us</p></NavDropdown.Item>
                           </NavDropdown>
                           <Nav.Link href="/caesar" style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}><p id="navbar-item">Professor Caesar</p></Nav.Link>
                           <NavDropdown onClick={()=>this.open("/research")} href="/research" id="nav-dropdown" style={{whiteSpace:"nowrap"}} title={<p id="navbar-item">Research &#11022;</p>} renderMenuOnMount={true} style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}>

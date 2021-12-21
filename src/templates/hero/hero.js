@@ -27,26 +27,28 @@ function MainHero(props) {
     );  
 }
 
-function PageHero(props) {
+function SubPageHero(props) {
     return(
         <motion.div
         y={"-100%"}
         animate={{ y:0 }}
         transition={{ duration: 0.5 }}
         >
-            <div style={{position:"relative", height:"100vh", width:"100vw"}}>
-                <img src={props.texture_img} alt="texture background image" id="texture_img" fixed="top"/>
+            <div style={{position:"relative", height:"50vh", width:"100vw"}}>
+                {/* <img src={props.texture_img} alt="texture background image" id="texture_img" fixed="top"/> */}
                 <div id="heading_section">
-                    <h1>{props.title}</h1>
-                    <h2>{props.subtitle}</h2>
                     <img src={props.hero_img} alt="hero image" id="hero_img"/>
+                    <div style={{position:"absolute", left:"10vw", width: "80vw", textJustify:"left", zIndex:"5000"}}>
+                        <h6 className="cloud-color text-align-left">{props.title}</h6>
+                        <h1 className="cloud-color text-align-left">{props.subtitle}</h1>
+                    </div>
                 </div>
             </div>
         </motion.div>
     );
 }
 
-function SubPageHero(props){
+function PageHero(props){
     return(
         <motion.div
         y={"-100%"}

@@ -26,13 +26,13 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: local('Montserrat'), url(./fonts/Montserrat/Montserrat-Bold.ttf) format('truetype');
+    src: local('Montserrat'), url(./fonts/Montserrat/Montserrat-SemiBold.ttf) format('truetype');
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'Montserrat';
-    src: local('Montserrat'), url(./fonts/Montserrat/Montserrat-BoldItalic.ttf) format('truetype');
+    src: local('Montserrat'), url(./fonts/Montserrat/Montserrat-SemiBoldItalic.ttf) format('truetype');
     font-weight: bold;
     font-style: italic;
 }
