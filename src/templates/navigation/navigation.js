@@ -6,7 +6,7 @@
 import React from 'react';
 import { Navbar,Nav, NavDropdown} from 'react-bootstrap';
 import './navigation.css';
-import logo from '../../images/sample_logo.jpeg'
+import logo from '../../images/iot-logo.png'
 
 export default class Navigation extends React.Component {
     constructor(props) {
@@ -142,7 +142,7 @@ export default class Navigation extends React.Component {
         return(
             <div className={this.state.navbarClass}>
               <a href="/"><img  id="logo-img" src={logo} alt="i-Jet logo" style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}/></a>
-              <Navbar collapseOnSelect expand='sm' className="navbar" onToggle={()=> this.toggleExpand()} id={this.state.navbarClass === "navbar-primary" ? "box-shadow" : ""}>
+              <Navbar collapseOnSelect expand='sm' className="navbar" onToggle={()=> this.toggleExpand()} id={this.state.navbarClass === "navbar-secondary" ? "box-shadow" : ""}>
                   <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                   <Navbar.Collapse id="responsive-navbar-nav"> {/*navbar background*/}
                       <Nav className="mr-auto" id="nav"> {/*actual navbar*/}

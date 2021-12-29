@@ -7,9 +7,11 @@
 
  .navbar-primary #logo-img{
      padding: 10px;
-     width: 150px;
+     width: 125px;
      height: auto;
      margin-left: 15px;
+     border-radius: 5px;
+     background-color: var(--cloud);
  }
  
  .navbar-secondary #logo-img {
@@ -23,11 +25,27 @@
  #box-shadow{
      box-shadow: 0px 7px 7px -10px rgba(0,0,0,.5);
  }
+
+ .navbar-primary .navbar {
+     width: 100%;
+ }
+
+ .navbar-primary #responsive-navbar-nav {
+     width: 100%;
+     align-items: center;
+     justify-content: space-between !important;
+ }
+
+ .navbar-primary #responsive-navbar-nav #nav {
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly !important;
+}
  
  .navbar{
-     background-color: white;
+     background-color: var(--cloud);
      width: fit-content;
-     height: fit-content;
+     height: 100%;
      opacity: 1;
      z-index: 1001;
      border-bottom-left-radius: 10px;
@@ -100,20 +118,31 @@
  }
  
  .navbar-primary{ 
-     z-index: 1001;
+     /* z-index: 1001;
      display: flex;
      flex-direction: row;
      justify-content: space-between;
      position: fixed;
      width: 98vw; 
      height: fit-content;
-     margin-right: 2vw;
+     margin-right: 2vw; */
+
+     background-color: var(--cloud);
+     display: flex; 
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+     width: 100vw;
+     position: fixed;
+     z-index: 1001;
+     padding: 1vw;
  }
  
  .navbar-secondary{ /* when page is scrolled down */
-     background-color: white;
+     background-color: var(--cloud);
      display: flex; 
      flex-direction: row;
+     align-items: center;
      justify-content: space-between;
      width: 100vw;
      position: fixed;
@@ -148,13 +177,13 @@
  }
  
  .dropdown:hover .dropdown-menu { /* hovering to open dropdown */
-     border: white;
-     background-color: white;
+     border: var(--cloud);
+     background-color: var(--cloud);
      display: block;
  }
  .dropdown .dropdown-menu :hover { /*hovering over dropdown menu item */
-     background-color: white;
-     border: white;
+     background-color: var(--cloud);
+     border: var(--cloud);
      color:var(--industrial-blue);
  }
  .dropdown-item{
