@@ -7,6 +7,7 @@ import about_hero from "../images/about_hero.png"
 import texture from "../images/texture.jpeg"
 import FlipCards from "../templates/flipcards/flipcards";
 import flipcard from "../images/flipcard.jpeg"
+import Footer from "../templates/footer/footer";
 
 const CaesarPage = () => {
   const cards = [{primary:"3", secondary:"years old", img: flipcard}, 
@@ -17,11 +18,12 @@ const CaesarPage = () => {
 
   return (
     <body>
-      <title>Professor Caesar</title>
+      <title>Research Overview</title>
       <Navigation />
       <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", padding:"0vw 10vw"}}>
         <PageHero texture_img={texture} hero_img={about_hero} title={"Research"} subtitle={"Learn more about all current and past projects"}/>      
         <FlipCards items={cards}/>
+        <Footer />
       </div>
     </body>
   )

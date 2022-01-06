@@ -43,7 +43,7 @@ function Card(props){
            onMouseLeave={()=>setHover(false)}
            style={{backgroundColor:"white"}}>
                 <img src={props.img} id="flip-background-img"/>
-                <h5 className="flip-item-text" id="secondary">{props.secondary}</h5>
+                <h6 className="flip-item-text" id="secondary">{props.secondary}</h6>
           </div>
         </ReactCardFlip>
         </motion.div>

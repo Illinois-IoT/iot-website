@@ -7,6 +7,7 @@ import about_hero from "../images/about_hero.png"
 import texture from "../images/texture.jpeg"
 import { Paragraph, List } from "../templates/paragraph/Paragraph";
 import CaesarProfile from "../images/caesar.jpeg"
+import Footer from "../templates/footer/footer";
 
 const CaesarPage = () => {
   return (
@@ -46,6 +47,7 @@ const CaesarPage = () => {
               "Computer Networking Laboratory"
             ]}
             />
+        <Footer />
       </div>
     </body>
   )

@@ -6,6 +6,7 @@ import { SubPageHero } from "../templates/hero/hero"
 import about_hero from "../images/about_hero.png"
 import texture from "../images/texture.jpeg"
 import {Paragraph} from "../templates/paragraph/Paragraph"
+import Footer from "../templates/footer/footer";
 
 const WelcomePage = () => {
   return (
@@ -22,6 +23,7 @@ const WelcomePage = () => {
                   "I hope you will join us,",
                   "Matthew Caesar",
                   "Director, Illinois Center for IoT"]}/>
+        <Footer />
       </div>
     </body>
   )

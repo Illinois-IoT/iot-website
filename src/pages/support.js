@@ -6,6 +6,7 @@ import { SubPageHero } from "../templates/hero/hero"
 import about_hero from "../images/about_hero.png"
 import texture from "../images/texture.jpeg"
 import {Paragraph, List} from "../templates/paragraph/Paragraph";
+import Footer from "../templates/footer/footer";
 
 const SupportPage = () => {
   return (
@@ -32,6 +33,7 @@ const SupportPage = () => {
                 ]}
                 />}
               />
+        <Footer />
       </div>
     </body>
   )

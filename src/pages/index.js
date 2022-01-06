@@ -4,6 +4,7 @@ import Navigation from "../templates/navigation/navigation"
 import { MainHero } from "../templates/hero/hero"
 
 import main_hero from "../images/main_hero.jpeg"
+import Footer from "../templates/footer/footer";
 
 const IndexPage = () => {
   return (
@@ -11,7 +12,7 @@ const IndexPage = () => {
       <title>IoT@Illinois</title>
       <Navigation />
       <MainHero hero_img={main_hero}/>
-      <MainHero hero_img={main_hero}/>
+      <Footer />
     </body>
   )
 }
