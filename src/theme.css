@@ -95,7 +95,7 @@
  }
  
  h5{ /* turning cards secondary words */
-   font-family: Montserrat bolder !important;
+   font-family: 'Montserrat' bolder !important;
    color: var(--illini-blue);
  }
  
@@ -377,4 +377,12 @@
 
  .text-align-left {
      text-align: left;
+ }
+
+ .flex-row {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
  }

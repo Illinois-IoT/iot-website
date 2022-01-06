@@ -13,7 +13,7 @@ function Paragraph(props) {
         paragraphs.push(<p className="paragraph" style={{marginTop:"10px"}}>{props.paragraphs[p]}</p>);
     }
     return(
-        <div style={{width:"100%",display:"flex", flexDirection:"column", justifyItems:"center", gap: "20px"}}>
+        <div id="paragraph-div">
             {props.heading && <h4 style={{paddingLeft:"20px",paddingRight:"20px"}}>{props.heading}</h4>} 
             {props.subheading && <div className="subheading">{props.subheading}</div>}
             {paragraphs}
@@ -29,7 +29,7 @@ function List(props) {
     }
     return(
         <div id="list-div">
-            <p>{props.listHeader}</p>
+            {props.listHeader}
             {list}
         </div>
     );

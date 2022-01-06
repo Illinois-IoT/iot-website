@@ -7,3 +7,11 @@
 #list-div {
     width: 100%;
 }
+
+#paragraph-div {
+    width: 100% !important;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
