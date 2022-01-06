@@ -118,21 +118,13 @@
  }
  
  .navbar-primary{ 
-     /* z-index: 1001;
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
-     position: fixed;
-     width: 98vw; 
-     height: fit-content;
-     margin-right: 2vw; */
-
      background-color: var(--cloud);
      display: flex; 
      flex-direction: row;
      align-items: center;
      justify-content: space-between;
      width: 100vw;
+     height: 10vh;
      position: fixed;
      z-index: 1001;
      padding: 1vw;

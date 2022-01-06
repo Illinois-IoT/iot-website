@@ -62,9 +62,9 @@
  #heading_section{
      position: absolute;
      z-index: 100;
-     top: 20vh;
+     top: 10vh;
      width: 100vw;
-     height: 100%;
+     height: 50vh;
      vertical-align: middle;
      display: flex;
      flex-direction: column;

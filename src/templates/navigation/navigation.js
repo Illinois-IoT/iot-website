@@ -146,17 +146,17 @@ export default class Navigation extends React.Component {
                   <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                   <Navbar.Collapse id="responsive-navbar-nav"> {/*navbar background*/}
                       <Nav className="mr-auto" id="nav"> {/*actual navbar*/}
-                          <NavDropdown onClick={()=>this.open("/about")} href="/about" id="nav-dropdown" style={{whiteSpace:"nowrap"}} title={<p id="navbar-item">About &#11022;</p>} renderMenuOnMount={true} style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}>
+                          <NavDropdown onClick={()=>this.open("/about")} href="/about" id="nav-dropdown" style={{whiteSpace:"nowrap"}} title={<p id="navbar-item">About &#9660;</p>} renderMenuOnMount={true} style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}>
                               <NavDropdown.Item  href="/welcome" className="dropdown-item"><p>Welcome</p></NavDropdown.Item>
                               <NavDropdown.Item href="/mission" className="dropdown-item"><p>Mission</p></NavDropdown.Item>
                               <NavDropdown.Item href="/support" className="dropdown-item"><p>Support Us</p></NavDropdown.Item>
                           </NavDropdown>
                           <Nav.Link href="/caesar" style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}><p id="navbar-item">Professor Caesar</p></Nav.Link>
-                          <NavDropdown onClick={()=>this.open("/research")} href="/research" id="nav-dropdown" style={{whiteSpace:"nowrap"}} title={<p id="navbar-item">Research &#11022;</p>} renderMenuOnMount={true} style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}>
+                          <NavDropdown onClick={()=>this.open("/research")} href="/research" id="nav-dropdown" style={{whiteSpace:"nowrap"}} title={<p id="navbar-item">Research &#9660;</p>} renderMenuOnMount={true} style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}>
                               <NavDropdown.Item  href="/iot-simulation" className="dropdown-item"><p>IoT Simulation</p></NavDropdown.Item>
                               <NavDropdown.Item href="/autonomy" className="dropdown-item"><p>Automony Research</p></NavDropdown.Item>
                           </NavDropdown>
-                          <NavDropdown onClick={()=>this.open("/outreach")} href="/outreach" id="nav-dropdown" style={{whiteSpace:"nowrap"}} title={<p id="navbar-item">Outreach &#11022;</p>} renderMenuOnMount={true} style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}>
+                          <NavDropdown onClick={()=>this.open("/outreach")} href="/outreach" id="nav-dropdown" style={{whiteSpace:"nowrap"}} title={<p id="navbar-item">Outreach &#9660;</p>} renderMenuOnMount={true} style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}>
                               <NavDropdown.Item  href="/local-outreach" className="dropdown-item"><p>Local Outreach</p></NavDropdown.Item>
                               <NavDropdown.Item href="/summer-camp" className="dropdown-item"><p>Summer Camp</p></NavDropdown.Item>
                           </NavDropdown>
