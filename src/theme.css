@@ -390,3 +390,7 @@
  .circle-div {
    border-radius: 50%;
  }
+
+ .curser-pointer {
+   cursor: pointer;
+ }
