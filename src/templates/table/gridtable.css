@@ -1,0 +1,113 @@
+/*
+ * gridtable.css
+ * Author: Lily Li
+ */
+
+@import "../../css/theme.css";
+
+@media(max-width: 1000px){
+    #grid-row-div{
+        flex-direction: column !important;
+        height: fit-content;
+    }
+    #grid-img-div{
+        height: 200px;
+    }
+}
+@media(min-width: 1001px){
+    #grid-row-div{
+        flex-direction: row !important;
+        height: 200px;
+    }
+    #grid-img-div{
+        height: 100%;
+    }
+}
+
+.grid-table-div{
+    align-self: center;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.grid-table-div > *+* {
+    margin-top:20px;
+}
+
+#grid-row-div{
+    display: flex;
+    width: 100%;
+    box-shadow: 7px 7px 7px -7px rgba(0,0,0,.5);
+}
+#header{
+    font-family: AvenirNext bolder;
+    color: white;
+    position: absolute;
+    width: fit-content; 
+    height: fit-content;   
+    opacity: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 0px !important;
+    z-index: 100;
+}
+
+#grid-row-header-background{
+    vertical-align: middle;
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    color: var(--darkblue);
+    background-color: var(--darkblue);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.9;
+    z-index: 500;
+}
+
+#background-img{
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    object-fit: cover;
+    opacity: 0.2;
+}
+
+#grid-img-div{
+    width: 100%;
+
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid-img{
+    position: absolute;
+    top: 0;
+    height: auto;
+    width: 100%;
+    z-index: 50;
+    opacity: 0.8;
+}
+
+#grid-text-div{
+    width: 100%;
+    height: 100%;
+    color: var(--darkblue);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}

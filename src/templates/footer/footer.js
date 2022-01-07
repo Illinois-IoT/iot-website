@@ -20,7 +20,7 @@ export default function Footer() {
     return(
     <div className='footer-div'>
         <div className='footer-content-div'>
-            <img src={wordmark} id="uiuc-wordmark"/>
+            <a href="https://illinois.edu/" target="_blank"><img src={wordmark} id="uiuc-wordmark"/></a>
             <div className='footer-socials-div'>
                 <a href="https://www.facebook.com/CSatIllinois/" target="_blank"><FontAwesomeIcon icon={faFacebookSquare} fixedWidth size="2x" aria-hidden={true} id="social-icon"/></a>
                 <a href="https://twitter.com/IllinoisCS/" target="_blank"><FontAwesomeIcon icon={faTwitterSquare} size="2x" fixedWidth aria-hidden={true} id="social-icon"/></a>

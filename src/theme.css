@@ -27,7 +27,7 @@
      --alma-mater: #1E3877;
      --alma-mater-light: #4D69A0;
      --alma-mater-lighter: #849BC1;
-     --alma-mater--lightest: #AFC7DB;
+     --alma-mater-lightest: #AFC7DB;
      
      --industrial-blue: #1D58A7;
      --industrial-blue-light: #5783BC;
@@ -361,8 +361,8 @@
    user-drag: none;
  }
  
- .lightblue-div{
-   background-color: var(--industrial-blue-light);
+ .lightblue-div {
+   background-color: var(--industrial-blue-lightest);
    width: 100vw;
    padding: 40px 10vw;
  }

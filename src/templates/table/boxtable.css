@@ -1,0 +1,131 @@
+
+/*
+ * boxtable.css
+ * Author: Lily Li
+ */
+
+ @import "../../css/theme.css";
+
+@media (max-width: 1200px){ 
+    .box-table-div{
+        width: 80vw;
+    }
+    .row-div{
+        width: 80vw;
+        height: 40vw;
+    }
+    .text-div{
+        width: 40vw !important;
+        height: 40vw !important;
+    }
+    #img-right-div{
+        height: 40vw !important;
+        width: 40vw !important;
+    }
+    #img-right{
+        height: 40vw !important;
+        width: 40vw !important;
+    }
+    #img-left{
+        height: 40vw !important;
+        width: 40vw !important;
+    }
+    #img-left-div{
+        height: 40vw !important;
+        width: 40vw !important;
+    }
+}
+@media (min-width: 1201px){
+    .box-table-div{
+        width: 60vw;
+    }
+    .row-div{
+        width: 60vw;
+        height: 30vw;
+    }
+    .text-div{
+        width: 30vw !important;
+        height: 30vw !important;
+    }
+    #img-right-div{
+        height: 30vw !important;
+        width: 30vw !important;
+    }
+    #img-right{
+        height: 30vw !important;
+        width: 30vw !important;
+    }
+    #img-left{
+        height: 30vw !important;
+        width: 30vw !important;
+    }
+    #img-left-div{
+        height: 30vw !important;
+        width: 30vw !important;
+    }
+}
+
+
+.box-table-div{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.row-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.text-div{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--blue);
+    padding: 50px;
+    color: white !important;
+}
+.text-div > *+* {
+    margin-top: 10px;
+}
+
+#img-right-div{
+    position: absolute;
+    display: block !important;
+    box-sizing:content-box !important;
+    overflow: hidden !important;
+    left: 50vw !important;
+    object-fit: cover !important;
+    object-position: right top !important;
+}
+#img-right{
+    display: block !important;
+    box-sizing:content-box !important;
+    overflow: hidden !important;
+    left: 50vw !important;
+    object-fit: cover !important;
+    object-position: 50% 40% !important;
+}
+
+#img-left{
+    display: block !important;
+    box-sizing:content-box !important;
+    overflow: hidden !important;
+    object-fit: cover !important;
+    object-position: 67% 40% !important;
+}
+
+#img-left-div{
+    overflow:hidden;
+}
+#left-arrow{
+    position: absolute;
+    right: 50vw;
+}
+#darkblue-background{
+    background-color: var(--darkblue);
+}
