@@ -17,7 +17,7 @@ const CaesarPage = () => {
       <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", padding:"0vw 10vw"}}>
         <PageHero texture_img={texture} hero_img={about_hero} title={"Professor Caesar"} subtitle={"Read more about the professor"}/>      
         <div className="flex-row">
-          <img src={CaesarProfile}/>
+          <img src={CaesarProfile} className="circle-div" style={{width:"35%"}}/>
           <div>
             <h5>Professor Matthew Caesar</h5>
             <p><b>Education:</b> Ph.D., Computer Science, University of California, Berkeley, 2007</p>

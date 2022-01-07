@@ -8,6 +8,8 @@ import texture from "../images/texture.jpeg"
 import FlipCards from "../templates/flipcards/flipcards";
 import flipcard from "../images/flipcard.jpeg"
 import Footer from "../templates/footer/footer";
+import { Paragraph } from "../templates/paragraph/Paragraph";
+import { CircleTable } from "../templates/table/circletable";
 
 const CaesarPage = () => {
   const cards = [{primary:"3", secondary:"years old", img: flipcard}, 
@@ -23,6 +25,16 @@ const CaesarPage = () => {
       <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", padding:"0vw 10vw"}}>
         <PageHero texture_img={texture} hero_img={about_hero} title={"Research"} subtitle={"Learn more about all current and past projects"}/>      
         <FlipCards items={cards}/>
+        <div className="lightblue-div">
+          <Paragraph heading={"CURRENT RESEARCH PROJECTS"} />
+          <CircleTable 
+            items={[
+              {heading: "Autonomy", href: "/autonomy"},
+              {heading: "IoT Simulation", href: "iot-simulation"},
+              {heading: "AI Drone", href: "ai-drone"},
+              {heading: "IoT Verification", href: "iot-verification"}
+            ]}/>
+        </div>
         <Footer />
       </div>
     </body>
