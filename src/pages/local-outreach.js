@@ -5,6 +5,7 @@ import { SubPageHero } from "../templates/hero/hero"
 
 import about_hero from "../images/about_hero.png"
 import texture from "../images/texture.jpeg"
+import { LocalOutreachInterestForm } from "../templates/forms/forms";
 
 import { Helmet } from "react-helmet"
 import favicon from '../images/block-i.png';
@@ -23,7 +24,10 @@ const SupportPage = () => {
         ]}
       />
       <Navigation />
-      <SubPageHero texture_img={texture} hero_img={about_hero}  title={"Local Outreach"} subtitle={"Giving back to the Urbana-Champaign community"}/>      
+      <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", padding:"0vw 10vw"}}>
+        <SubPageHero texture_img={texture} hero_img={about_hero}  title={"Local Outreach"} subtitle={"Giving back to the Urbana-Champaign community"}/>      
+        <LocalOutreachInterestForm />
+      </div>
     </body>
   )
 }

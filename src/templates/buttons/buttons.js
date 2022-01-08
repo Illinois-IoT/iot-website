@@ -14,6 +14,12 @@ function BasicButton(props){
     );
 }
 
+function FormButton(props){
+    return(
+    <Button variant="pill" onClick={props.onClick} id="basic-button"><h7>{props.name}</h7></Button>
+    );
+}
+
 function ButtonContainer(props){
     var buttons = [];
     for (var item in props.items) {
@@ -36,4 +42,4 @@ function ButtonContainer(props){
     );
 }
 
-export {BasicButton, ButtonContainer};
+export {BasicButton, FormButton, ButtonContainer};

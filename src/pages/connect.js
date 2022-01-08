@@ -8,6 +8,7 @@ import texture from "../images/texture.jpeg"
 import { CircleWithTextTable } from "../templates/table/circletable";
 import Footer from "../templates/footer/footer";
 import { Paragraph } from "../templates/paragraph/Paragraph";
+import { ContactUsForm } from "../templates/forms/forms";
 
 import { Helmet } from "react-helmet"
 import favicon from '../images/block-i.png';
@@ -35,6 +36,7 @@ const ConnectPage = () => {
                 {heading: "Email", text: "caesar[at]illinois.edu"},
                 {heading: "Phone", text: "(847) 323-2968"}
               ]}/>
+        <ContactUsForm />
         <Footer />
       </div>
     </body>

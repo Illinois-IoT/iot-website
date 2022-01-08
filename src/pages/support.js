@@ -7,6 +7,7 @@ import about_hero from "../images/about_hero.png"
 import texture from "../images/texture.jpeg"
 import {Paragraph, List} from "../templates/paragraph/Paragraph";
 import Footer from "../templates/footer/footer";
+import { SupportUsForm } from "../templates/forms/forms";
 
 import { Helmet } from "react-helmet"
 import favicon from '../images/block-i.png';
@@ -46,6 +47,7 @@ const SupportPage = () => {
                 ]}
                 />}
               />
+        <SupportUsForm />
         <Footer />
       </div>
     </body>
