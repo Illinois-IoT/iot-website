@@ -126,9 +126,9 @@ function LocalOutreachInterestForm() {
               <div className='form-row'>
                   <h5 className='form-label'>(optional) Which school do you attend?</h5>
                   <input
-                      id="residency"
+                      id="school"
                       type="text" 
-                      name="residency"
+                      name="school"
                       className='form-input'
                       placeholder="ex: Champaign Central High School, Urbana Middle School, etc."
                   />
