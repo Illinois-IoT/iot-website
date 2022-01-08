@@ -9,10 +9,22 @@ import { Paragraph, List } from "../templates/paragraph/Paragraph";
 import CaesarProfile from "../images/caesar.jpeg"
 import Footer from "../templates/footer/footer";
 
+import { Helmet } from "react-helmet"
+import favicon from '../images/block-i.png';
+
 const CaesarPage = () => {
   return (
     <body>
-      <title>Professor Caesar</title>
+      <Helmet
+        title="IoT@Illinois - Professor Caesar"
+        meta={[
+            { name: 'description', content: 'The official website for The Illinois Center for Internet of Things.' },
+            { name: 'keywords', content: 'Illinois IoT' },
+        ]}
+        link={[
+            { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
+        ]}
+      />
       <Navigation />
       <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", padding:"0vw 10vw"}}>
         <PageHero texture_img={texture} hero_img={about_hero} title={"Professor Caesar"} subtitle={"Read more about the professor"}/>      

@@ -8,10 +8,22 @@ import texture from "../images/texture.jpeg"
 import {Paragraph, List} from "../templates/paragraph/Paragraph";
 import Footer from "../templates/footer/footer";
 
+import { Helmet } from "react-helmet"
+import favicon from '../images/block-i.png';
+
 const SupportPage = () => {
   return (
     <body>
-      <title>Support Us</title>
+      <Helmet
+        title="IoT@Illinois - Support Us"
+        meta={[
+            { name: 'description', content: 'The official website for The Illinois Center for Internet of Things.' },
+            { name: 'keywords', content: 'Illinois IoT' },
+        ]}
+        link={[
+            { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
+        ]}
+      />
       <Navigation />
       <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", padding:"0vw 10vw"}}>
         <SubPageHero texture_img={texture} hero_img={about_hero}  title={"Support Us"} subtitle={"Support our endeavors through donating or volunteering"}/>      

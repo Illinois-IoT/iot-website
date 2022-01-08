@@ -9,10 +9,22 @@ import { CircleWithTextTable } from "../templates/table/circletable";
 import Footer from "../templates/footer/footer";
 import { Paragraph } from "../templates/paragraph/Paragraph";
 
+import { Helmet } from "react-helmet"
+import favicon from '../images/block-i.png';
+
 const ConnectPage = () => {
   return (
     <body>
-      <title>Connect With Us</title>
+      <Helmet
+        title="IoT@Illinois - Connect With Us"
+        meta={[
+            { name: 'description', content: 'The official website for The Illinois Center for Internet of Things.' },
+            { name: 'keywords', content: 'Illinois IoT' },
+        ]}
+        link={[
+            { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
+        ]}
+      />
       <Navigation />
       <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", padding:"0vw 10vw"}}>
         <PageHero texture_img={texture} hero_img={about_hero} title={"CONNECT"} subtitle={"Contact us for any inquiries"}/>      

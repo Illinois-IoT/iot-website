@@ -6,10 +6,22 @@ import { SubPageHero } from "../templates/hero/hero"
 import about_hero from "../images/about_hero.png"
 import texture from "../images/texture.jpeg"
 
+import { Helmet } from "react-helmet"
+import favicon from '../images/block-i.png';
+
 const SupportPage = () => {
   return (
     <body>
-      <title>Local Outreach</title>
+      <Helmet
+        title="IoT@Illinois - Local Outreach"
+        meta={[
+            { name: 'description', content: 'The official website for The Illinois Center for Internet of Things.' },
+            { name: 'keywords', content: 'Illinois IoT' },
+        ]}
+        link={[
+            { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
+        ]}
+      />
       <Navigation />
       <SubPageHero texture_img={texture} hero_img={about_hero}  title={"Local Outreach"} subtitle={"Giving back to the Urbana-Champaign community"}/>      
     </body>
