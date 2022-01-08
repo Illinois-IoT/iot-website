@@ -111,6 +111,6 @@
      right: 0px;
      bottom: 0px;
      left: 0px;
-     background-color: rgba(14, 76, 119, 0.8);
+     background-color: var(--illini-blue);
  }
  

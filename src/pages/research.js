@@ -24,6 +24,7 @@ const CaesarPage = () => {
       <Navigation />
       <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", padding:"0vw 10vw"}}>
         <PageHero texture_img={texture} hero_img={about_hero} title={"Research"} subtitle={"Learn more about all current and past projects"}/>      
+        <Paragraph heading={"ABOUT OUR RESEARCH"} subheading={"Some statistics about research at Illinois Center for IoT"} />
         <FlipCards items={cards}/>
         <div className="lightblue-div">
           <Paragraph heading={"CURRENT RESEARCH PROJECTS"} />
