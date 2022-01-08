@@ -1,5 +1,5 @@
 --- 
 deployment: 
      tasks: 
-          - export DEPLOYPATH=/home/iotwebillinois/repositories/iot-website/
+          - export DEPLOYPATH=/home/iotwebillinois/public_html/
           - /bin/cp -R public/* $DEPLOYPATH
