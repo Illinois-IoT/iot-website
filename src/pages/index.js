@@ -22,7 +22,7 @@ const IndexPage = () => {
       <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", padding:"0vw 10vw"}}>
       <MainHero hero_img={main_hero}/>
         <div>
-          <Paragraph heading="WE ARE ILLINOIS INTERNET OF THINGS" subheading="The IoT research lab at University of Illinois" 
+          <Paragraph heading="HERE AT ILLINOIS CENTER FOR IOT" subheading="We are the IoT research lab at University of Illinois" 
                   paragraphs={[
                     "At The Illinois Center For IoT, we are passionate about the technology of tomorrow. Our research and outreach efforts are focused on fundamentally accelerating the development of this Internet of Things. Our mission is to build platforms with strong and rigorous guarantees, with high performance and service quality, that are practically useful and remain resilient in the face of adversaries and unreliable conditions, and that serve to meet societal and ethical principles while advancing equality and viability of our society.",
                     "Our two main focuses are research and outreach. Our experts in systems, networking, artificial intelligence, and data sciences coming together are developing algorithms, platforms, and methodologies that provide new ways to collect and digest data at scale, leveraging artificially intelligent network and device infrastructures. We also routinely provide educational opportunities to our local community of Urbana-Champaign and to K-12 students around the world."

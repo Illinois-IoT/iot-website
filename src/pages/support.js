@@ -16,6 +16,7 @@ const SupportPage = () => {
       <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", padding:"0vw 10vw"}}>
         <SubPageHero texture_img={texture} hero_img={about_hero}  title={"Support Us"} subtitle={"Support our endeavors through donating or volunteering"}/>      
         <Paragraph heading="DONATE TOWARDS OUR MISSION"
+              subheading="Invest in the technologies and innovators of tomorrow"
               paragraphs={[
                   "We need your help! Our research projects and the Makerspace are not successful without generous donations from people like you!",
                   "Donations can be monetary or in the form of supplies, equipment, or machines.",
