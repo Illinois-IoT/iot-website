@@ -63,7 +63,7 @@ function CircleImageBackground(props){
     );
 }
 
-function CircleBackground(props){
+function CircleWithText(props){
     return(
         <motion.div
         animate={{ scale: [0.9,1] }}
@@ -77,17 +77,17 @@ function CircleBackground(props){
     );
 }
 
-function CircleBackgroundTable(props){
+function CircleWithTextTable(props){
     var circles = [];
     for (var item in props.items) {
         if(item == 0){
-            circles.push(<CircleBackground style={{backgroundColor:"var(--lightblue)"}} heading={props.items[item].heading} text={props.items[item].text}/>)
+            circles.push(<CircleWithText style={{backgroundColor:"var(--illini-blue)"}} heading={props.items[item].heading} text={props.items[item].text}/>)
         }
         else if(item == 1){
-            circles.push(<CircleBackground style={{backgroundColor:"var(--gray)"}} heading={props.items[item].heading} text={props.items[item].text}/>)
+            circles.push(<CircleWithText style={{backgroundColor:"var(--cloud-dark)", color:"var(--illini-blue"}} heading={props.items[item].heading} text={props.items[item].text}/>)
         }
         else{
-            circles.push(<CircleBackground style={{backgroundColor:"var(--lightgray)"}} heading={props.items[item].heading} text={props.items[item].text}/>)
+            circles.push(<CircleWithText style={{backgroundColor:"var(--illini-orange)"}} heading={props.items[item].heading} text={props.items[item].text}/>)
         }
     }
     return( 
@@ -114,4 +114,4 @@ function CircleImageBackgroundTable(props){
     );
 }
 
-export {CircleBackgroundTable, CircleImageBackgroundTable, CircleBackground, CircleImageBackground, CircleTable};
+export {CircleTable, CircleImageBackgroundTable, Circle, CircleWithText, CircleWithTextTable};
