@@ -1,0 +1,32 @@
+.supportus-form {
+    width: 50%;
+    height: fit-content;
+
+    margin: auto;
+
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form-row {
+    width: 100%;
+}
+
+.form-label {
+    width: 100% !important;
+    text-align: left;
+}
+
+.form-input {
+    width: 100% !important;
+}
+
+.form-textarea {
+    width: 100%;
+    height: 200px;
+}
