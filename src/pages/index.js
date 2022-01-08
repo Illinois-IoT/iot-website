@@ -14,10 +14,22 @@ import slide1 from "../images/slide1.jpeg";
 import slide2 from "../images/slide2.jpeg";
 import CaesarProfile from "../images/caesar2.png" 
 
+import { Helmet } from "react-helmet"
+import favicon from '../images/block-i.png';
+
 const IndexPage = () => {
   return (
     <body>
-      <title>IoT@Illinois</title>
+      <Helmet
+        title="IoT@Illinois"
+        meta={[
+            { name: 'description', content: 'The official website for The Illinois Center for Internet of Things.' },
+            { name: 'keywords', content: 'Illinois IoT' },
+        ]}
+        link={[
+            { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
+        ]}
+      />
       <Navigation />
       <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", padding:"0vw 10vw"}}>
       <MainHero hero_img={main_hero}/>

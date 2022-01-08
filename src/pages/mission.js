@@ -8,10 +8,22 @@ import texture from "../images/texture.jpeg"
 import {Paragraph} from "../templates/paragraph/Paragraph";
 import Footer from "../templates/footer/footer";
 
+import { Helmet } from "react-helmet"
+import favicon from '../images/block-i.png';
+
 const MissionPage = () => {
   return (
     <body>
-      <title>Mission</title>
+      <Helmet
+        title="IoT@Illinois - Mission"
+        meta={[
+            { name: 'description', content: 'The official website for The Illinois Center for Internet of Things.' },
+            { name: 'keywords', content: 'Illinois IoT' },
+        ]}
+        link={[
+            { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
+        ]}
+      />
       <Navigation />
       <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", padding:"0vw 10vw"}}>
         <SubPageHero texture_img={texture} hero_img={about_hero}  title={"Mission & Vision"} subtitle={"Our aspirations for innovation"}/>      

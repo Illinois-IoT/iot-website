@@ -11,6 +11,9 @@ import Footer from "../templates/footer/footer";
 import { Paragraph } from "../templates/paragraph/Paragraph";
 import { CircleTable } from "../templates/table/circletable";
 
+import { Helmet } from "react-helmet"
+import favicon from '../images/block-i.png';
+
 const CaesarPage = () => {
   const cards = [{primary:"3", secondary:"years old", img: flipcard}, 
     {primary:"100+", secondary:"undergraduate students", img: flipcard}, 
@@ -20,7 +23,16 @@ const CaesarPage = () => {
 
   return (
     <body>
-      <title>Research Overview</title>
+      <Helmet
+        title="IoT@Illinois - Research Overview"
+        meta={[
+            { name: 'description', content: 'The official website for The Illinois Center for Internet of Things.' },
+            { name: 'keywords', content: 'Illinois IoT' },
+        ]}
+        link={[
+            { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
+        ]}
+      />
       <Navigation />
       <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", padding:"0vw 10vw"}}>
         <PageHero texture_img={texture} hero_img={about_hero} title={"Research"} subtitle={"Learn more about all current and past projects"}/>      
