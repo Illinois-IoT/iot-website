@@ -1,0 +1,61 @@
+/*
+ * buttons.css
+ * Author: Lily Li
+ */
+
+ @import '../../theme.css';
+
+ #basic-button{
+     background-color: white;
+     color: var(--illini-blue);
+     border-color: var(--illini-blue);
+     border-radius: 100px;
+     text-align: center;
+     height: fit-content;
+     width: max-content;
+     margin: auto;
+     font-family: 'Abel', sans-serif;
+     letter-spacing: 4px;
+     font-weight: bold;
+     border-width: 2px var(--illini-blue) solid;
+ }
+ #basic-button:hover{
+     background-color: var(--illini-blue);
+     color: white;
+ }
+ 
+ .button-section{
+     height: fit-content;
+     display: flex;
+     justify-content: space-evenly;
+ }
+ 
+ @media (max-width: 625px){
+     .button-div{
+         display: flex;
+         flex-direction: column;
+         width: fit-content;
+         justify-self: center;
+         align-self: center;
+         position: relative;
+         gap: 20px;
+     }
+     #basic-button{
+         padding: 10px 40px;
+         width: max-content;
+     }
+ }
+ 
+ @media (min-width: 626px){
+     .button-div{
+         display: flex;
+         flex-direction: row;
+         align-items: baseline;
+         align-content: center;
+         justify-content: space-around;
+         gap: 2vw;
+     }
+     #basic-button{
+         padding: 10px 40px;
+     }
+ }

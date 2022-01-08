@@ -1,0 +1,44 @@
+/*
+ * carouselitem.css
+ * Author: Lily Li
+ */
+
+.background_img{
+    height: 100%;
+    width: 100%;
+    opacity: 0.2;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.information{
+    height: fit-content;
+    width: 60vw;
+    z-index: 50;
+}
+
+.information p{
+    color: white;
+}
+
+.item-div{
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 600px){
+    .item-div{
+        height: 500px !important;
+    }
+}
+@media (max-width: 425px){ /* mobile */   
+    .item-div{
+        height: 600px !important;
+    }
+}

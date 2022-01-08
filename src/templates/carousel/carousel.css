@@ -1,0 +1,24 @@
+/*
+ * carousel.css
+ * Author: Lily Li
+ */
+ 
+@import "../../theme.css";
+
+.carousel{
+    width: 100vw;
+    height: 400px;
+    background-color: var(--illini-blue);
+}
+
+@media (max-width: 600px){
+    .carousel{
+        height: 500px !important;
+    }
+}
+
+@media (max-width: 425px){ /* mobile */   
+    .carousel{
+        height: 700px !important;
+    }
+}

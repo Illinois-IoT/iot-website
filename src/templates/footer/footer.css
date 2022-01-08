@@ -1,0 +1,54 @@
+.footer-div {
+    width: 100vw;
+    height: fit-content;
+
+    padding: 50px 10vw;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    background-color: var(--cloud-dark);
+}
+
+.footer-socials-div {
+    width: fit-content;
+    height: fit-content;
+
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.footer-content-div {
+    width: fit-content;
+    height: fit-content;
+}
+
+#uiuc-wordmark {
+    width: 150px;
+    height: auto;
+}
+
+.footer-text-div {
+    margin-top: 20px;
+}
+
+.footer-text-div p {
+    font-size: 80%;
+    margin: 0;
+}
+
+#social-icon {
+    background-color: transparent;
+    color: var(--illini-blue);
+}
+
+#social-icon:hover {
+    background-color: transparent;
+    color: var(--illini-orange);
+}

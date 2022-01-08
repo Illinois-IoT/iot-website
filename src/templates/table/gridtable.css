@@ -1,0 +1,108 @@
+/*
+ * gridtable.css
+ * Author: Lily Li
+ */
+
+ @import "../../theme.css";
+
+ @media(max-width: 1000px){
+     #grid-row-div{
+         flex-direction: column !important;
+     }
+
+     #grid-row-header-background {
+        width: 100 !important;
+        height: 45 !important;
+     }
+ }
+ @media(min-width: 1001px){
+     #grid-row-div{
+         flex-direction: row !important;
+     }
+
+     #grid-row-header-background {
+        width: 45%;
+        height: 100 !important;
+     }
+ }
+ 
+ .grid-table-div{
+     align-self: center;
+     width: 90%;
+     display: flex;
+     flex-direction: column;
+     height: auto;
+ }
+ .grid-table-div > *+* {
+     margin-top:20px;
+ }
+ 
+ #grid-row-div{
+     height: max-content;
+     display: flex;
+     width: 100%;
+     box-shadow: 7px 7px 7px -7px var(--illini-blue);
+     background-color: var(--cloud);
+     color: white !important;
+ }
+
+ #header{
+     color: white;
+     width: fit-content; 
+     height: fit-content;   
+     opacity: 1;
+     letter-spacing: 0px !important;
+     z-index: 100;
+ }
+ 
+ #grid-row-header-background {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+
+     color: var(--cloud);
+     background-color: var(--illini-blue);
+
+     z-index: 500;
+
+ }
+ 
+ #grid-row-header-div {
+     height: 80%;
+     width: 80%;
+
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+
+     background-color: var(--illini-blue);
+     color: white !important;
+     z-index: 1000;
+ }
+ 
+ #grid-img{
+     top: 0;
+     height: auto;
+     width: 100%;
+     z-index: 50;
+     opacity: 0.8;
+ }
+ 
+ #grid-text-div {
+     width: 100%;
+     height: fit-content;
+
+     padding: 40px;
+ 
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     gap: 20px;
+ }
+
+ #grid-text-div p {
+     margin: 0;
+     color: var(--illini-blue);
+ }
