@@ -17,11 +17,11 @@ function MainHero(props) {
         transition={{ duration: 0.5 }}
         >
             <div id="main-hero-div">
-                <img src={props.hero_img} alt="hero image" fixed="top" style={{height:"100vh", width:"100vw", left:"0", top:"0",objectFit: "cover", opacity:"0.4"}}/>
+                <img src={props.hero_img} alt="hero image" fixed="top" style={{height:"100vh", width:"100vw", left:"0", top:"0",objectFit: "cover", opacity:"0.3"}}/>
             </div>
             <div id="main-hero-quote-div">
-                <h3 className="medium-header" style={{opacity:'1', color:"white", zIndex:'100'}}>University of Illinois</h3>
-                <h1 className="bold-header" style={{opacity:'1', color:"white", zIndex:'100'}}>Internet of Things</h1>
+                <h3 className="medium-header" style={{opacity:'1', color:"var(--cloud)", zIndex:'100'}}>University of Illinois</h3>
+                <h1 className="bold-header" style={{opacity:'1', color:"var(--cloud)", zIndex:'100'}}>Internet of Things</h1>
             </div>
         </motion.div>
     );  
@@ -43,7 +43,7 @@ function SubPageHero(props) {
 
 function PageHero(props){
     return(
-        <div style={{position:"relative", height:"60vh", width:"100vw"}}>
+        <div style={{position:"relative", height:"60vh", width:"100vw", backgroundColor:"var(--cloud)"}}>
             <img src={props.texture_img} alt="texture background image" id="subpage_texture_img" fixed="top"/>
             <div id="subpage_heading_section" style={{backgroundImage:`url(${props.hero_img})`}}>
                 <header style={{zIndex:'500', opacity:"1"}}>{props.title}</header>

@@ -3,8 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from "../templates/navigation/navigation"
 import { SubPageHero } from "../templates/hero/hero"
 
-import about_hero from "../images/about_hero.png"
-import texture from "../images/texture.jpeg"
+import hero from "../images/hero.png"
 import {Paragraph} from "../templates/paragraph/Paragraph";
 import Footer from "../templates/footer/footer";
 
@@ -26,7 +25,7 @@ const MissionPage = () => {
       />
       <Navigation />
       <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", padding:"0vw 10vw"}}>
-        <SubPageHero texture_img={texture} hero_img={about_hero}  title={"Mission & Vision"} subtitle={"Our aspirations for innovation"}/>      
+        <SubPageHero hero_img={hero}  title={"Mission & Vision"} subtitle={"Our aspirations for innovation"}/>      
         <Paragraph heading="MISSION FOR THE FUTURE" subheading="Our vision for the technology of tomorrow" 
               paragraphs={[
                   "All around us, things are becoming alive. From smart watches, self-driving cars, appliances and phones, devices all around us are beginning to think, to understand, and to communicate with us as never before. But what we don't see is the vast revolution going on in all aspects of our society, from the revolution in healthcare, wearables and medical equipment enabling new ways to detect disease and save lives; smart agriculture helping farmers to grow food more efficiently to end hunger; intelligent power grids that save energy and protect critical infrastructure during outages; emergency response, tracking firefighters when they enter a burning building, smart cities, and so much more.",

@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from "../templates/navigation/navigation"
 import { PageHero } from "../templates/hero/hero"
 
-import about_hero from "../images/about_hero.png"
+import about_hero from "../images/hero1.png"
 import texture from "../images/texture.jpeg"
 
 import { Helmet } from "react-helmet"

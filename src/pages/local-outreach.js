@@ -3,8 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from "../templates/navigation/navigation"
 import { SubPageHero } from "../templates/hero/hero"
 
-import about_hero from "../images/about_hero.png"
-import texture from "../images/texture.jpeg"
+import hero from "../images/hero.png"
+
 import { LocalOutreachInterestForm } from "../templates/forms/forms";
 
 import { Helmet } from "react-helmet"
@@ -25,7 +25,7 @@ const SupportPage = () => {
       />
       <Navigation />
       <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", padding:"0vw 10vw"}}>
-        <SubPageHero texture_img={texture} hero_img={about_hero}  title={"Local Outreach"} subtitle={"Giving back to the Urbana-Champaign community"}/>      
+        <SubPageHero hero_img={hero}  title={"Local Outreach"} subtitle={"Giving back to the Urbana-Champaign community"}/>      
         <LocalOutreachInterestForm />
       </div>
     </body>

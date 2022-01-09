@@ -3,8 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from "../templates/navigation/navigation"
 import { SubPageHero } from "../templates/hero/hero"
 
-import about_hero from "../images/about_hero.png"
-import texture from "../images/texture.jpeg"
+import hero from "../images/hero.png"
 import {Paragraph, List} from "../templates/paragraph/Paragraph";
 import Footer from "../templates/footer/footer";
 import { SupportUsForm } from "../templates/forms/forms";
@@ -27,7 +26,7 @@ const SupportPage = () => {
       />
       <Navigation />
       <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", padding:"0vw 10vw"}}>
-        <SubPageHero texture_img={texture} hero_img={about_hero}  title={"Support Us"} subtitle={"Support our endeavors through donating or volunteering"}/>      
+        <SubPageHero hero_img={hero}  title={"Support Us"} subtitle={"Support our endeavors through donating or volunteering"}/>      
         <Paragraph heading="DONATE TOWARDS OUR MISSION"
               subheading="Invest in the technologies and innovators of tomorrow"
               paragraphs={[
