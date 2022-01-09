@@ -3,8 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from "../templates/navigation/navigation"
 import { SubPageHero } from "../templates/hero/hero"
 
-import about_hero from "../images/about_hero.png"
-import texture from "../images/texture.jpeg"
+import hero from "../images/hero.png"
 
 import { Helmet } from "react-helmet"
 import favicon from '../images/block-i.png';
@@ -23,7 +22,7 @@ const SupportPage = () => {
         ]}
       />
       <Navigation />
-      <SubPageHero texture_img={texture} hero_img={about_hero}  title={"IoT Simulation"} subtitle={"Insert problem statement of project"}/>      
+      <SubPageHero hero_img={hero}  title={"IoT Simulation"} subtitle={"Insert problem statement of project"}/>      
     </body>
   )
 }

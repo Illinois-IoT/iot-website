@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from "../templates/navigation/navigation"
 import { MainHero } from "../templates/hero/hero"
 
-import main_hero from "../images/main_hero.jpeg"
+import main_hero from "../images/hero1.jpeg"
 import Footer from "../templates/footer/footer";
 import { Paragraph } from "../templates/paragraph/Paragraph";
 import { ButtonContainer } from "../templates/buttons/buttons";

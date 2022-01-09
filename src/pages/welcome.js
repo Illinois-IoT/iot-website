@@ -3,8 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from "../templates/navigation/navigation"
 import { SubPageHero } from "../templates/hero/hero"
 
-import about_hero from "../images/about_hero.png"
-import texture from "../images/texture.jpeg"
+import hero from "../images/hero.png"
 import {Paragraph} from "../templates/paragraph/Paragraph"
 import Footer from "../templates/footer/footer";
 
@@ -26,7 +25,7 @@ const WelcomePage = () => {
       />
       <Navigation />
       <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", padding:"0vw 10vw"}}>
-      <SubPageHero texture_img={texture} hero_img={about_hero}  title={"Welcome to IoT@Illinois"} subtitle={"Letter from Professor Caesar"}/>      
+      <SubPageHero hero_img={hero}  title={"Welcome to IoT@Illinois"} subtitle={"Letter from Professor Caesar"}/>      
         <Paragraph heading="A LETTER OF WELCOME" subheading="The heart behind Professor Caesar" 
               paragraphs={[
                   "When I was a child, I used to watch movies by Disney and Pixar, and see dancing teacups and talking cars. Today my children grow up in a world where intelligent machines are no longer a fantasy, but part of our daily lives. As we are increasingly surrounded by non-human intelligence, it becomes ever more critical for us to not only understand how they work, but to think deeply about how they should be designed.",

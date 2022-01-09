@@ -3,8 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from "../templates/navigation/navigation"
 import { SubPageHero } from "../templates/hero/hero"
 
-import about_hero from "../images/about_hero.png"
-import texture from "../images/texture.jpeg"
+import hero from "../images/hero.png"
+
 import summerCampLogo from "../images/summer-camp-logo.png"
 import { Paragraph, List } from "../templates/paragraph/Paragraph";
 import Collapsible from "../templates/collapsible/collapsible";
@@ -28,7 +28,7 @@ const SupportPage = () => {
       />
       <Navigation />
       <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", padding:"0vw 10vw"}}>
-        <SubPageHero texture_img={texture} hero_img={about_hero}  title={"IoT Summer Camp"} subtitle={"Educating high school students on the basics of IoT Development"}/>      
+        <SubPageHero hero_img={hero}  title={"IoT Summer Camp"} subtitle={"Educating high school students on the basics of IoT Development"}/>      
         <div className="flex-row">
           <img src={summerCampLogo} style={{width:"35%"}}/>
           <div style={{width:"50%"}}>

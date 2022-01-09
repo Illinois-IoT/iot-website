@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from "../templates/navigation/navigation"
 import { PageHero } from "../templates/hero/hero"
 
-import about_hero from "../images/about_hero.png"
+import about_hero from "../images/hero2.jpeg"
 import texture from "../images/texture.jpeg"
 import FlipCards from "../templates/flipcards/flipcards";
 import flipcard from "../images/flipcard.jpeg"
