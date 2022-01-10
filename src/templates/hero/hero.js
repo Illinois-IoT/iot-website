@@ -46,7 +46,7 @@ function PageHero(props){
         <div style={{position:"relative", height:"60vh", width:"100vw", backgroundColor:"var(--cloud)"}}>
             <img src={props.texture_img} alt="texture background image" id="subpage_texture_img" fixed="top"/>
             <div id="subpage_heading_section" style={{backgroundImage:`url(${props.hero_img})`}}>
-                <header style={{zIndex:'500', opacity:"1"}}>{props.title}</header>
+                <header style={{zIndex:'500', opacity:"1", color:"var(--illini-blue)"}}>{props.title}</header>
             </div>
         </div>
     );

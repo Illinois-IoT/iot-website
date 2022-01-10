@@ -101,7 +101,7 @@
      -moz-background-size: cover;
      -o-background-size: cover;
      background-size: cover;
-     background-color: var(--illini-blue);
+     background-color: var(--industrial-blue-lightest);
      z-index: 50;
  }
  
@@ -112,6 +112,6 @@
      right: 0px;
      bottom: 0px;
      left: 0px;
-     background-color: var(--illini-blue);
+     background-color: var(--industrial-blue-lightest);
  }
  
