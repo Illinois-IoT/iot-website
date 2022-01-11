@@ -14,26 +14,33 @@
     }
 
     .tablerow-img {
-        width: 70%;
+        width: 70vw !important;
+        height: 70vw !important;
+        padding: 0;
     }
 
     .tablerow-detail {
         width: 100%;
+        height: fit-content;
     }
 }
 @media (min-width: 801px){
     .tablerow-div {
         display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
     }
 
     .tablerow-img {
-        width: 35%;
+        width: 35vw !important;
+        height: 35vw !important;
+
+        padding: 0 !important;
     }
 
     .tablerow-detail {
         width: 55%;
+        height: fit-content;
     }
 }

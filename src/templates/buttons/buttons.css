@@ -14,10 +14,10 @@
      height: fit-content;
      width: max-content;
      margin: auto;
-     font-family: 'Abel', sans-serif;
+     font-family: 'Montserrat', sans-serif;
      letter-spacing: 4px;
      font-weight: bold;
-     border-width: 2px var(--illini-blue) solid;
+     border: 2px var(--illini-blue) solid;
  }
  #basic-button:hover{
      background-color: var(--illini-blue);
