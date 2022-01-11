@@ -10,7 +10,7 @@ function SupportUsForm() {
       return (
         <div className='lightblue-div'>
             <Paragraph heading="DONATION INQUIRY FORM" subheading="Send us an email detailing how you would like to contribute"/>
-            <div className="supportus-form">
+            <div className="form-div">
             <h5>Successfully submitted. Thank you!</h5>
             </div>
         </div>
@@ -20,7 +20,7 @@ function SupportUsForm() {
   return (
     <div className='lightblue-div'>
         <Paragraph heading="DONATION INQUIRY FORM" subheading="Send us an email detailing how you would like to contribute"/>
-        <form onSubmit={handleSubmit} className="supportus-form">
+        <form onSubmit={handleSubmit} className="form-div">
             <div className='form-row'>
                 <h5 className='form-label'>Name</h5>
                 <input
@@ -74,8 +74,8 @@ function LocalOutreachInterestForm() {
     if (state.succeeded) {
         return (
           <div className='lightblue-div'>
-              <Paragraph heading="URBANA-CHAMPAIGN AREA OUTREACH" subheading="Send us an email to be notified of our future outreach events"/>
-              <div className="supportus-form">
+              <Paragraph heading="INTEREST FORM" subheading="Be notified of our future outreach events in the Urbana-Champaing area"/>
+              <div className="form-div">
               <h5>Successfully submitted. Thank you!</h5>
               </div>
           </div>
@@ -84,8 +84,8 @@ function LocalOutreachInterestForm() {
 
     return (
       <div className='lightblue-div'>
-          <Paragraph heading="URBANA-CHAMPAIGN AREA OUTREACH" subheading="Send us an email to be notified of our future outreach events"/>
-          <form onSubmit={handleSubmit} className="supportus-form">
+          <Paragraph heading="INTEREST FORM" subheading="Be notified of our future outreach events in the Urbana-Champaing area"/>
+          <form onSubmit={handleSubmit} className="form-div">
               <div className='form-row'>
                   <h5 className='form-label'>Name</h5>
                   <input
@@ -114,7 +114,7 @@ function LocalOutreachInterestForm() {
                   errors={state.errors}
               />
               <div className='form-row'>
-                  <h5 className='form-label'>(optional) Which county/city do you reside in?</h5>
+                  <h5 className='form-label'>Which county/city do you reside in?</h5>
                   <input
                       id="residency"
                       type="text" 
@@ -124,7 +124,7 @@ function LocalOutreachInterestForm() {
                   />
               </div>
               <div className='form-row'>
-                  <h5 className='form-label'>(optional) Which school do you attend?</h5>
+                  <h5 className='form-label'>Which school do you attend?</h5>
                   <input
                       id="school"
                       type="text" 
@@ -144,6 +144,7 @@ function LocalOutreachInterestForm() {
                         type="checkbox" 
                         name="interested-in"
                         value="Internet of Things"
+                        className='form-checkbox'
                     />
                 </div>
                 <div className='form-chekcbox-row'>
@@ -153,6 +154,7 @@ function LocalOutreachInterestForm() {
                         type="checkbox" 
                         name="interested-in"
                         value="Programming"
+                        className='form-checkbox'
                     />
                 </div>
                 <div className='form-chekcbox-row'>
@@ -162,6 +164,7 @@ function LocalOutreachInterestForm() {
                         type="checkbox" 
                         name="interested-in"
                         value="Electrical hardware (sensors)"
+                        className='form-checkbox'
                     />
                 </div>
               </div>
@@ -184,7 +187,7 @@ function ContactUsForm() {
         return (
           <div className='lightblue-div'>
               <Paragraph heading="CONTACT FORM" subheading="Send us an email with your inquiry"/>
-              <div className="supportus-form">
+              <div className="form-div">
               <h5>Successfully submitted. Thank you!</h5>
               </div>
           </div>
@@ -194,7 +197,7 @@ function ContactUsForm() {
     return (
       <div className='lightblue-div'>
           <Paragraph heading="CONTACT FORM" subheading="Send us an email with your inquiry"/>
-          <form onSubmit={handleSubmit} className="supportus-form">
+          <form onSubmit={handleSubmit} className="form-div">
               <div className='form-row'>
                   <h5 className='form-label'>Name</h5>
                   <input
@@ -225,7 +228,7 @@ function ContactUsForm() {
 
               <div className='form-row'>
                   <h5 className='form-label'>Subject</h5>
-                  <select name="subject" id="subject">
+                  <select name="subject" id="subject" className='form-input'>
                     <option value="General questions">General questions</option>
                     <option value="Question about research projects">Question about research projects</option>
                     <option value="Interest in joining research (undergraduate)">Interest in joining research (undergraduate)</option>

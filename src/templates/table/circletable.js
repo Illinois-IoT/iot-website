@@ -54,7 +54,7 @@ function CircleImageBackground(props){
         animate={{ scale: [0.9,1] }}
         transition={{ duration: 0.5 }}
         >
-            <div id="basic-circle" style={props.style}>
+            <div id="circle" style={props.style}>
                 <img src={props.img} id="circle-background-img"/>
                 <h6 style={{textAlign:"center"}} className="condensed">{props.heading}</h6>
                 {props.text && <p className="paragraph" style={{textAlign:"center"}}>{props.text}</p>} 
@@ -69,8 +69,8 @@ function CircleWithText(props){
         animate={{ scale: [0.9,1] }}
         transition={{ duration: 0.5 }}
         >
-            <div id="basic-circle-copyable" style={props.style}>
-                <h6 className="medium-header" style={{textAlign:"center", color:"var(--darkblue)"}}>{props.heading}</h6>
+            <div id="circle" style={props.style}>
+                <h5 className="medium-header" style={{textAlign:"center", color:"var(--darkblue)"}}>{props.heading}</h5>
                 {props.text && <p className="paragraph" style={{textAlign:"center", color:"var(--darkblue)"}}>{props.text}</p>} 
             </div>
         </motion.div>
@@ -81,7 +81,7 @@ function CircleWithTextTable(props){
     var circles = [];
     for (var item in props.items) {
         if(item == 0){
-            circles.push(<CircleWithText style={{backgroundColor:"var(--illini-blue)"}} heading={props.items[item].heading} text={props.items[item].text}/>)
+            circles.push(<CircleWithText style={{backgroundColor:"var(--illini-blue)", color:"var(--cloud)"}} heading={props.items[item].heading} text={props.items[item].text}/>)
         }
         else if(item == 1){
             circles.push(<CircleWithText style={{backgroundColor:"var(--cloud-dark)", color:"var(--illini-blue"}} heading={props.items[item].heading} text={props.items[item].text}/>)

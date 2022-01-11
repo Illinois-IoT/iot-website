@@ -5,9 +5,10 @@ import { PageHero } from "../templates/hero/hero"
 
 import about_hero from "../images/hero4.png"
 import texture from "../images/texture.jpeg"
-import { Paragraph, List } from "../templates/paragraph/Paragraph";
+import { List } from "../templates/paragraph/Paragraph";
 import CaesarProfile from "../images/caesar.jpeg"
 import Footer from "../templates/footer/footer";
+import TableRow from "../templates/table/tablerow";
 
 import { Helmet } from "react-helmet"
 import favicon from '../images/block-i.png';
@@ -28,15 +29,16 @@ const CaesarPage = () => {
       <Navigation />
       <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", padding:"0vw 10vw"}}>
         <PageHero texture_img={texture} hero_img={about_hero} title={"Professor Caesar"} subtitle={"Read more about the professor"}/>      
-        <div className="flex-row">
-          <img src={CaesarProfile} className="circle-div" style={{width:"35%"}}/>
-          <div>
-            <h5>Professor Matthew Caesar</h5>
+        <TableRow 
+          img_src={CaesarProfile}
+          header={<h5>Professor Matthew Caesar</h5>}
+          detail={<div>
             <p><b>Education:</b> Ph.D., Computer Science, University of California, Berkeley, 2007</p>
             <p><b>Email:</b> caesar[at]illinois.edu</p>
             <p><b>Office:</b> 3118 Siebel Center for Comp Science</p>
-          </div> 
-        </div>
+          </div>}
+          blue_background={false}
+        />
         <List 
             listHeader={<h5>Research Interests:</h5>}
             listItems={[
