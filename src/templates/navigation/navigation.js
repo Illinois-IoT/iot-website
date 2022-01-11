@@ -18,6 +18,7 @@ export default class Navigation extends React.Component {
         this.state = {
           expanded: null,
           navbarClass: "navbar-primary",
+          innerWidth: 0
         };
       }
     
@@ -29,6 +30,9 @@ export default class Navigation extends React.Component {
     componentDidMount() {
         //adds scroll listener
         this.listener = document.addEventListener("scroll", e => {
+          this.setState({
+            innerWidth: window.innerWidth
+          });
           this.renameNavbarClassName();
         });
         this.listener = document.addEventListener("resize", e => {
@@ -42,6 +46,10 @@ export default class Navigation extends React.Component {
         else{
           this.setState({ navbarClass: "navbar-not-expanded" });
         }
+
+        this.setState({
+          innerWidth: window.innerWidth
+        });
     }
 
     renameNavbarClassName(){
@@ -87,7 +95,7 @@ export default class Navigation extends React.Component {
     }
 
     render() {
-        if (window.innerWidth > 600) {
+        if (this.state.innerWidth > 600) {
         return(
             <div className={this.state.navbarClass}>
               <a href="/"><img  id="logo-img" src={logo} alt="logo" style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}/></a>
