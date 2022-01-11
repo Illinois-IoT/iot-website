@@ -74,7 +74,7 @@ function LocalOutreachInterestForm() {
     if (state.succeeded) {
         return (
           <div className='lightblue-div'>
-              <Paragraph heading="URBANA-CHAMPAIGN AREA OUTREACH" subheading="Send us an email to be notified of our future outreach events"/>
+              <Paragraph heading="INTEREST FORM" subheading="Be notified of our future outreach events in the Urbana-Champaing area"/>
               <div className="form-div">
               <h5>Successfully submitted. Thank you!</h5>
               </div>
@@ -84,7 +84,7 @@ function LocalOutreachInterestForm() {
 
     return (
       <div className='lightblue-div'>
-          <Paragraph heading="URBANA-CHAMPAIGN AREA OUTREACH" subheading="Send us an email to be notified of our future outreach events"/>
+          <Paragraph heading="INTEREST FORM" subheading="Be notified of our future outreach events in the Urbana-Champaing area"/>
           <form onSubmit={handleSubmit} className="form-div">
               <div className='form-row'>
                   <h5 className='form-label'>Name</h5>
