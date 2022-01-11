@@ -1,4 +1,6 @@
 import * as React from "react"
+
+import "../theme.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from "../templates/navigation/navigation"
 import { PageHero } from "../templates/hero/hero"
@@ -42,14 +44,14 @@ const CaesarPage = () => {
           <Paragraph heading={"CURRENT RESEARCH PROJECTS"} />
           <CircleTable 
             items={[
-              {heading: "Autonomy", href: "/autonomy"},
+              {heading: "Autonomy", href: "autonomy"},
               {heading: "IoT Simulation", href: "iot-simulation"},
               {heading: "AI Drone", href: "ai-drone"},
               {heading: "IoT Verification", href: "iot-verification"}
             ]}/>
         </div>
-        <Footer />
       </div>
+      <Footer />
     </body>
   )
 }

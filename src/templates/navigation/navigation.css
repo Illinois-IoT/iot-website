@@ -3,193 +3,227 @@
  * Author: Lily Li
  */
 
- @import '../../theme.css';
+@import '../../theme.css';
 
- .navbar-primary #logo-img{
-     padding: 10px;
-     width: 125px;
-     height: auto;
-     margin-left: 15px;
-     border-radius: 5px;
-     background-color: var(--cloud);
- }
- 
- .navbar-secondary #logo-img {
-     padding: 10px;
-     width: 100px;
-     height: auto;
-     vertical-align: middle;
-     margin-left: 15px;
- }
- 
- #box-shadow{
-     box-shadow: 0px 7px 7px -10px rgba(0,0,0,.5);
- }
+.navbar-primary #logo-img{
+    padding: 10px;
+    width: 125px;
+    height: auto;
+    margin-left: 15px;
+    border-radius: 5px;
+    background-color: var(--cloud);
+}
 
- .navbar-primary .navbar {
-     width: 100%;
- }
+.navbar-secondary #logo-img {
+    padding: 10px;
+    width: 100px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 15px;
+}
 
- .navbar-primary #responsive-navbar-nav {
-     width: 100%;
-     align-items: center;
-     justify-content: space-between !important;
- }
+#box-shadow {
+    box-shadow: 0px 7px 7px -10px rgba(0,0,0,.5);
+}
 
- .navbar-primary #responsive-navbar-nav #nav {
+.navbar-primary .navbar {
+    width: 100%;
+}
+
+.navbar-primary #responsive-navbar-nav {
     width: 100%;
     align-items: center;
-    justify-content: space-evenly !important;
+    justify-content: space-between !important;
 }
- 
- .navbar{
-     background-color: var(--cloud);
-     width: fit-content;
-     height: 100%;
-     opacity: 1;
-     z-index: 1001;
-     border-bottom-left-radius: 10px;
-     border-bottom-right-radius: 10px;
-     padding-right: 10px; 
-     color: var(--illini-blue) !important;
-     vertical-align: middle;
- }
- 
- .navbar-expanded{
-     height: 100vh;
-     width: 100vw;
-     z-index: 1001;
-     position: fixed;
-     top: 0;
-     left: 0;
- }
- 
- .navbar-not-expanded{
-     z-index: 1001;
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
-     justify-items: center;
-     align-items: center;
-     align-content: center;
-     position: fixed;
-     width: 100vw; 
-     height: fit-content;
- }
- 
- .navbar-not-expanded img{
-     padding: 10px;
-     width: 100px;
-     margin-left: 15px;
-     height: auto;
- }
- 
- .navbar-expanded .navbar{
-     width: 100%;
-     height: 100%;
-     position: absolute;
-     top: 0;
-     left: 0;
-     border-radius: 0;
-     background-color: var(--industrial-blue-lighter) !important;
- }
- 
- .navbar-expanded #nav{
-     height: 90vh;
-     width: 100%;
- }
- 
- .navbar-expanded #navbar-item{
-     width: 50%;
-     height: auto;
-     color:var(--illini-blue) !important;
-     background-color: transparent;
- }
- .navbar-expanded #navbar-item:hover{
-     background-color: transparent !important;
- }
- 
- .navbar-expanded .dropdown:hover{
-     background-color: transparent !important;
- }
- .navbar-expanded .dropdown-item:hover{
-     background-color: transparent !important;
- }
 
- .navbar-primary #navbar-item {
-    font-weight: bold;
-     font-size: 125%;
- }
- 
- .navbar-primary{ 
-     background-color: var(--cloud);
-     display: flex; 
-     flex-direction: row;
-     align-items: center;
-     justify-content: space-between;
-     width: 100vw;
-     height: 15vh;
-     position: fixed;
-     z-index: 1001;
-     padding: 1vw;
+.navbar-primary #responsive-navbar-nav #nav {
+width: 100%;
+align-items: center;
+justify-content: space-evenly !important;
+}
 
-     box-shadow: 0px 7px 7px -10px rgba(0,0,0,.5);
- }
- 
- .navbar-secondary{ /* when page is scrolled down */
-     background-color: var(--cloud);
-     display: flex; 
-     flex-direction: row;
-     align-items: center;
-     justify-content: space-between;
-     width: 100vw;
-     position: fixed;
-     z-index: 1001;
-     box-shadow: 0px 7px 7px -10px rgba(0,0,0,.5);
-     padding-right: 2vw;
- }
- 
- #nav-dropdown::after{
-     content: none;
-     white-space: nowrap;
- }
- 
- #navbar-item{
-     color: var(--illini-blue) !important;
-     border-color: white;
-     margin: auto;
-     vertical-align: middle;
-     padding: auto;
- }
- 
- #navbar-item:hover{ /* hovering over any navbar item */
-     color: var(--industrial-blue) !important;
- }
- 
- .dropdown {
-     border: white;
-     color: var(--illini-blue) !important;
- }
- .dropdown-menu{
-     color: var(--illini-blue) !important;
- }
- 
- .dropdown:hover .dropdown-menu { /* hovering to open dropdown */
-     border: var(--cloud);
-     background-color: var(--cloud);
-     display: block;
- }
- .dropdown .dropdown-menu :hover { /*hovering over dropdown menu item */
-     background-color: var(--cloud);
-     border: var(--cloud);
-     color:var(--industrial-blue);
- }
- .dropdown-item{
-     color:var(--illini-blue);
- }
- 
- #responsive-navbar-nav{
-     color:var(--illini-blue);
-     vertical-align: middle;
-     padding: 7px 15px;
- }
+.navbar{
+    background-color: var(--cloud);
+    width: fit-content;
+    height: 100%;
+    opacity: 1;
+    z-index: 1001;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-right: 10px; 
+    color: var(--illini-blue) !important;
+    vertical-align: middle;
+}
+
+.navbar-expanded{
+    height: 70vh;
+    width: 100vw;
+    z-index: 2001;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    overflow: hidden !important;
+}
+
+.navbar-not-expanded {
+    z-index: 1001;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    position: fixed;
+    width: 100vw; 
+    height: fit-content;
+
+    background-color: lightgreen;
+}
+
+.navbar-not-expanded img {
+    padding: 10px;
+    width: 100px;
+    margin-left: 15px;
+    height: auto;
+}
+
+.navbar-expanded .navbar{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+    background-color: var(--industrial-blue-lighter) !important;
+    overflow-y: hidden !important;
+}
+
+.navbar-expanded #nav{
+    height: 90vh;
+    width: 100%;
+}
+
+.navbar-expanded #navbar-item{
+    width: 50%;
+    height: auto;
+    color:var(--illini-blue) !important;
+    background-color: transparent;
+}
+.navbar-expanded #navbar-item:hover{
+    background-color: transparent !important;
+}
+
+.navbar-expanded .dropdown:hover{
+    background-color: transparent !important;
+}
+.navbar-expanded .dropdown-item:hover{
+    background-color: transparent !important;
+}
+
+.navbar-primary #navbar-item {
+font-weight: bold;
+    font-size: 125%;
+}
+
+.navbar-primary{ 
+    background-color: var(--cloud);
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 15vh;
+    position: fixed;
+    z-index: 1001;
+    padding: 1vw;
+
+    box-shadow: 0px 7px 7px -10px rgba(0,0,0,.5);
+}
+
+.navbar-secondary{ /* when page is scrolled down */
+    background-color: var(--cloud);
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    position: fixed;
+    z-index: 1001;
+    box-shadow: 0px 7px 7px -10px rgba(0,0,0,.5);
+    padding-right: 2vw;
+}
+
+#nav-dropdown::after{
+    content: none;
+    white-space: nowrap;
+}
+
+#navbar-item{
+    color: var(--illini-blue) !important;
+    border-color: white;
+    margin: auto;
+    vertical-align: middle;
+    padding: auto;
+}
+
+#navbar-item:hover{ /* hovering over any navbar item */
+    color: var(--industrial-blue) !important;
+}
+
+.dropdown {
+    border: white;
+    color: var(--illini-blue) !important;
+}
+
+.dropdown-menu{
+    color: var(--illini-blue) !important;
+}
+
+.dropdown:hover .dropdown-menu { /* hovering to open dropdown */
+    border: var(--cloud);
+    background-color: var(--cloud);
+    display: block;
+}
+
+.dropdown .dropdown-menu :hover { /*hovering over dropdown menu item */
+    background-color: var(--cloud);
+    border: var(--cloud);
+    color:var(--industrial-blue);
+}
+
+.dropdown-item{
+    color:var(--illini-blue);
+}
+
+#responsive-navbar-nav{
+    color:var(--illini-blue);
+    vertical-align: middle;
+    padding: 7px 15px;
+}
+
+.navbar-div-mobile {
+    width: 100vw;
+    height: fit-content;
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 20px 10vw;
+
+    background-color: var(--cloud);
+    z-index: 1001;
+}
+
+#mobile-logo-img {
+    width: 100px;
+}
+
+.mobile-navlink:active {
+    background-color: transparent;
+}

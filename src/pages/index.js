@@ -1,4 +1,6 @@
 import * as React from "react"
+
+import "../theme.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from "../templates/navigation/navigation"
 import { MainHero } from "../templates/hero/hero"
@@ -56,10 +58,10 @@ const IndexPage = () => {
           <Paragraph heading={"CURRENT RESEARCH PROJECTS"} />
           <CircleTable 
             items={[
-              {heading: "Autonomy", href: "/autonomy"},
-              {heading: "IoT Simulation", href: "iot-simulation"},
-              {heading: "AI Drone", href: "ai-drone"},
-              {heading: "IoT Verification", href: "iot-verification"}
+              {heading: "Autonomy", href: "research/autonomy"},
+              {heading: "IoT Simulation", href: "research/iot-simulation"},
+              {heading: "AI Drone", href: "research/ai-drone"},
+              {heading: "IoT Verification", href: "research/iot-verification"}
             ]}/>
         </div>
         <TableRow 
@@ -68,8 +70,8 @@ const IndexPage = () => {
           detail={<p>I am a Professor in the Department of Computer Science at UIUC. I am also an Affiliate Professor in the Department of Electrical and Computer Engineering, an Affiliate Research Professor in the Coordinated Science Laboratory, Affiliate Professor in the School of Information Sciences, and a member of the Information Trust Institute. I currently serve as the Vice Chair of ACM SIGCOMM. I previously served as the Chief Science Officer of Veriflow (sold to VMware in 2019). I received my Ph.D. in Computer Science from UC Berkeley.</p>}
           blue_background={true}
         />
-        <Footer />
       </div>
+      <Footer />
     </body>
   )
 }

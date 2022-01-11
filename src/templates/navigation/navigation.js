@@ -18,7 +18,7 @@ export default class Navigation extends React.Component {
         this.state = {
           expanded: null,
           navbarClass: "navbar-primary",
-          navbarItems: null
+          innerWidth: 0
         };
       }
     
@@ -27,16 +27,17 @@ export default class Navigation extends React.Component {
         var win = window.location.replace(url);
     }
 
-    //ran when page loads
     componentDidMount() {
         //adds scroll listener
         this.listener = document.addEventListener("scroll", e => {
+          this.setState({
+            innerWidth: window.innerWidth
+          });
           this.renameNavbarClassName();
         });
         this.listener = document.addEventListener("resize", e => {
 
           this.renameNavbarClassName();
-          this.addNavbar();
         });
 
         if(window.innerWidth > 425){
@@ -45,7 +46,10 @@ export default class Navigation extends React.Component {
         else{
           this.setState({ navbarClass: "navbar-not-expanded" });
         }
-        this.addNavbar();
+
+        this.setState({
+          innerWidth: window.innerWidth
+        });
     }
 
     renameNavbarClassName(){
@@ -69,57 +73,9 @@ export default class Navigation extends React.Component {
           this.setState({ navbarClass: "navbar-primary" });
         }
       }
-      this.addNavbar();
       console.log("navbarClass: " + this.state.navbarClass);
     }
-
-    addNavbar(){
-      var navLinks = []
-      if(window.innerWidth > 600 || (window.innerWidth >= 10000 && this.state.navbarClass==="navbar-primary") || this.state.navbarClass==="navbar-expanded"){
-      } else {
-            navLinks.push(
-                <Nav.Link href="/about" style={{backgroundColor:"black"}}><h5 id="navbar-item" className="subscript">About</h5></Nav.Link>
-            );
-            navLinks.push(
-                <NavDropdown.Item  href="/welcome" id="navbar-item"><h5 id="navbar-item" className="subscript">&ndash; Welcome</h5></NavDropdown.Item>
-            );
-            navLinks.push(
-                <NavDropdown.Item href="/mission"><h5 id="navbar-item" className="subscript">&ndash; Mission</h5></NavDropdown.Item>
-            );
-            navLinks.push(
-                <NavDropdown.Item href="/support"><h5 id="navbar-item" className="subscript">&ndash; Support Us</h5></NavDropdown.Item>
-            );
-            navLinks.push(
-                <Nav.Link href="/caesar"><h5 id="navbar-item" className="subscript">Professor Caesar</h5></Nav.Link>
-            );
-            navLinks.push(
-                <Nav.Link href="/research"><h5 id="navbar-item" className="subscript">Research</h5></Nav.Link>
-            );
-            navLinks.push(
-                <NavDropdown.Item href="/iot-simulation"><h5 id="navbar-item" className="subscript">&ndash; IoT Simulation</h5></NavDropdown.Item>
-            );
-            navLinks.push(
-                <NavDropdown.Item href="/autonomy"><h5 id="navbar-item" className="subscript">&ndash; Autonomy Research</h5></NavDropdown.Item>
-            );
-            navLinks.push(
-                <Nav.Link href="/outreach"><h5 id="navbar-item" className="subscript">Outreach</h5></Nav.Link>
-            );
-            navLinks.push(
-                <NavDropdown.Item href="/local-outreach"><h5 id="navbar-item" className="subscript">&ndash; Local Outreach</h5></NavDropdown.Item>
-            );
-            navLinks.push(
-                <NavDropdown.Item href="/summer-camp"><h5 id="navbar-item" className="subscript">&ndash; Summer Camp</h5></NavDropdown.Item>
-            );
-            navLinks.push(
-                <Nav.Link href="/connect"><h5 id="navbar-item" className="subscript">Connect</h5></Nav.Link>
-            );
-        }
-        this.setState({
-            navbarItems: navLinks,
-        });
-    }
     
-    //remove scroll listener
     componentDidUpdate() {
         document.removeEventListener("scroll", this.listener);
         document.removeEventListener("resize", this.listener);
@@ -136,12 +92,13 @@ export default class Navigation extends React.Component {
           this.renameNavbarClassName();
         }); 
       }
-      this.addNavbar();
     }
+
     render() {
+        if (this.state.innerWidth > 600) {
         return(
             <div className={this.state.navbarClass}>
-              <a href="/"><img  id="logo-img" src={logo} alt="i-Jet logo" style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}/></a>
+              <a href="/"><img  id="logo-img" src={logo} alt="logo" style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}/></a>
               <Navbar collapseOnSelect expand='sm' className="navbar" onToggle={()=> this.toggleExpand()} id={this.state.navbarClass === "navbar-secondary" ? "box-shadow" : ""}>
                   <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                   <Navbar.Collapse id="responsive-navbar-nav"> {/*navbar background*/}
@@ -153,19 +110,48 @@ export default class Navigation extends React.Component {
                           </NavDropdown>
                           <Nav.Link href="/caesar" style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}><p id="navbar-item">Professor Caesar</p></Nav.Link>
                           <NavDropdown onClick={()=>this.open("/research")} href="/research" id="nav-dropdown" style={{whiteSpace:"nowrap"}} title={<p id="navbar-item">Research &#9660;</p>} renderMenuOnMount={true} style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}>
-                              <NavDropdown.Item  href="/iot-simulation" className="dropdown-item"><p>IoT Simulation</p></NavDropdown.Item>
-                              <NavDropdown.Item href="/autonomy" className="dropdown-item"><p>Automony Research</p></NavDropdown.Item>
+                              <NavDropdown.Item href="/research/autonomy" className="dropdown-item"><p>Automony Research</p></NavDropdown.Item>
+                              <NavDropdown.Item  href="/research/iot-simulation" className="dropdown-item"><p>IoT Simulation</p></NavDropdown.Item>
+                              <NavDropdown.Item href="/research/ai-drone" className="dropdown-item"><p>AI Drone Research</p></NavDropdown.Item>
+                              <NavDropdown.Item href="/research/iot-verification" className="dropdown-item"><p>IoT Verification</p></NavDropdown.Item>
                           </NavDropdown>
                           <NavDropdown onClick={()=>this.open("/outreach")} href="/outreach" id="nav-dropdown" style={{whiteSpace:"nowrap"}} title={<p id="navbar-item">Outreach &#9660;</p>} renderMenuOnMount={true} style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}>
-                              <NavDropdown.Item  href="/local-outreach" className="dropdown-item"><p>Local Outreach</p></NavDropdown.Item>
-                              <NavDropdown.Item href="/summer-camp" className="dropdown-item"><p>Summer Camp</p></NavDropdown.Item>
+                              <NavDropdown.Item  href="/outreach/local-outreach" className="dropdown-item"><p>Local Outreach</p></NavDropdown.Item>
+                              <NavDropdown.Item href="/outreach/summer-camp" className="dropdown-item"><p>Summer Camp</p></NavDropdown.Item>
                           </NavDropdown>
                           <Nav.Link href="/connect" style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}><p id="navbar-item">Connect</p></Nav.Link>
-                          {this.state.navbarItems}
                       </Nav>
                   </Navbar.Collapse>
               </Navbar>
             </div>
         );  
+        } else {
+          return (
+            <div className='navbar-div-mobile' id="box-shadow">
+            <a href="/"><img  id="mobile-logo-img" src={logo} alt="logo"/></a>
+            <Navbar collapseOnSelect expand='sm' className="navbar-mobile">
+                  <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+                  <Navbar.Collapse id="responsive-navbar-nav"> {/*navbar background*/}
+                      <Nav className="mr-auto" id="nav"> {/*actual navbar*/}
+                        <Nav.Link href="/about" className='mobile-navlink'><h5 id="navbar-item" className="subscript">About</h5></Nav.Link>
+                        <Nav.Link href="/welcome" className='mobile-navlink'><h5 id="navbar-item" className="subscript tab">&ndash; Welcome</h5></Nav.Link>
+                        <Nav.Link href="/mission" className='mobile-navlink'><h5 id="navbar-item" className="subscript tab">&ndash; Mission</h5></Nav.Link>
+                        <Nav.Link href="/support" className='mobile-navlink'><h5 id="navbar-item" className="subscript tab">&ndash; Support Us</h5></Nav.Link>
+                        <Nav.Link href="/caesar" className='mobile-navlink'><h5 id="navbar-item" className="subscript">Professor Caesar</h5></Nav.Link>
+                        <Nav.Link href="/research" className='mobile-navlink'><h5 id="navbar-item" className="subscript">Research</h5></Nav.Link>
+                        <Nav.Link href="/research/autonomy" className='mobile-navlink'><h5 id="navbar-item" className="subscript tab">&ndash; Autonomy Research</h5></Nav.Link>
+                        <Nav.Link href="/research/iot-simulation" className='mobile-navlink'><h5 id="navbar-item" className="subscript tab">&ndash; IoT Simulation</h5></Nav.Link>
+                        <Nav.Link href="/research/ai-drone" className='mobile-navlink'><h5 id="navbar-item" className="subscript tab">&ndash; AI Drone Research</h5></Nav.Link>
+                        <Nav.Link href="/research/iot-verification" className='mobile-navlink'><h5 id="navbar-item" className="subscript tab">&ndash; IoT Verification</h5></Nav.Link>
+                        <Nav.Link href="/outreach" className='mobile-navlink'><h5 id="navbar-item" className="subscript">Outreach</h5></Nav.Link>
+                        <Nav.Link href="/outreach/local-outreach" className='mobile-navlink'><h5 id="navbar-item" className="subscript tab">&ndash; Local Outreach</h5></Nav.Link>
+                        <Nav.Link href="/outreach/summer-camp" className='mobile-navlink'><h5 id="navbar-item" className="subscript tab">&ndash; Summer Camp</h5></Nav.Link>
+                        <Nav.Link href="/connect" className='mobile-navlink'><h5 id="navbar-item" className="subscript">Connect</h5></Nav.Link>
+                      </Nav>
+                  </Navbar.Collapse>
+              </Navbar>
+            </div>
+          )
+        }
     }
 }

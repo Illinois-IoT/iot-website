@@ -1,4 +1,6 @@
 import * as React from "react"
+
+import "../theme.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from "../templates/navigation/navigation"
 import { PageHero } from "../templates/hero/hero"
@@ -37,8 +39,8 @@ const ConnectPage = () => {
                 {heading: "Phone", text: "(847) 323-2968"}
               ]}/>
         <ContactUsForm />
-        <Footer />
       </div>
+      <Footer />
     </body>
   )
 }

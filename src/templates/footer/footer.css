@@ -3,6 +3,8 @@
     height: fit-content;
 
     padding: 50px 10vw;
+
+    margin-bottom: 0;
     
     display: flex;
     flex-direction: row;
