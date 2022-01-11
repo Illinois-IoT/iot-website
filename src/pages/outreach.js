@@ -35,12 +35,12 @@ const OutreachPage = () => {
             {header: "Urbana-Champaign Outreach", 
             text:"We are dedicated to giving back to our local community. For students living in or near the Urbana-Champaign area, keep up to date with our future workshops when they are announced! Our local outreach program is focused on introducing the concept of IoT to K-12 students and exposing them to the field. You do not need any prior experience or knowledge to attend one of our workshops!",
             buttons: [
-              {name: "Local Workshops", href: "/local-outreach"}
+              {name: "Local Workshops", href: "local-outreach"}
             ]},
             {header: "Illinois of Things Summer Camp", 
             text:"Calling all high school students interested in programming and the Internet of Things! We are organizing a week-long summer camp on the UofI campus this summer. Students will get a chance to learn about the field of IoT, and progress through a week-long hands-on project to show off their newfound knowledge!",
             buttons: [
-              {name: "Summer Camp", href: "/summer-camp"}
+              {name: "Summer Camp", href: "summer-camp"}
             ]}
             ]}/>
       </div>

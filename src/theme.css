@@ -80,7 +80,7 @@
  h3{ /* turning cards primary words, 
      slider heading, overlaping card heading, 
      3 cell table subheading, circle cell text */
-   font-family: Abel,sans-serif;
+   font-family: 'Montserrat',sans-serif;
    text-align: center;
    color: white;
    letter-spacing: 5px;
@@ -107,7 +107,7 @@
  }
  
  .subheading{ /* paragraph subheading */
-   font-family: 'Abel', sans-serif;
+   font-family: 'Montserrat', sans-serif;
    color: var(--industrial-blue);
    font-weight: lighter;
    text-align: center;
