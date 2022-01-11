@@ -1,0 +1,39 @@
+/*
+ * tablerow.css
+ * Author: Lily Li
+ */
+
+@import "../../theme.css";
+
+@media (max-width: 800px){
+    .tablerow-div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .tablerow-img {
+        width: 70%;
+    }
+
+    .tablerow-detail {
+        width: 100%;
+    }
+}
+@media (min-width: 801px){
+    .tablerow-div {
+        display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+    }
+
+    .tablerow-img {
+        width: 35%;
+    }
+
+    .tablerow-detail {
+        width: 55%;
+    }
+}
