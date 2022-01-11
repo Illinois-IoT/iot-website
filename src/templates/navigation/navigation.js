@@ -18,7 +18,8 @@ export default class Navigation extends React.Component {
         this.state = {
           expanded: null,
           navbarClass: "navbar-primary",
-          innerWidth: 0
+          innerWidth: 0,
+          mobile_expanded: false
         };
       }
     
@@ -127,12 +128,12 @@ export default class Navigation extends React.Component {
         );  
         } else {
           return (
-            <div className='navbar-div-mobile' id="box-shadow">
+            <div className={this.state.mobile_expanded ? 'navbar-div-mobile-expanded' : 'navbar-div-mobile'} id="box-shadow">
             <a href="/"><img  id="mobile-logo-img" src={logo} alt="logo"/></a>
-            <Navbar collapseOnSelect expand='sm' className="navbar-mobile">
-                  <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+            <Navbar collapseOnSelect expand='sm' expanded={this.state.mobile_expanded} className="navbar-mobile">
+                  <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => this.setState({mobile_expanded: !this.state.mobile_expanded})} className='navbar-mobile-toggle'/>
                   <Navbar.Collapse id="responsive-navbar-nav"> {/*navbar background*/}
-                      <Nav className="mr-auto" id="nav"> {/*actual navbar*/}
+                      <Nav className="mr-auto" id="nav" justify-content-center> {/*actual navbar*/}
                         <Nav.Link href="/about" className='mobile-navlink'><h5 id="navbar-item" className="subscript">About</h5></Nav.Link>
                         <Nav.Link href="/welcome" className='mobile-navlink'><h5 id="navbar-item" className="subscript tab">&ndash; Welcome</h5></Nav.Link>
                         <Nav.Link href="/mission" className='mobile-navlink'><h5 id="navbar-item" className="subscript tab">&ndash; Mission</h5></Nav.Link>
