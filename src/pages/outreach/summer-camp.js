@@ -1,19 +1,19 @@
 import * as React from "react"
 
-import "../theme.css"
+import "../../theme.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navigation from "../templates/navigation/navigation"
-import { SubPageHero } from "../templates/hero/hero"
+import Navigation from "../../templates/navigation/navigation"
+import { SubPageHero } from "../../templates/hero/hero"
 
-import hero from "../images/hero.jpg"
+import hero from "../../images/hero.jpg"
 
-import summerCampLogo from "../images/summer-camp-logo.png"
-import { Paragraph, List } from "../templates/paragraph/Paragraph";
-import Collapsible from "../templates/collapsible/collapsible";
-import Footer from "../templates/footer/footer";
+import summerCampLogo from "../../images/summer-camp-logo.png"
+import { Paragraph, List } from "../../templates/paragraph/Paragraph";
+import Collapsible from "../../templates/collapsible/collapsible";
+import Footer from "../../templates/footer/footer";
 
 import { Helmet } from "react-helmet"
-import favicon from '../images/block-i.png';
+import favicon from '../../images/block-i.png';
 
 const SupportPage = () => {
   return (

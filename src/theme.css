@@ -137,7 +137,7 @@
  }
  
  .subscript{
-   font-family: 'Abel', sans-serif !important;
+   font-family: 'Montserrat' !important;
    font-weight: lighter !important;
    color: var(--industrial-blue)
  }
@@ -398,4 +398,8 @@
 
  .curser-pointer {
    cursor: pointer;
+ }
+
+ .tab {
+   padding-left: 20px;
  }
