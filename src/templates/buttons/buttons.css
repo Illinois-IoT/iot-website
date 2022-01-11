@@ -40,9 +40,14 @@
          position: relative;
          gap: 20px;
      }
+
      #basic-button{
-         padding: 10px 40px;
+         padding: 10px 20px;
          width: max-content;
+     }
+
+     #basic-button-text {
+        font-size: 80% !important;
      }
  }
  
@@ -55,7 +60,8 @@
          justify-content: space-around;
          gap: 2vw;
      }
-     #basic-button{
+
+     #basic-button {
          padding: 10px 40px;
      }
  }

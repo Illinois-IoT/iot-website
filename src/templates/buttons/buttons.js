@@ -10,13 +10,7 @@ import {motion} from 'framer-motion'
 
 function BasicButton(props){
     return(
-    <Button variant="pill" href={props.href} id="basic-button"><h7>{props.name}</h7></Button>
-    );
-}
-
-function FormButton(props){
-    return(
-    <Button variant="pill" onClick={props.onClick} id="basic-button"><h7>{props.name}</h7></Button>
+    <Button variant="pill" href={props.href} id="basic-button"><h7 id="basic-button-text">{props.name}</h7></Button>
     );
 }
 
@@ -42,4 +36,4 @@ function ButtonContainer(props){
     );
 }
 
-export {BasicButton, FormButton, ButtonContainer};
+export {BasicButton, ButtonContainer};

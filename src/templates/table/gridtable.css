@@ -12,7 +12,8 @@
 
      #grid-row-header-background {
         width: 100 !important;
-        height: 45 !important;
+        height: fit-content !important;
+        padding: 20px;
      }
  }
  @media(min-width: 1001px){
