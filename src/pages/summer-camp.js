@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from "../templates/navigation/navigation"
 import { SubPageHero } from "../templates/hero/hero"
 
-import hero from "../images/hero.png"
+import hero from "../images/hero.jpg"
 
 import summerCampLogo from "../images/summer-camp-logo.png"
 import { Paragraph, List } from "../templates/paragraph/Paragraph";

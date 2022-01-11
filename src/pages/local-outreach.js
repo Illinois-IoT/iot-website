@@ -7,7 +7,7 @@ import { SubPageHero } from "../templates/hero/hero"
 import { Paragraph, List } from "../templates/paragraph/Paragraph";
 import Footer from "../templates/footer/footer";
 
-import hero from "../images/hero.png"
+import hero from "../images/hero.jpg"
 
 import { LocalOutreachInterestForm } from "../templates/forms/forms";
 

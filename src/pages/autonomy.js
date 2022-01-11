@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from "../templates/navigation/navigation"
 import { SubPageHero } from "../templates/hero/hero"
 
-import hero from "../images/hero.png"
+import hero from "../images/hero.jpg"
 
 import { Helmet } from "react-helmet"
 import favicon from '../images/block-i.png';
