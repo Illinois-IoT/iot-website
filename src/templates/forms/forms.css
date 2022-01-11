@@ -121,13 +121,10 @@
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
-	border: 1px solid var(--industrial-blue-light);
+	border: 2px solid var(--illini-blue);
 	outline: none;
 	color: var(--illini-blue);
 	padding: 5px 8px 5px 8px;
-	box-shadow: inset 1px 1px 4px var(--industrial-blue-light);
-	-moz-box-shadow: inset 1px 1px 4px var(--industrial-blue-light);
-	-webkit-box-shadow: inset 1px 1px 4px var(--industrial-blue-light);
 	background: var(--cloud);
 }
 
