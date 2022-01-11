@@ -15,11 +15,14 @@
     .circle-div{
         padding: 0 10px;
     }
-    #circle-img{
-        height: 50px;
-        width: 50px;
+    #circle-background-img {
+        width: 30vw !important;
+        height: 30vw !important;
+        margin: 10px 25px;
+        padding: 40px;
     }
 }
+
 @media(max-width: 700px){
     #circle{
         width: 60vw !important;
@@ -30,13 +33,28 @@
     .circle-div{
         padding: 0 5px;
     }
-    #circle-img{
-        height: 30px;
-        width: 30px;
+    #circle-background-img {
+        width: 60vw !important;
+        height: 60vw !important;
+        margin: 10px 25px;
+        padding: 20px;
     }
 }
 
-@media(min-width: 1001px){
+@media(max-width: 1439px){
+    #circle{
+        width: 23vw;
+        height: 23vw;
+        margin: 10px 25px;
+        padding: 20px;
+    }
+    .circle-div{
+        padding: 0 20px;
+    }
+}
+
+
+@media(min-width: 1440px){
     #circle{
         width: 15vw;
         height: 15vw;
@@ -46,50 +64,14 @@
     .circle-div{
         padding: 0 20px;
     }
-    #circle-img{
-        height: 80px;
-        width: 80px;
+    #circle-background-img {
+        width: 15vw !important;
+        height: 15vw !important;
+        margin: 10px 25px;
+        padding: 20px;
     }
 }
 
-#basic-circle-copyable{
-    width: 225px;
-    height: 225px;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: space-evenly;
-    justify-items: center;
-    z-index: 5;
-    margin: 10px 60px;
-    padding: 40px;
-    color: white;
-    opacity: 0.95;
-}
-
-#basic-circle{
-    width: 225px;
-    height: 225px;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: space-evenly;
-    justify-items: center;
-    z-index: 5;
-    margin: 10px 60px;
-    padding: 40px;
-    background-color: var(--darkblue);
-    color: white;
-    opacity: 0.95;
-    -webkit-user-select: none; /* Safari */        
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
-    user-select: none; /* Standard */
-}
 #circle{
     border-radius: 50%;
     display: flex;
@@ -109,8 +91,6 @@
     position: absolute;
     opacity: 0.2;
     z-index: -1;
-    width: 225px !important;
-    height: 225px !important;
     object-fit: cover;
     overflow: hidden;
     border-radius: 50%;

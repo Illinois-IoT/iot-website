@@ -225,7 +225,7 @@ function ContactUsForm() {
 
               <div className='form-row'>
                   <h5 className='form-label'>Subject</h5>
-                  <select name="subject" id="subject">
+                  <select name="subject" id="subject" className='form-input'>
                     <option value="General questions">General questions</option>
                     <option value="Question about research projects">Question about research projects</option>
                     <option value="Interest in joining research (undergraduate)">Interest in joining research (undergraduate)</option>
