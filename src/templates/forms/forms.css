@@ -6,7 +6,7 @@
 @import '../../theme.css';
  
 @media (max-width: 768px) {
-    .supportus-form {
+    .form-div {
         width: 100%;
         height: fit-content;
     
@@ -31,7 +31,7 @@
 }
 
 @media (min-width: 769px) {
-    .supportus-form {
+    .form-div {
         width: 50%;
         height: fit-content;
     
@@ -99,4 +99,50 @@
     align-items: center;
     justify-content: space-around;
     gap: 20px;
+}
+
+.form-div {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.form-div input[type=text],
+.form-div input[type=date],
+.form-div input[type=datetime],
+.form-div input[type=number],
+.form-div input[type=search],
+.form-div input[type=time],
+.form-div input[type=url],
+.form-div input[type=email],
+.form-div select, 
+.form-div textarea {
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border: 1px solid var(--industrial-blue-light);
+	outline: none;
+	color: var(--illini-blue);
+	padding: 5px 8px 5px 8px;
+	box-shadow: inset 1px 1px 4px var(--industrial-blue-light);
+	-moz-box-shadow: inset 1px 1px 4px var(--industrial-blue-light);
+	-webkit-box-shadow: inset 1px 1px 4px var(--industrial-blue-light);
+	background: var(--cloud);
+}
+
+.form-div ::placeholder {
+    color: var(--cloud-darkest);
+}
+
+.form-div input[type="checkbox"] {
+    height: 100;
+    border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border: 1px solid var(--industrial-blue-light);
+	outline: none;
+	color: var(--illini-blue);
+	padding: 5px 8px 5px 8px;
+	background: var(--cloud);
 }
