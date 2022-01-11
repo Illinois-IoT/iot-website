@@ -7,8 +7,8 @@
 
 @media(max-width: 1000px){
     #circle{
-        width: 150px !important;
-        height: 150px !important;
+        width: 30vw !important;
+        height: 30vw !important;
         margin: 10px 25px;
         padding: 40px;
     }
@@ -22,8 +22,8 @@
 }
 @media(max-width: 700px){
     #circle{
-        width: 120px !important;
-        height: 120px !important;
+        width: 60vw !important;
+        height: 60vw !important;
         margin: 10px 25px;
         padding: 20px;
     }
@@ -35,10 +35,11 @@
         width: 30px;
     }
 }
+
 @media(min-width: 1001px){
     #circle{
-        width: 200px;
-        height: 200px;
+        width: 15vw;
+        height: 15vw;
         margin: 10px 25px;
         padding: 20px;
     }
