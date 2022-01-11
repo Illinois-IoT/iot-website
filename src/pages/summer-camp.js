@@ -1,4 +1,6 @@
 import * as React from "react"
+
+import "../theme.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from "../templates/navigation/navigation"
 import { SubPageHero } from "../templates/hero/hero"
@@ -110,8 +112,8 @@ const SupportPage = () => {
             detail={<p>Check out the Frequently Asked Questions page [link to page] on WYSE’s website.</p>}
           />
         </div>
-        <Footer />
       </div>
+      <Footer />
     </body>
   )
 }

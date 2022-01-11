@@ -1,4 +1,6 @@
 import * as React from "react"
+
+import "../theme.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from "../templates/navigation/navigation"
 import { PageHero } from "../templates/hero/hero"
@@ -45,8 +47,8 @@ const AboutPage = () => {
             {name: "Outreach Events", href:"/outreach"}
           ]}
           ]}/>
-        <Footer />
       </div>
+      <Footer />
     </body>
   )
 }

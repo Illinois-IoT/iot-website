@@ -365,10 +365,15 @@
    background-color: var(--industrial-blue-lightest);
    width: 100vw;
    padding: 40px 10vw;
+   margin: 0 !important;
  }
  
  .flex-parent > *+* {
-   margin: 4.5vw 0 0.5vw 0;
+   margin: 40px 0;
+ }
+
+ .lists-div > *+* {
+   margin: 20px 0;
  }
 
  .cloud-color{

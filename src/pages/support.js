@@ -1,4 +1,6 @@
 import * as React from "react"
+
+import "../theme.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from "../templates/navigation/navigation"
 import { SubPageHero } from "../templates/hero/hero"
@@ -47,8 +49,8 @@ const SupportPage = () => {
                 />}
               />
         <SupportUsForm />
-        <Footer />
       </div>
+      <Footer />
     </body>
   )
 }

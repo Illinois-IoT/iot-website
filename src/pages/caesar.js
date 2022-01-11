@@ -1,4 +1,6 @@
 import * as React from "react"
+
+import "../theme.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from "../templates/navigation/navigation"
 import { PageHero } from "../templates/hero/hero"
@@ -39,30 +41,32 @@ const CaesarPage = () => {
           </div>}
           blue_background={false}
         />
-        <List 
-            listHeader={<h5>Research Interests:</h5>}
-            listItems={[
-              "Simplifying management and improving reliability of distributed systems and networks through principles of self-organization and self-diagnosis, with an emphasis on wide-area networks and networked systems.",
-              "My research focuses on the design, analysis, and implementation of distributed systems and networks on the extremely large scale, with an emphasis on network operations, measurement, and availability. I am particularly interested in improving availability and performance of the Internet infrastructure, including routing, DNS, and data centers."
-            ]}
-            />
-        <List 
-            listHeader={<h5>Research Area:</h5>}
-            listItems={[
-              "Security and Privacy",
-              "Systems and Networking"
-            ]}
-            />
-        <List 
-            listHeader={<h5>Recent Courses Taught:</h5>}
-            listItems={[
-              "Topics in Internet of Things",
-              "Internet of Things",
-              "Computer Networking Laboratory"
-            ]}
-            />
-        <Footer />
+        <div className="lists-div">
+          <List 
+              listHeader={<h5>Research Interests:</h5>}
+              listItems={[
+                "Simplifying management and improving reliability of distributed systems and networks through principles of self-organization and self-diagnosis, with an emphasis on wide-area networks and networked systems.",
+                "My research focuses on the design, analysis, and implementation of distributed systems and networks on the extremely large scale, with an emphasis on network operations, measurement, and availability. I am particularly interested in improving availability and performance of the Internet infrastructure, including routing, DNS, and data centers."
+              ]}
+              />
+          <List 
+              listHeader={<h5>Research Area:</h5>}
+              listItems={[
+                "Security and Privacy",
+                "Systems and Networking"
+              ]}
+              />
+          <List 
+              listHeader={<h5>Recent Courses Taught:</h5>}
+              listItems={[
+                "Topics in Internet of Things",
+                "Internet of Things",
+                "Computer Networking Laboratory"
+              ]}
+              />
+        </div>
       </div>
+      <Footer />
     </body>
   )
 }

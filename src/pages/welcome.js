@@ -1,4 +1,6 @@
 import * as React from "react"
+
+import "../theme.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from "../templates/navigation/navigation"
 import { SubPageHero } from "../templates/hero/hero"
@@ -36,8 +38,8 @@ const WelcomePage = () => {
           <h6 style={{textAlign:"left"}}>Matthew Caesar</h6>
           <p>Director, Illinois Center for IoT</p>
           </div> 
-        <Footer />
       </div>
+      <Footer />
     </body>
   )
 }

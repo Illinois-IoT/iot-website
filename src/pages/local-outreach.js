@@ -1,8 +1,11 @@
 import * as React from "react"
+
+import "../theme.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from "../templates/navigation/navigation"
 import { SubPageHero } from "../templates/hero/hero"
 import { Paragraph, List } from "../templates/paragraph/Paragraph";
+import Footer from "../templates/footer/footer";
 
 import hero from "../images/hero.png"
 
@@ -40,6 +43,7 @@ const SupportPage = () => {
                 />}/>
         <LocalOutreachInterestForm />
       </div>
+      <Footer />
     </body>
   )
 }

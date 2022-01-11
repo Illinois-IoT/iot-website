@@ -1,4 +1,6 @@
 import * as React from "react"
+
+import "../theme.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from "../templates/navigation/navigation"
 import { PageHero } from "../templates/hero/hero"
@@ -48,8 +50,8 @@ const CaesarPage = () => {
               {heading: "IoT Verification", href: "iot-verification"}
             ]}/>
         </div>
-        <Footer />
       </div>
+      <Footer />
     </body>
   )
 }
