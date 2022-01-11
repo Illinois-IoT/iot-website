@@ -153,8 +153,10 @@ export default class Navigation extends React.Component {
                           </NavDropdown>
                           <Nav.Link href="/caesar" style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}><p id="navbar-item">Professor Caesar</p></Nav.Link>
                           <NavDropdown onClick={()=>this.open("/research")} href="/research" id="nav-dropdown" style={{whiteSpace:"nowrap"}} title={<p id="navbar-item">Research &#9660;</p>} renderMenuOnMount={true} style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}>
-                              <NavDropdown.Item  href="/iot-simulation" className="dropdown-item"><p>IoT Simulation</p></NavDropdown.Item>
-                              <NavDropdown.Item href="/autonomy" className="dropdown-item"><p>Automony Research</p></NavDropdown.Item>
+                              <NavDropdown.Item href="/research/autonomy" className="dropdown-item"><p>Automony Research</p></NavDropdown.Item>
+                              <NavDropdown.Item  href="/research/iot-simulation" className="dropdown-item"><p>IoT Simulation</p></NavDropdown.Item>
+                              <NavDropdown.Item href="/research/ai-drone" className="dropdown-item"><p>AI Drone Research</p></NavDropdown.Item>
+                              <NavDropdown.Item href="/research/iot-verification" className="dropdown-item"><p>IoT Verification</p></NavDropdown.Item>
                           </NavDropdown>
                           <NavDropdown onClick={()=>this.open("/outreach")} href="/outreach" id="nav-dropdown" style={{whiteSpace:"nowrap"}} title={<p id="navbar-item">Outreach &#9660;</p>} renderMenuOnMount={true} style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}>
                               <NavDropdown.Item  href="/local-outreach" className="dropdown-item"><p>Local Outreach</p></NavDropdown.Item>

@@ -1,12 +1,12 @@
 import * as React from "react"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navigation from "../templates/navigation/navigation"
-import { SubPageHero } from "../templates/hero/hero"
+import Navigation from "../../templates/navigation/navigation"
+import { SubPageHero } from "../../templates/hero/hero"
 
-import hero from "../images/hero.jpg"
+import hero from "../../images/hero.jpg"
 
 import { Helmet } from "react-helmet"
-import favicon from '../images/block-i.png';
+import favicon from '../../images/block-i.png';
 
 const SupportPage = () => {
   return (

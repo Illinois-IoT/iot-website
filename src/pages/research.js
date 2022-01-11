@@ -44,7 +44,7 @@ const CaesarPage = () => {
           <Paragraph heading={"CURRENT RESEARCH PROJECTS"} />
           <CircleTable 
             items={[
-              {heading: "Autonomy", href: "/autonomy"},
+              {heading: "Autonomy", href: "autonomy"},
               {heading: "IoT Simulation", href: "iot-simulation"},
               {heading: "AI Drone", href: "ai-drone"},
               {heading: "IoT Verification", href: "iot-verification"}

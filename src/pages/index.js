@@ -58,10 +58,10 @@ const IndexPage = () => {
           <Paragraph heading={"CURRENT RESEARCH PROJECTS"} />
           <CircleTable 
             items={[
-              {heading: "Autonomy", href: "/autonomy"},
-              {heading: "IoT Simulation", href: "iot-simulation"},
-              {heading: "AI Drone", href: "ai-drone"},
-              {heading: "IoT Verification", href: "iot-verification"}
+              {heading: "Autonomy", href: "research/autonomy"},
+              {heading: "IoT Simulation", href: "research/iot-simulation"},
+              {heading: "AI Drone", href: "research/ai-drone"},
+              {heading: "IoT Verification", href: "research/iot-verification"}
             ]}/>
         </div>
         <TableRow 
