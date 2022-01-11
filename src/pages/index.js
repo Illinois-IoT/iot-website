@@ -64,8 +64,10 @@ const IndexPage = () => {
         </div>
         <TableRow 
           img_src={CaesarProfile}
-          header="Hi there!"
-          detail="I am a Professor in the Department of Computer Science at UIUC. I am also an Affiliate Professor in the Department of Electrical and Computer Engineering, an Affiliate Research Professor in the Coordinated Science Laboratory, Affiliate Professor in the School of Information Sciences, and a member of the Information Trust Institute. I currently serve as the Vice Chair of ACM SIGCOMM. I previously served as the Chief Science Officer of Veriflow (sold to VMware in 2019). I received my Ph.D. in Computer Science from UC Berkeley."/>
+          header={<h5>Hi there!</h5>}
+          detail={<p>I am a Professor in the Department of Computer Science at UIUC. I am also an Affiliate Professor in the Department of Electrical and Computer Engineering, an Affiliate Research Professor in the Coordinated Science Laboratory, Affiliate Professor in the School of Information Sciences, and a member of the Information Trust Institute. I currently serve as the Vice Chair of ACM SIGCOMM. I previously served as the Chief Science Officer of Veriflow (sold to VMware in 2019). I received my Ph.D. in Computer Science from UC Berkeley.</p>}
+          blue_background={true}
+        />
         <Footer />
       </div>
     </body>
