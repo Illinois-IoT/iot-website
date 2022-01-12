@@ -262,4 +262,56 @@ function ContactUsForm() {
     );
 }
 
-export { SupportUsForm, LocalOutreachInterestForm, ContactUsForm };
+function MakerspaceAccessRequestForm() {
+    const [state, handleSubmit] = useForm("xvolzovv");
+    if (state.succeeded) {
+        return (
+          <div className='lightblue-div'>
+              <Paragraph heading="ACCESS REQUEST FORM" subheading="Enter your @illinois email to request access"/>
+              <div className="form-div">
+              <h5>Successfully submitted. Thank you!</h5>
+              </div>
+          </div>
+        );
+    }
+
+    return (
+      <div className='lightblue-div'>
+          <Paragraph heading="ACCESS REQUEST FORM" subheading="Enter your @illinois email to request access"/>
+          <form onSubmit={handleSubmit} className="form-div">
+              <div className='form-row'>
+                  <h5 className='form-label'>Name</h5>
+                  <input
+                      id="name"
+                      type="text" 
+                      name="name"
+                      className='form-input'
+                      placeholder="ex: John Smith"
+                      required
+                  />
+              </div>
+              <div className='form-row'>
+                  <h5 className='form-label'>Email</h5>
+                  <input
+                      id="email"
+                      type="email" 
+                      name="email"
+                      className='form-input'
+                      placeholder="ex: js@illinois.edu"
+                      required
+                  />
+              </div>
+              <ValidationError 
+                  prefix="Email" 
+                  field="email"
+                  errors={state.errors}
+              />
+              <button type="submit" disabled={state.submitting} id="basic-button">
+                  Submit
+              </button>
+          </form>
+      </div>
+    );
+}
+
+export { SupportUsForm, LocalOutreachInterestForm, ContactUsForm, MakerspaceAccessRequestForm };

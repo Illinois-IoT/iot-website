@@ -110,6 +110,7 @@ export default class Navigation extends React.Component {
                               <NavDropdown.Item href="/support" className="dropdown-item"><p>Support Us</p></NavDropdown.Item>
                           </NavDropdown>
                           <Nav.Link href="/caesar" style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}><p id="navbar-item">Professor Caesar</p></Nav.Link>
+                          <Nav.Link href="/makerspace" style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}><p id="navbar-item">Makerspace</p></Nav.Link>
                           <NavDropdown onClick={()=>this.open("/research")} href="/research" id="nav-dropdown" style={{whiteSpace:"nowrap"}} title={<p id="navbar-item">Research &#9660;</p>} renderMenuOnMount={true} style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}>
                               <NavDropdown.Item href="/research/autonomy" className="dropdown-item"><p>Automony Research</p></NavDropdown.Item>
                               <NavDropdown.Item  href="/research/iot-simulation" className="dropdown-item"><p>IoT Simulation</p></NavDropdown.Item>
@@ -139,6 +140,7 @@ export default class Navigation extends React.Component {
                         <Nav.Link href="/mission" className='mobile-navlink'><h5 id="navbar-item" className="subscript tab">&ndash; Mission</h5></Nav.Link>
                         <Nav.Link href="/support" className='mobile-navlink'><h5 id="navbar-item" className="subscript tab">&ndash; Support Us</h5></Nav.Link>
                         <Nav.Link href="/caesar" className='mobile-navlink'><h5 id="navbar-item" className="subscript">Professor Caesar</h5></Nav.Link>
+                        <Nav.Link href="/makerspace" className='mobile-navlink'><h5 id="navbar-item" className="subscript">Makerspace</h5></Nav.Link>
                         <Nav.Link href="/research" className='mobile-navlink'><h5 id="navbar-item" className="subscript">Research</h5></Nav.Link>
                         <Nav.Link href="/research/autonomy" className='mobile-navlink'><h5 id="navbar-item" className="subscript tab">&ndash; Autonomy Research</h5></Nav.Link>
                         <Nav.Link href="/research/iot-simulation" className='mobile-navlink'><h5 id="navbar-item" className="subscript tab">&ndash; IoT Simulation</h5></Nav.Link>
