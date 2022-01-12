@@ -365,7 +365,7 @@
    background-color: var(--industrial-blue-lightest);
    width: 100vw;
    padding: 40px 10vw;
-   margin: 0 !important;
+   /* margin: 0 !important; */
  }
 
  .img-div {

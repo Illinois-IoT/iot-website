@@ -22,6 +22,15 @@ function Paragraph(props) {
     );
 }
 
+function CustomList(props) {
+    return(
+        <div id="list-div">
+            {props.listHeader}
+            {props.listItems}
+        </div>
+    );
+}
+
 function List(props) {
     var list = []
     for(var p in props.listItems){
@@ -35,4 +44,4 @@ function List(props) {
     );
 }
 
-export {Paragraph, List};
+export {Paragraph, List, CustomList};
