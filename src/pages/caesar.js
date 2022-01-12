@@ -7,7 +7,7 @@ import { PageHero } from "../templates/hero/hero"
 
 import about_hero from "../images/hero4.png"
 import texture from "../images/texture.jpeg"
-import { List } from "../templates/paragraph/Paragraph";
+import { List, CustomList } from "../templates/paragraph/Paragraph";
 import CaesarProfile from "../images/caesar.jpeg"
 import Footer from "../templates/footer/footer";
 import TableRow from "../templates/table/tablerow";
@@ -64,6 +64,21 @@ const CaesarPage = () => {
                 "Computer Networking Laboratory"
               ]}
               />
+          <CustomList 
+              listHeader={<h5>Recent Publications:</h5>}
+              listItems={
+                <div>
+                <p className='list-item'>&#x2212; Otto Piramuthu, Matthew Caesar, <strong>Towards a Lightweight VANET Authentication Protocol, ACM SIGAPP Symposium on Applied Computing</strong>, April 2022</p>
+                <p className='list-item'>&#x2212; Otto Piramuthu, Matthew Caesar, <strong>How Effective are Identification Technologies in Autonomous Self-Driving Vehicles?</strong>, IEEE CommNet, December 2021</p>
+                <p className='list-item'>&#x2212; Bingzhe Liu, Kuan-Yen Chou, Pramod Jamkhedkar, Bilal Anwer, Rakesh Sinha, Kostas Oikonomou, Matthew Caesar, Brighten Godfrey, <strong>Practical Automation for Management Planes of Service Provider Infrastructure</strong>, ACM SIGCOMM Workshop on Flexible Networks (FlexNets), August 2021 <a href="http://caesar.cs.illinois.edu/papers/strategy-flexnets21.pdf" target="_blank">[pdf]</a></p>
+                <p className='list-item'>&#x2212; Aniket Shirke, Rebecca Golden, Mrinal Gautam, Angela Green-Miller, Matthew Caesar, Ryan N. Dilger, <strong>Vision-based Behavioral Recognition of Novelty Preference in Pigs</strong>, CVPR CV4Animals Workshop, July 2021 <a href="http://caesar.cs.illinois.edu/papers/behavior-cvpr21.pdf" target="_blank">[pdf]</a></p>
+                <p className='list-item'>&#x2212; Isabella Lee, Vignesh Babu, Matthew Caesar, David Nicol, <strong>Deep Reinforcement Learning for UAV-Assisted Emergency Response, Mobiquitous</strong>, December 2020 <a href="http://caesar.cs.illinois.edu/papers/drone-mobi20.pdf" target="_blank">[pdf]</a></p>
+                <p className='list-item'>&#x2212; Santhosh Prabhu, Kuan Yen Chou, Ali Kheradmand, Brighten Godfrey, Matthew Caesar, <strong>Plankton: Scalable Network Configuration Verification Through Model Checking</strong>, NSDI, February 2020 <a href="http://caesar.cs.illinois.edu/papers/plankton-nsdi20.pdf" target="_blank">[pdf]</a></p>
+                <p className='list-item'>&#x2212; Jason Croft, Ratul Mahajan, Matthew Caesar, Madan Musuvathi, <strong>Systematically Exploring the Behavior of Control Programs</strong>, USENIX Annual Technical Conference, July 2015 <a href="http://caesar.cs.illinois.edu/papers/delorean-atc15.pdf" target="_blank">[pdf]</a></p>
+                </div>
+              }
+              />
+          <p className='list-item'>For more publications, see <a href="http://caesar.cs.illinois.edu/pubs.html" target="_blank">Professor Caesar's personal website</a></p>
         </div>
       </div>
       <Footer />

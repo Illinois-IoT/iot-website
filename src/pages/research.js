@@ -17,11 +17,11 @@ import { Helmet } from "react-helmet"
 import favicon from '../images/block-i.png';
 
 const CaesarPage = () => {
-  const cards = [{primary:"3", secondary:"years old", img: flipcard}, 
-    {primary:"100+", secondary:"undergraduate students", img: flipcard}, 
+  const cards = [{primary:"10+", secondary:"years old", img: flipcard}, 
+    {primary:"30", secondary:"undergraduate students", img: flipcard}, 
     {primary:"10",secondary:"graduate/Ph.D. students", img: flipcard}, 
     {primary:"4",secondary:"current projects", img: flipcard}, 
-    {primary:"18",secondary:"past projects", img: flipcard}]
+    {primary:"25",secondary:"past projects", img: flipcard}]
 
   return (
     <body>
