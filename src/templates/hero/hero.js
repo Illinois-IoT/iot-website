@@ -20,7 +20,7 @@ function MainHero(props) {
                 <img src={props.hero_img} alt="hero image" fixed="top" style={{height:"100vh", width:"100vw", left:"0", top:"0",objectFit: "cover", opacity:"0.3"}}/>
             </div>
             <div id="main-hero-quote-div">
-                <h3 className="medium-header" style={{opacity:'1', color:"var(--cloud)", zIndex:'100'}}>University of Illinois</h3>
+                <h3 className="medium-header" style={{opacity:'1', color:"var(--cloud)", zIndex:'100'}}>University of Illinois Center for</h3>
                 <h1 className="bold-header" style={{opacity:'1', color:"var(--cloud)", zIndex:'100'}}>Internet of Things</h1>
             </div>
         </motion.div>

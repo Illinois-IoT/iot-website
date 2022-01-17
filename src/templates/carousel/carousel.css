@@ -5,8 +5,27 @@
  
 @import "../../theme.css";
 
-.carousel{
+.background_img{
+    height: 100%;
+    width: 100%;
+    opacity: 0.2;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+.carousel-div {
     width: 100vw;
     height: 60vh !important;
+    position: relative;
     background-color: var(--illini-blue);
+}
+
+.carousel {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
 }
