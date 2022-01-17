@@ -10,7 +10,7 @@ import texture from "../images/texture.jpeg"
 import { List, CustomList } from "../templates/paragraph/Paragraph";
 import CaesarProfile from "../images/caesar.jpeg"
 import Footer from "../templates/footer/footer";
-import TableRow from "../templates/table/tablerow";
+import {TableRowCircleImg} from "../templates/table/tablerow";
 
 import { Helmet } from "react-helmet"
 import favicon from '../images/block-i.png';
@@ -31,7 +31,7 @@ const CaesarPage = () => {
       <Navigation />
       <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", padding:"0vw 10vw"}}>
         <PageHero texture_img={texture} hero_img={about_hero} title={"Professor Caesar"} subtitle={"Read more about the professor"}/>      
-        <TableRow 
+        <TableRowCircleImg 
           img_src={CaesarProfile}
           header={<h5>Professor Matthew Caesar</h5>}
           detail={<div>

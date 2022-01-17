@@ -11,7 +11,7 @@ import { Paragraph } from "../templates/paragraph/Paragraph";
 import { ButtonContainer } from "../templates/buttons/buttons";
 import { CircleTable } from "../templates/table/circletable";
 import Slides from "../templates/carousel/carousel";
-import TableRow from "../templates/table/tablerow";
+import {TableRowCircleImg} from "../templates/table/tablerow";
 
 import slide1 from "../images/slide1.jpeg";
 import slide2 from "../images/slide2.jpeg";
@@ -49,7 +49,7 @@ const IndexPage = () => {
               {name: "Outreach", href: "/outreach"}
             ]}/>
         </div>
-        <TableRow 
+        <TableRowCircleImg 
           img_src={CaesarProfile}
           header={<h5>Hi there!</h5>}
           detail={<p>I am Matthew Caesar, a Professor in the Department of Computer Science at UIUC. Here at the Illinois Center for IoT, we are embarking on an exploration of a new world, one which we are building ourselves, and learning more about every day. What we will create, and what we will discover, will be an adventure unlike anything humanity has done before. Here, we are developing foundational technologies to fundamentally accelerate the development of this Internet of Things. Our mission is to build platforms with strong and rigorous guarantees, with high performance and service quality, that are practically useful and remain resilient in the face of adversaries and unreliable conditions, and that serve to meet societal and ethical principles while advancing equality and viability of our society. I hope you will join us!</p>}

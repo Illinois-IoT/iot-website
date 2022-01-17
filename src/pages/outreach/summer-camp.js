@@ -11,11 +11,12 @@ import summerCampLogo from "../../images/summer-camp-logo.png"
 import { Paragraph, List } from "../../templates/paragraph/Paragraph";
 import Collapsible from "../../templates/collapsible/collapsible";
 import Footer from "../../templates/footer/footer";
+import {TableRowDefaultImg} from "../../templates/table/tablerow";
 
 import { Helmet } from "react-helmet"
 import favicon from '../../images/block-i.png';
 
-const SupportPage = () => {
+const SummerCampPage = () => {
   return (
     <body>
       <Helmet
@@ -31,16 +32,18 @@ const SupportPage = () => {
       <Navigation />
       <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", padding:"0vw 10vw"}}>
         <SubPageHero hero_img={hero}  title={"IoT Summer Camp"} subtitle={"Educating high school students on the basics of IoT Development"}/>      
-        <div className="flex-row">
-          <img src={summerCampLogo} style={{width:"35%"}}/>
-          <div style={{width:"50%"}}>
+        <TableRowDefaultImg 
+          img_src={summerCampLogo}
+          circle_img={false}
+          detail={<div>
             <p>Introducing...</p>
             <Paragraph heading="ILLINOIS OF THINGS SUMMER CAMP" subheading="Organized by The Illinois Center for Internet of Things" 
                     paragraphs={[
                       "Introducing our first IoT Summer Camp for high school students! During the Summer of 2022, we will be hosting a week-long IoT-focused summer camp on the UofI campus. This camp is established in collaboration with WYSE [link to WYSE]. Campers will be able to spend a week on UofI campus, living in the dorms and learning about IoT development!"
                       ]}/>
-          </div> 
-        </div>
+          </div>}
+          blue_background={false}
+        />
         <div className="lightblue-div">
           <Paragraph heading={"SUMMER CAMP DETAILS"} />
           <h5>Who?</h5>
@@ -118,4 +121,4 @@ const SupportPage = () => {
   )
 }
 
-export default SupportPage
+export default SummerCampPage
