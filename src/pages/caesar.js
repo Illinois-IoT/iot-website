@@ -43,10 +43,22 @@ const CaesarPage = () => {
         />
         <div className="lists-div">
           <List 
+              listHeader={<h5>Affiliations:</h5>}
+              listItems={[
+                "Professor in the Department of Computer Science at UIUC",
+                "Affiliate Professor in the Department of Electrical and Computer Engineering",
+                "Affiliate Research Professor in the Coordinated Science Laboratory",
+                "Affiliate Professor in the School of Information Sciences",
+                "Member of the Information Trust Institute",
+                "Vice-Chair of ACM SIGCOMM",
+                "Previously served as the Chief Science Officer of Veriflow (sold to VMware in 2019)"
+              ]}
+              />
+          <List 
               listHeader={<h5>Research Interests:</h5>}
               listItems={[
-                "Simplifying management and improving reliability of distributed systems and networks through principles of self-organization and self-diagnosis, with an emphasis on wide-area networks and networked systems.",
-                "My research focuses on the design, analysis, and implementation of distributed systems and networks on the extremely large scale, with an emphasis on network operations, measurement, and availability. I am particularly interested in improving availability and performance of the Internet infrastructure, including routing, DNS, and data centers."
+                "Simplifying management and improving the reliability of distributed systems and networks through principles of self-organization and self-diagnosis, with an emphasis on wide-area networks and networked systems.",
+                "Design, analysis, and implementation of distributed systems and networks on an extremely large scale, with an emphasis on network operations, measurement, and availability. Particularly interested in improving the availability and performance of the Internet infrastructure, including routing, DNS, and data centers."
               ]}
               />
           <List 

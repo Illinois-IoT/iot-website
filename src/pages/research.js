@@ -46,7 +46,7 @@ const CaesarPage = () => {
           {title:"AUTONOMY", slide_href: "autonomy", description:"TODO"}, 
           {title:"IOT SIMULATION", slide_href: "iot-simulation", description:"TODO"},
           {title:"AI DRONE", slide_href: "autonomy", description:"TODO"},
-          {title:"IOT VERIFICATION", slide_href: "iot-verification", description:"TODO"}
+          {title:"IOT VERIFICATION", slide_href: "iot-verification", description:"'Virtualization' is a concept that has revolutionized computing, from virtual machines to virtual networks. Our team is bringing the concept of virtualization to IoT, enabling device intelligence and functionality to seamlessly migrate, manage, and secure IoT functions at the edge and cloud. Our distributed software layer stands to revolutionize the way that users and operators interact with and operate IoT."}
         ]}/>
       </div>
       <Footer />
