@@ -13,6 +13,8 @@ import Footer from "../templates/footer/footer";
 import { Paragraph } from "../templates/paragraph/Paragraph";
 import { CircleTable } from "../templates/table/circletable";
 
+import Slides from "../templates/carousel/carousel";
+
 import { Helmet } from "react-helmet"
 import favicon from '../images/block-i.png';
 
@@ -40,16 +42,12 @@ const CaesarPage = () => {
         <PageHero texture_img={texture} hero_img={about_hero} title={"Research"} subtitle={"Learn more about all current and past projects"}/>      
         <Paragraph heading={"ABOUT OUR RESEARCH"} subheading={"Some statistics about research at Illinois Center for IoT"} />
         <FlipCards items={cards}/>
-        <div className="lightblue-div">
-          <Paragraph heading={"CURRENT RESEARCH PROJECTS"} />
-          <CircleTable 
-            items={[
-              {heading: "Autonomy", href: "autonomy"},
-              {heading: "IoT Simulation", href: "iot-simulation"},
-              {heading: "AI Drone", href: "ai-drone"},
-              {heading: "IoT Verification", href: "iot-verification"}
-            ]}/>
-        </div>
+        <Slides items={[
+          {title:"AUTONOMY", slide_href: "autonomy", description:"TODO"}, 
+          {title:"IOT SIMULATION", slide_href: "iot-simulation", description:"TODO"},
+          {title:"AI DRONE", slide_href: "autonomy", description:"TODO"},
+          {title:"IOT VERIFICATION", slide_href: "iot-verification", description:"'Virtualization' is a concept that has revolutionized computing, from virtual machines to virtual networks. Our team is bringing the concept of virtualization to IoT, enabling device intelligence and functionality to seamlessly migrate, manage, and secure IoT functions at the edge and cloud. Our distributed software layer stands to revolutionize the way that users and operators interact with and operate IoT."}
+        ]}/>
       </div>
       <Footer />
     </body>

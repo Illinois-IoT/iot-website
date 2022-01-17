@@ -32,17 +32,17 @@ const AboutPage = () => {
         <Paragraph heading={"MAIN FOCUSES"} subheading={"What we concentrate our efforts on, here at Illinois Center for IoT"} />
         <GridTable items={[
           {header: "Research", 
-          text:"Illinois Center for IoT is focused on progressing IoT-related research. Our students range from the undergraduate level to graduate and PhD students, who are passionate about the technology of tomorrow. Innovative design, analysis, and implementation of IoT and distributed systems are the core of our research projects.",
+          text:"Illinois Center for IoT is focused on progressing IoT-related research. Our students range from the undergraduate level to graduate and Ph.D. students, who are passionate about the technology of tomorrow. Innovative design, analysis, and implementation of IoT and distributed systems are the core of our research projects. Currently, our main research projects explore IoT virtualization, autonomous vehicles, IoT verification, and AI drones. We are constantly looking for new students to join our research efforts! Whether you are an undergraduate, graduate, or Ph.D. student, if you are interested, please connect with us!",
           buttons: [
             {name: "Research Overview", href: "/research"}
           ]},
           {header: "Innovation", 
-          text:"With the introduction of of the IoT Makerspace in room 1129 (Siebel Center for Computer Science), we encourage all students to explore the field of IoT. This makerspace has adequate resources for students to build IoT-related projects and learn more about the field.",
+          text:"In collaboration with ACM, we are creating a space for students to create and explore IoT-related technology! In this space, there is a myriad of equipment and hardware for students to use: ranging from 3-D printers to networking equipment, to books about IoT and security. The IoT Makerspace is located in Room 1129 in the Siebel Center for Comp Science. To gain access to the Makerspace, please fill out the form on the Makerspace page (button below). Before requesting access, please read our Makerspace Norms carefully and remember to follow them!",
           buttons: [
             {name: "IoT Makerspace", href: "/makerspace"}
           ]},
           {header:"Outreach",
-          text:"Starting Spring of 2022, we are incorporating outreach activities into our mission. We are focused on introducing the next generation of innovators to the field of IoT and its applications. We hope to inspire more students to have passion for this field by hosting local workshops and the Illinois of Things Summer Camp.",
+          text:"Reaching out to K-12 students is part of our mission. We are focused on introducing the next generation of innovators to the field of IoT and its applications. We hope to inspire more students to have passion for this field by hosting local workshops and the Illinois of Things Summer Camp. Our local workshops focus on the following: what is IoT, applications/importance of IoT, basics of IoT development, programming, and sensor connectivity.",
           buttons: [
             {name: "Outreach Events", href:"/outreach"}
           ]}

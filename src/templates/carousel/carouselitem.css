@@ -3,17 +3,6 @@
  * Author: Lily Li
  */
 
-.background_img{
-    height: 100%;
-    width: 100%;
-    opacity: 0.2;
-    object-fit: cover;
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
 .information{
     height: fit-content;
     width: 50vw;
@@ -34,4 +23,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.carousel-indicators {
+    margin: 0;
 }
