@@ -14,7 +14,7 @@ import { LocalOutreachInterestForm } from "../../templates/forms/forms";
 import { Helmet } from "react-helmet"
 import favicon from '../../images/block-i.png';
 
-const SupportPage = () => {
+const LocalOutreachPage = () => {
   return (
     <body>
       <Helmet
@@ -48,4 +48,4 @@ const SupportPage = () => {
   )
 }
 
-export default SupportPage
+export default LocalOutreachPage

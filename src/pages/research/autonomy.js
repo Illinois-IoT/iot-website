@@ -8,7 +8,7 @@ import hero from "../../images/hero.jpg"
 import { Helmet } from "react-helmet"
 import favicon from '../../images/block-i.png';
 
-const SupportPage = () => {
+const AutonomyPage = () => {
   return (
     <body>
       <Helmet
@@ -27,4 +27,4 @@ const SupportPage = () => {
   )
 }
 
-export default SupportPage
+export default AutonomyPage

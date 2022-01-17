@@ -19,6 +19,12 @@
         padding: 0;
     }
 
+    .tablerow-img-default {
+        width: 70vw !important;
+        height: auto;
+        padding: 0;
+    }
+
     .tablerow-detail {
         width: 100%;
         height: fit-content;
@@ -36,6 +42,12 @@
         width: 25vw !important;
         height: 25vw !important;
 
+        padding: 0 !important;
+    }
+
+    .tablerow-img-default {
+        width: 25vw !important;
+        height: auto;
         padding: 0 !important;
     }
 

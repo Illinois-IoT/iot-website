@@ -380,10 +380,18 @@
   width: 60% !important;
   height: auto;
  }
+
+@media(max-width: 768px){
+  .flex-parent > *+* {
+    margin: 20px 0;
+  }
+}
  
- .flex-parent > *+* {
-   margin: 40px 0;
- }
+@media(min-width: 769px){
+  .flex-parent > *+* {
+    margin: 40px 0;
+  }
+}
 
  .lists-div > *+* {
    margin: 20px 0;

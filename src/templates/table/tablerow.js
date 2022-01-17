@@ -7,7 +7,7 @@ import React from 'react';
 import './tablerow.css'
 import { ButtonContainer } from '../buttons/buttons';
 
-export default function TableRow(props){
+function TableRowCircleImg(props){
     return(
     <div className={props.blue_background ? "lightblue-div" : ""}>
         <div className="tablerow-div">
@@ -19,3 +19,18 @@ export default function TableRow(props){
         </div>
     </div>)
 }
+
+function TableRowDefaultImg(props){
+    return(
+    <div className={props.blue_background ? "lightblue-div" : ""}>
+        <div className="tablerow-div">
+            <img src={props.img_src} className="tablerow-img-default"/>
+            <div className='tablerow-detail'>
+                {props.header}
+                {props.detail}
+            </div>
+        </div>
+    </div>)
+}
+
+export {TableRowCircleImg, TableRowDefaultImg}
