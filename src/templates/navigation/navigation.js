@@ -116,6 +116,7 @@ export default class Navigation extends React.Component {
                               <NavDropdown.Item  href="/research/iot-simulation" className="dropdown-item"><p>IoT Simulation</p></NavDropdown.Item>
                               <NavDropdown.Item href="/research/ai-drone" className="dropdown-item"><p>AI Drone Research</p></NavDropdown.Item>
                               <NavDropdown.Item href="/research/iot-verification" className="dropdown-item"><p>IoT Verification</p></NavDropdown.Item>
+                              <NavDropdown.Item href="/research/mmwave" className="dropdown-item"><p>mmWave Research</p></NavDropdown.Item>
                           </NavDropdown>
                           <NavDropdown onClick={()=>this.open("/outreach")} href="/outreach" id="nav-dropdown" style={{whiteSpace:"nowrap"}} title={<p id="navbar-item">Outreach &#9660;</p>} renderMenuOnMount={true} style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}>
                               <NavDropdown.Item  href="/outreach/local-outreach" className="dropdown-item"><p>Local Outreach</p></NavDropdown.Item>
@@ -146,6 +147,7 @@ export default class Navigation extends React.Component {
                         <Nav.Link href="/research/iot-simulation" className='mobile-navlink'><h5 id="navbar-item" className="subscript tab">&ndash; IoT Simulation</h5></Nav.Link>
                         <Nav.Link href="/research/ai-drone" className='mobile-navlink'><h5 id="navbar-item" className="subscript tab">&ndash; AI Drone Research</h5></Nav.Link>
                         <Nav.Link href="/research/iot-verification" className='mobile-navlink'><h5 id="navbar-item" className="subscript tab">&ndash; IoT Verification</h5></Nav.Link>
+                        <Nav.Link href="/research/mmwave" className='mobile-navlink'><h5 id="navbar-item" className="subscript tab">&ndash; mmWave Research</h5></Nav.Link>
                         <Nav.Link href="/outreach" className='mobile-navlink'><h5 id="navbar-item" className="subscript">Outreach</h5></Nav.Link>
                         <Nav.Link href="/outreach/local-outreach" className='mobile-navlink'><h5 id="navbar-item" className="subscript tab">&ndash; Local Outreach</h5></Nav.Link>
                         <Nav.Link href="/outreach/summer-camp" className='mobile-navlink'><h5 id="navbar-item" className="subscript tab">&ndash; Summer Camp</h5></Nav.Link>
