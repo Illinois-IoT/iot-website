@@ -5,7 +5,7 @@
 
 @import "../../theme.css";
 
-@media(max-width: 1000px){
+@media(max-width: 800px){
     #circle{
         width: 30vw !important;
         height: 30vw !important;
@@ -23,7 +23,7 @@
     }
 }
 
-@media(max-width: 700px){
+@media(max-width: 400px){
     #circle{
         width: 60vw !important;
         height: 60vw !important;
@@ -41,7 +41,7 @@
     }
 }
 
-@media(max-width: 1439px){
+@media(max-width: 1000px){
     #circle{
         width: 23vw;
         height: 23vw;
@@ -54,7 +54,7 @@
 }
 
 
-@media(min-width: 1440px){
+@media(min-width: 999px){
     #circle{
         width: 15vw;
         height: 15vw;

@@ -30,6 +30,31 @@
         height: fit-content;
     }
 }
+@media (max-width: 799px){
+    .tablerow-div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .tablerow-img {
+        width: 50vw !important;
+        height: 50vw !important;
+        padding: 0;
+    }
+
+    .tablerow-img-default {
+        width: 50vw !important;
+        height: auto;
+        padding: 0;
+    }
+
+    .tablerow-detail {
+        width: 100%;
+        height: fit-content;
+    }
+}
 @media (min-width: 801px){
     .tablerow-div {
         display: flex;
