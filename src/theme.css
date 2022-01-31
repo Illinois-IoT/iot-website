@@ -127,7 +127,8 @@
  }
  
  .paragraph-italics{
-   font-family: Montserrat italics !important; 
+   font-family: 'Montserrat';
+   font-style: italics !important; 
    color: var(--illini-blue);
  }
  

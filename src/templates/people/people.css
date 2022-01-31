@@ -1,0 +1,78 @@
+/*
+* people.css
+* Author: Lily Li
+*/
+
+@import '../../theme.css';
+
+#people-div {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-items: flex-start;
+    gap: 5%;
+    row-gap: 20px;
+}
+
+@media(max-width: 900px){
+    #people-div {
+        justify-content: flex-start;
+    }
+    #person-div {
+        width: 45%;
+    }
+
+    #person-img {
+        width: 80%;
+    }
+}
+
+@media(max-width: 500px){
+    #people-div {
+        justify-content: center;
+    }
+    #person-div {
+        width: 90%;
+    }
+
+    #person-img {
+        width: 80%;
+    }
+}
+
+@media(min-width: 901px){
+    #people-div {
+        justify-content: flex-start;
+    }
+    #person-div {
+        width: 30%;
+    }
+
+    #person-img {
+        width: 80%;
+    }
+}
+
+#person-div {
+    padding: 20px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+#person-div p {
+    text-align: center;
+}
+
+#person-img {
+    height: auto;
+    border-radius: 50%;
+    padding: 20px;
+}
