@@ -20,15 +20,15 @@ import milind_sagaram from "../images/people/milind_sagaram.jpeg"
 import rishabh_bassi from "../images/people/rishabh_bassi.jpeg"
 import shrirang_bagdi from "../images/people/shrirang_bagdi.jpeg"
 import max_fan from "../images/people/max_fan.jpeg"
-
+import sushruth_booma from "../images/people/sushruth_booma.jpg"
 const people_arr = [
     {name:"Rishabh Bassi", bio:"BS Computer Science, 2019", involvement:"Explain Net, NLP in Network systems", img: rishabh_bassi},
     {name:"Daniel Abdoue", bio:"BS Computer Engineering, 2022", involvement:"mmWave Research", img: daniel_abdoue},
     {name:"Lily Li", bio:"BS Computer Science, 2022", involvement:"Website Manager, Illinois of Things Coordinator", img: lily_li},
     {name:"Shrirang Bagdi", bio:"BS Statistics & Computer Science , 2023", involvement:"ML-algorithms", img: shrirang_bagdi},
     {name:"Max Fan", bio:"BS CS + Philosophy, 2024", involvement:"IoT security", img:max_fan},
+    {name: "Sushruth Booma", bio:"BS Mathematics & Computer Science, 2024", involvement:"ML-Algorithms", img: sushruth_booma},
     {name:"Milind Sagaram", bio:"BS Computer Engineering, 2025", involvement:"Illinois of Things, AI Drone Research", img: milind_sagaram},
-
 ]
 
 const ConnectPage = () => {
