@@ -56,7 +56,7 @@ const SummerCampPage = () => {
           <p>At the end of the week, campers will be able to... [TODO]</p>
           
           <h5>When?</h5>
-          <p>List the dates of the camp [TODO]</p>
+          <p>6/19-6/25</p>
 
           <h5>Where?</h5>
           <p>The University of Illinois at Urbana-Champaign</p>
