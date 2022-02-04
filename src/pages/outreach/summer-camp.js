@@ -4,6 +4,7 @@ import "../../theme.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from "../../templates/navigation/navigation"
 import { SubPageHero } from "../../templates/hero/hero"
+import { ButtonContainer, BasicButton } from "../../templates/buttons/buttons";
 
 import hero from "../../images/hero.jpg"
 
@@ -39,7 +40,7 @@ const SummerCampPage = () => {
             <p>Introducing...</p>
             <Paragraph heading="ILLINOIS OF THINGS SUMMER CAMP" subheading="Organized by The Illinois Center for Internet of Things" 
                     paragraphs={[
-                      "Introducing our first IoT Summer Camp for high school students! During the Summer of 2022, we will be hosting a week-long IoT-focused summer camp on the UofI campus. This camp is established in collaboration with WYSE [link to WYSE]. Campers will be able to spend a week on UofI campus, living in the dorms and learning about IoT development!"
+                      "Introducing our first IoT Summer Camp for high school students! During the Summer of 2022, we will be hosting a week-long IoT-focused summer camp on the UofI campus. This camp is established in collaboration with WYSE. Campers will be able to spend a week on UofI campus, living in the dorms and learning about IoT development!"
                       ]}/>
           </div>}
           blue_background={false}
@@ -50,10 +51,9 @@ const SummerCampPage = () => {
           <p>Calling all high school students interested in programming and the internet of things!</p>
           
           <h5>What?</h5>
-          <p>The IoT Summer Camp is an all-inclusive, week-long camp where high school students learn the basics of IoT development. Campers will be introduced to the processes and architecture of IoT development, as well as applications for IoT. Throughout the week, they will be working on a culminating project, where they will apply the concepts being taught in a hands-on environment. There will also be guest speakers from the university and within the industry to give talks on their field of expertise.</p>
+          <p>The IoT Summer Camp is an residential, week-long camp where high school students learn the basics of IoT development. Campers will be introduced to the processes and architecture of IoT development, as well as applications for IoT. Throughout the week, they will be working on a culminating project, where they will apply the concepts being taught in a hands-on environment. There will also be guest speakers from the university and within the industry to give talks on their field of expertise.</p>
           <p>Campers will also get a feel for college life by living in a campus dorm for the duration of the camp. There will also be group activities/outings on and around campus (see the schedule below for details).</p>
-          <p>Illinois IoT is partnering with WYSE (Worldwide Youth in Science and Engineering Program) to put on this summer camp. WYSE is experienced in organizing events for K-12 students, including sleep-over camps during the summer. While WYSE will facilitate all of the legal logistics of the camp, Illinois IoT is focused on providing the richest educational experience for the campers. Lessons will be taught by college students experienced in the field, under the guidance and instruction of Professor Caesar. The professor and knowledgeable students will also guide the campers through hands-on activities and the week-long project. WYSE counselors will be present in the dorms and during fun activities to oversee the safety and security of all campers.</p>
-          <p>At the end of the week, campers will be able to... [TODO]</p>
+          <p>At the end of the week, campers will have completed a culminating IoT project using a Raspberry Pi and several sensors. Each camp will be able to take these projects home to show off!</p>
           
           <h5>When?</h5>
           <p>6/19-6/25</p>
@@ -62,13 +62,13 @@ const SummerCampPage = () => {
           <p>The University of Illinois at Urbana-Champaign</p>
 
           <h5>How?</h5>
-          <p>Apply here [TODO]</p>
+          <BasicButton new_tab={true} name={"Apply Here"} href={"https://enroll.illinois.edu/register/?id=02b43cb4-e3be-45f7-9f7c-315eb8bf8780"}/>
         </div>
         <div style={{width:"100%", display:"flex", flexDirection:"column", gap:"20px"}}>
           <Paragraph heading={"FREQUENTLY ASKED QUESTIONS"} />
           <Collapsible 
             header={"How much will the camp cost?"}
-            detail={<p>$1000 (tbd) [TODO]</p>}
+            detail={<div><p><b>Residential:</b> $1,000</p><p><b>Commuter:</b> $600</p></div>}
           />
           <Collapsible 
             header={"What is included in the tuition?"}
@@ -76,7 +76,14 @@ const SummerCampPage = () => {
           />
           <Collapsible 
             header={"What/who is WYSE?"}
-            detail={<p>WYSE (Worldwide Youth in Science and Engineering Program) is a department in the Grainger College of Engineering. Their purpose is to introduce talented and diverse pre-college students to active college students, and together they explore engineering and the sciences through hands-on, minds-on activities. WYSE collaborates with departments across campus, with corporations and foundations, and with in- and out-of-school learning partners across the state, the WYSE program offers multiple out-of-school learning opportunities for K-12 students in Illinois, the nation, and the world.</p>}
+            detail={
+            <div>
+              <p>WYSE (Worldwide Youth in Science and Engineering Program) is a department in the Grainger College of Engineering. Their purpose is to introduce talented and diverse pre-college students to active college students, and together they explore engineering and the sciences through hands-on, minds-on activities. WYSE collaborates with departments across campus, with corporations and foundations, and with in- and out-of-school learning partners across the state, the WYSE program offers multiple out-of-school learning opportunities for K-12 students in Illinois, the nation, and the world.</p>
+              <ButtonContainer 
+              items={[
+                {name: "WYSE Website", href: "https://wyse.engineering.illinois.edu/summer-camps/", new_tab:true}
+              ]}/>
+            </div>}
           />
           <Collapsible 
             header={"Why is the summer camp in collaboration with WYSE?"}
@@ -112,7 +119,14 @@ const SummerCampPage = () => {
           />
           <Collapsible 
             header={"More questions?"}
-            detail={<p>Check out the Frequently Asked Questions page [link to page] on WYSE’s website.</p>}
+            detail={
+            <div>
+              <p>Check out the Frequently Asked Questions page on WYSE’s website.</p>
+              <ButtonContainer 
+              items={[
+                {name: "WYSE FAQ", href: "https://wyse.engineering.illinois.edu/faqs/", new_tab:true}
+              ]}/>
+            </div>}
           />
         </div>
       </div>
