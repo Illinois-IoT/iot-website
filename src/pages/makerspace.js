@@ -33,7 +33,7 @@ const MakerspacePage = () => {
       <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", padding:"0vw 10vw"}}>
         <PageHero texture_img={texture} hero_img={about_hero} title={"MAKERSPACE"}/>      
         <Paragraph 
-            heading="SIEBLE ROOM 1129" 
+            heading="SIEBEL ROOM 1129" 
             subheading="A place in the Siebel Center for Comp Science to explore"
             paragraphs={[
                 "Come check out Room 1129 in the Siebel Center for Comp Science! In collaboration with ACM, we are creating a space for students to create and explore IoT-related technology.",
