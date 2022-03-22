@@ -10,9 +10,14 @@ import texture from "../images/texture.jpeg"
 import Footer from "../templates/footer/footer";
 import { Paragraph } from "../templates/paragraph/Paragraph";
 import { PeopleTable } from "../templates/people/people";
+import {TableRowCircleImg} from "../templates/table/tablerow";
 
 import { Helmet } from "react-helmet"
 import favicon from '../images/block-i.png';
+
+import CaesarProfile from "../images/caesar.jpeg"
+import ElaheProfile from "../images/elahe.jpeg"
+
 
 import lily_li from "../images/people/lily_li.jpeg"
 import daniel_abdoue from "../images/people/daniel_abdoue.png"
@@ -33,6 +38,10 @@ const people_arr = [
     {name:"Alec Zhang", bio:"BS Computer Science, 2022", involvement:"Illinois of Things", img: alec_zhang},
 ]
 
+const staff_arr = [
+  {name:"Professor Matthew Caesar", bio:"Ph.D., Computer Science, University of California, Berkeley, 2007", img: CaesarProfile},
+  {name:"Professor Elahé Soltanaghai", bio:"Ph.D., Computer Science, University of Virginia, 2019", img: ElaheProfile},
+]
 const ConnectPage = () => {
   return (
     <body>
@@ -49,8 +58,12 @@ const ConnectPage = () => {
       <Navigation />
       <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", padding:"0vw 10vw"}}>
         <PageHero texture_img={texture} hero_img={about_hero} title={"PEOPLE"}/>      
-        <Paragraph heading="THE RESEARCHERS" subheading="Meet some of the undergraduate, graduate, and PhD students at IoT@Illinois" />
-        <PeopleTable people={people_arr}/>
+        <Paragraph heading="STAFF" subheading="The co-directors of IoT@Illinois" />
+        <PeopleTable people={staff_arr} large={true}/>
+        <div className="lightblue-div">
+          <Paragraph heading="STUDENTS" subheading="Meet some of the undergraduate, graduate, and PhD students at IoT@Illinois" />
+          <PeopleTable people={people_arr}/>
+        </div>
       </div>
       <Footer />
     </body>

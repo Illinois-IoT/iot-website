@@ -109,8 +109,10 @@ export default class Navigation extends React.Component {
                               <NavDropdown.Item href="/mission" className="dropdown-item"><p>Mission</p></NavDropdown.Item>
                               <NavDropdown.Item href="/support" className="dropdown-item"><p>Support Us</p></NavDropdown.Item>
                           </NavDropdown>
-                          <Nav.Link href="/caesar" style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}><p id="navbar-item">Professor Caesar</p></Nav.Link>
-                          <Nav.Link href="/people" style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}><p id="navbar-item">People</p></Nav.Link>
+                          <NavDropdown onClick={()=>this.open("/people")} href="/people" id="nav-dropdown" style={{whiteSpace:"nowrap"}} title={<p id="navbar-item">People &#9660;</p>} renderMenuOnMount={true} style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}>
+                              <NavDropdown.Item href="/people/caesar" className="dropdown-item"><p>Professor Caesar</p></NavDropdown.Item>
+                              <NavDropdown.Item href="/people/elahe" className="dropdown-item"><p>Professor Elahe</p></NavDropdown.Item>
+                          </NavDropdown>
                           <Nav.Link href="/makerspace" style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}><p id="navbar-item">Makerspace</p></Nav.Link>
                           <NavDropdown onClick={()=>this.open("/research")} href="/research" id="nav-dropdown" style={{whiteSpace:"nowrap"}} title={<p id="navbar-item">Research &#9660;</p>} renderMenuOnMount={true} style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}>
                               <NavDropdown.Item href="/research/autonomy" className="dropdown-item"><p>Automony Research</p></NavDropdown.Item>
@@ -141,8 +143,9 @@ export default class Navigation extends React.Component {
                         <Nav.Link href="/welcome" className='mobile-navlink'><h5 id="navbar-item" className="subscript tab">&ndash; Welcome</h5></Nav.Link>
                         <Nav.Link href="/mission" className='mobile-navlink'><h5 id="navbar-item" className="subscript tab">&ndash; Mission</h5></Nav.Link>
                         <Nav.Link href="/support" className='mobile-navlink'><h5 id="navbar-item" className="subscript tab">&ndash; Support Us</h5></Nav.Link>
-                        <Nav.Link href="/caesar" className='mobile-navlink'><h5 id="navbar-item" className="subscript">Professor Caesar</h5></Nav.Link>
                         <Nav.Link href="/people" className='mobile-navlink'><h5 id="navbar-item" className="subscript">People</h5></Nav.Link>
+                        <Nav.Link href="/people/caesar" className='mobile-navlink'><h5 id="navbar-item" className="subscript tab">&ndash; Professor Caesar</h5></Nav.Link>
+                        <Nav.Link href="/people/elahe" className='mobile-navlink'><h5 id="navbar-item" className="subscript tab">&ndash; Professor Elahe</h5></Nav.Link>
                         <Nav.Link href="/makerspace" className='mobile-navlink'><h5 id="navbar-item" className="subscript">Makerspace</h5></Nav.Link>
                         <Nav.Link href="/research" className='mobile-navlink'><h5 id="navbar-item" className="subscript">Research</h5></Nav.Link>
                         <Nav.Link href="/research/autonomy" className='mobile-navlink'><h5 id="navbar-item" className="subscript tab">&ndash; Autonomy Research</h5></Nav.Link>
