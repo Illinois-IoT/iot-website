@@ -1,19 +1,19 @@
 import * as React from "react"
 
-import "../theme.css"
+import "../../theme.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navigation from "../templates/navigation/navigation"
-import { PageHero } from "../templates/hero/hero"
+import Navigation from "../../templates/navigation/navigation"
+import { PageHero } from "../../templates/hero/hero"
 
-import about_hero from "../images/hero4.png"
-import texture from "../images/texture.jpeg"
-import { List, CustomList } from "../templates/paragraph/Paragraph";
-import CaesarProfile from "../images/caesar.jpeg"
-import Footer from "../templates/footer/footer";
-import {TableRowCircleImg} from "../templates/table/tablerow";
+import about_hero from "../../images/hero4.png"
+import texture from "../../images/texture.jpeg"
+import { List, CustomList } from "../../templates/paragraph/Paragraph";
+import CaesarProfile from "../../images/caesar.jpeg"
+import Footer from "../../templates/footer/footer";
+import {TableRowCircleImg} from "../../templates/table/tablerow";
 
 import { Helmet } from "react-helmet"
-import favicon from '../images/block-i.png';
+import favicon from '../../images/block-i.png';
 
 const CaesarPage = () => {
   return (
