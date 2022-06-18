@@ -1,6 +1,4 @@
 .collapsible-div {
-    background-color: var(--cloud-dark);
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -11,7 +9,6 @@
 .collapsible-header {
     width: 100%;
     padding: 20px;
-    background-color: var(--cloud-darkest);
 }
 
 .collapsible-div h5 {

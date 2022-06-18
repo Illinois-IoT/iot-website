@@ -29,8 +29,8 @@ function MainHero(props) {
 
 function SubPageHero(props) {
     return(
-            <div id="subpagehero" style={{position:"relative", height:"60vh", width:"100vw"}}>
-            <div id="heading_section">
+            <div id="subpagehero" style={{position:"relative", height: props.no_margin ? "50vh" : "60vh", width:"100vw"}}>
+            <div id="heading_section" style={{top: props.no_margin ? "0" : "10vh" }}>
                 <img src={props.hero_img} alt="hero image" id="hero_img"/>
                 <div style={{position:"absolute", left:"10vw", width: "80vw", textJustify:"left", zIndex:"5000"}}>
                     <h6 className="cloud-color text-align-left">{props.title}</h6>

@@ -64,7 +64,6 @@
  #heading_section{
      position: absolute;
      z-index: 100;
-     top: 10vh;
      width: 100vw;
      height: 50vh;
      vertical-align: middle;

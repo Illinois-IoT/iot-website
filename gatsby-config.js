@@ -23,9 +23,6 @@ module.exports = {
           `gatsby-remark-prismjs`,
           {
             resolve: `gatsby-remark-images`,
-            options: {
-              maxHeight: 500,
-            },
           },
         ],
       },
