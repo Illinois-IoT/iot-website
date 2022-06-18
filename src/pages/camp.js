@@ -16,9 +16,6 @@ import { ButtonContainer } from "../templates/buttons/buttons";
 
 import ReactGoogleSlides from "react-google-slides";
 
-const isBrowser = () => typeof window !== "undefined"
-isBrowser() && window.location.replace(res.data)
-
 const CampPage = () => {
   return (
     <body>
