@@ -158,7 +158,6 @@ const CampPage = () => {
                 <div style={{display:"flex", flexDirection:"column", gap:"20px", padding: "40px 10vw"}}>
                     <Paragraph heading={"DAY 4"} />
                     <Collapsible 
-                        header_light={true}
                         header={"Lecture Slides"}
                         detail={
                         <div>
@@ -173,7 +172,6 @@ const CampPage = () => {
                         </div>}
                     />
                     <Collapsible 
-                        header_light={true}
                         header={"Mini Lab Slides"}
                         detail={
                             <div>
