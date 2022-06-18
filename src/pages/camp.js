@@ -39,6 +39,7 @@ const CampPage = () => {
                         {name: "Intro Survey", href: "https://forms.gle/BLQy9s1784JXq168A", new_tab:true}
                         ]}/>
                 </div>
+                <div className="semi-hide-div">
                 <div className="lightblue-div" style={{display:"flex", flexDirection:"column", gap:"20px"}}>
                     <Paragraph heading={"DAY 1"} />
                     <Collapsible 
@@ -227,6 +228,7 @@ const CampPage = () => {
                         items={[
                         {name: "Project Documentation", href: "/camp/day5"}
                         ]}/>
+                </div>
                 </div>
             </div>
         </div>
