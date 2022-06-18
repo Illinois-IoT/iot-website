@@ -35,11 +35,23 @@
 .blog-post-content h3 {
   color: var(--illini-orange);
   margin: 30px 0px;
-  padding: 10px;
+  font-size: medium;
+}
+
+.blog-post-content h4 {
+  color: var(--alma-mater);
+  font-size: 100% !important;
+  text-align: left !important;
 }
 
 .blog-post-content p {
   padding: 0 10px;
+}
+
+.blog-post-content img {
+  width: 50%;
+  height: auto;
+  margin: 1% 25%;
 }
 
 .gatsby-highlight {
@@ -183,7 +195,7 @@ h6{ /* circle text */
   color: var(--illini-blue);
 }
 
-p{ /* quote, footer text, slider paragraph */
+p, ul{ /* quote, footer text, slider paragraph */
   font-family: Montserrat;
   color:var(--illini-blue);
 }

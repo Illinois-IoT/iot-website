@@ -138,7 +138,7 @@ Now, let's revisit our initial question. How do we detect motion within a camera
 
 What exactly is "motion" anyways? In the example above, we see that there are minor differences between each frame. If you put all of these minor differences together, you get "motion".
 
-![](day3_frames_animated.gif)
+![](./day3_frames_animated.gif)
 
 Today, we will explore what it means to use background subtraction between frames to detect motion.
 
