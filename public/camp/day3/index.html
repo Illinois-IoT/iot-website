@@ -41,11 +41,7 @@
 <p>We would then need to figure out a way to detect any motion in the stream. We'll get back to this later, but for now, think of some ideas about how we can detect motion. Think about what exactly the "motion" is in terms of a stream of images. After all, a video is just a set of still images that you view in rapid succession.</p>
 <h2>1. Steady Camera Stream</h2>
 <p>First things first, let's stream the camera in Python. To do this, we will need the <code class="language-text">picamera</code> module. Run the following in the terminal to download the necessary packages:</p>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ python3 -c <span class="token string">"import picamera"</span>
-<span class="token comment"># TODO install these packages on day1</span>
-$ pip3 <span class="token function">install</span> opencv-contrib-python 
-$ <span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> -y libatlas-base-dev libhdf5-dev libhdf5-serial-dev libatlas-base-dev libjasper-dev  libqtgui4  libqt4-test
-$ pip3 <span class="token function">install</span> -U numpy </code></pre></div>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ python3 -c <span class="token string">"import picamera"</span></code></pre></div>
 <h3>a) Access Single Images</h3>
 <p>Let's start by accessing a single image from the camera stream. Create a new Python file called <code class="language-text">motion_detection.py</code></p>
 <p>First, import the required libraries</p>
