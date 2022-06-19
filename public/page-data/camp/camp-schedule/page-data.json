@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-camp-curriculum-js",
+    "path": "/camp/camp-schedule",
+    "result": {"data":{"markdownRemark":{"html":"<p><img src=\"/static/camp_schedule-cbd347e509acfd404180b7615f36415c.jpg\" alt=\"credentials\"></p>","frontmatter":{"date":"June 19, 2022","slug":"/camp/camp-schedule","title":"Camp Schedule"}}},"pageContext":{"slug":"/camp/camp-schedule"}},
+    "staticQueryHashes": []}

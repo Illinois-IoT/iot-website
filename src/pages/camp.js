@@ -38,8 +38,8 @@ const CampPage = () => {
                         items={[
                         {name: "Intro Survey", href: "https://forms.gle/BLQy9s1784JXq168A", new_tab:true},
                         {name:"EWS Credentials", href:"/camp/ews-credentials", new_tab:true},
-                        {name:"Guest Wi-Fi Credentials", href:"/camp/guest-wifi-credentials", new_tab:true}
-                        ]}/>
+                        {name:"Guest Wi-Fi Credentials", href:"/camp/guest-wifi-credentials", new_tab:true},
+                        {name:"Camp Schedule", href:"/camp/camp-schedule", new_tab:true}]}/>
             </div>
             <div className="semi-hide-div">
                 <div className="lightblue-div" style={{display:"flex", flexDirection:"column", gap:"20px"}}>
