@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-camp-curriculum-js",
+    "path": "/camp/guest-wifi-credentials",
+    "result": {"data":{"markdownRemark":{"html":"<p><img src=\"/static/GuestWiFi_IoT_Camp_1-ed39345ed7ca4cdc6ee93c80cb1fdfc2.jpg\" alt=\"credentials\">\n<img src=\"/static/GuestWiFi_IoT_Camp_2-3f981552529c513649e5d765017b280f.jpg\" alt=\"credentials\">\n<img src=\"/static/GuestWiFi_IoT_Camp_3-6246971f3ad665374f1b0860e154159d.jpg\" alt=\"credentials\">\n<img src=\"/static/GuestWiFi_IoT_Camp_4-e768aaf912e9d82f2012140ae9259dba.jpg\" alt=\"credentials\"></p>","frontmatter":{"date":"June 19, 2022","slug":"/camp/guest-wifi-credentials","title":"Guest Wi-Fi Credentials"}}},"pageContext":{"slug":"/camp/guest-wifi-credentials"}},
+    "staticQueryHashes": []}

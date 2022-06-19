@@ -455,6 +455,11 @@ width: 60% !important;
 height: auto;
 }
 
+#collapsible-img {
+  width: 80%;
+  margin: 0 10%;
+}
+
 @media(max-width: 768px){
 .flex-parent > *+* {
   margin: 20px 0;

@@ -32,14 +32,16 @@ const CampPage = () => {
         <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", padding:"0vw"}}>
             <SubPageHero no_margin={true} hero_img={hero}  title={"Welcome to IoT@Illinois"} subtitle={"2022 Camp Material"}/>
             <div style={{width:"100vw", display:"flex", flexDirection:"column", gap:"20px"}}>
-                <div style={{display:"flex", flexDirection:"column", gap:"20px"}}>
+            <div style={{display:"flex", flexDirection:"column", gap:"20px", padding: "40px 10vw"}}>
                     <Paragraph heading={"DAY 0"} />
                     <ButtonContainer 
                         items={[
-                        {name: "Intro Survey", href: "https://forms.gle/BLQy9s1784JXq168A", new_tab:true}
+                        {name: "Intro Survey", href: "https://forms.gle/BLQy9s1784JXq168A", new_tab:true},
+                        {name:"EWS Credentials", href:"/camp/ews-credentials", new_tab:true},
+                        {name:"Guest Wi-Fi Credentials", href:"/camp/guest-wifi-credentials", new_tab:true}
                         ]}/>
-                </div>
-                <div className="semi-hide-div">
+            </div>
+            <div className="semi-hide-div">
                 <div className="lightblue-div" style={{display:"flex", flexDirection:"column", gap:"20px"}}>
                     <Paragraph heading={"DAY 1"} />
                     <Collapsible 
