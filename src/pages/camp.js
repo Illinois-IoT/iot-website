@@ -41,49 +41,50 @@ const CampPage = () => {
                         {name:"Guest Wi-Fi Credentials", href:"/camp/guest-wifi-credentials", new_tab:true},
                         {name:"Camp Schedule", href:"/camp/camp-schedule", new_tab:true}]}/>
             </div>
-            <div className="semi-hide-div">
-                <div className="lightblue-div" style={{display:"flex", flexDirection:"column", gap:"20px"}}>
-                    <Paragraph heading={"DAY 1"} />
-                    <Collapsible 
-                        header_light={true}
-                        header={"Lecture Slides"}
-                        detail={
-                        <div style={{display:"flex", flexDirection:"column", gap:"20px"}}>
-                            <ReactGoogleSlides
-                                height="400px"
-                                width="100%"
-                                slidesLink="https://docs.google.com/presentation/d/1XPEDcmMltW_LmqjJhc9jmPweZdwmQTG7/edit?usp=sharing&ouid=115923064281253178961&rtpof=true&sd=true"
-                                slideDuration={5}
-                                showControls
-                                loop
-                            />
-                            <ButtonContainer 
-                                items={[
-                                {name: "Python Tutorial", href: "https://colab.research.google.com/drive/1oZvhzrTAjKOv22QqjFwyuMJ0pywzK5Pb?usp=sharing"}
-                                ]}/>
-                        </div>}
-                    />
-                    <Collapsible 
-                        header_light={true}
-                        header={"Mini Lab Slides"}
-                        detail={
-                            <div>
-                            <ReactGoogleSlides
-                                height="400px"
-                                width="100%"
-                                slidesLink="https://docs.google.com/presentation/d/1DRGr_CLwFjSJYmwI-ZF_b0CHsFFnbP_j8MT_Nc_SoZE/edit?usp=sharing"
-                                slideDuration={5}
-                                showControls
-                                loop
-                            />
-                        </div>}
-                    />
-                    <ButtonContainer 
-                        items={[
-                        {name: "Project Documentation", href: "/camp/day1"}
-                        ]}/>
-                </div>
+            
+            <div className="lightblue-div" style={{display:"flex", flexDirection:"column", gap:"20px"}}>
+                <Paragraph heading={"DAY 1"} />
+                <Collapsible 
+                    header_light={true}
+                    header={"Lecture Slides"}
+                    detail={
+                    <div style={{display:"flex", flexDirection:"column", gap:"20px"}}>
+                        <ReactGoogleSlides
+                            height="400px"
+                            width="100%"
+                            slidesLink="https://docs.google.com/presentation/d/1XPEDcmMltW_LmqjJhc9jmPweZdwmQTG7/edit?usp=sharing&ouid=115923064281253178961&rtpof=true&sd=true"
+                            slideDuration={5}
+                            showControls
+                            loop
+                        />
+                        <ButtonContainer 
+                            items={[
+                            {name: "Python Tutorial", href: "https://colab.research.google.com/drive/1oZvhzrTAjKOv22QqjFwyuMJ0pywzK5Pb?usp=sharing"}
+                            ]}/>
+                    </div>}
+                />
+                <Collapsible 
+                    header_light={true}
+                    header={"Mini Lab Slides"}
+                    detail={
+                        <div>
+                        <ReactGoogleSlides
+                            height="400px"
+                            width="100%"
+                            slidesLink="https://docs.google.com/presentation/d/1DRGr_CLwFjSJYmwI-ZF_b0CHsFFnbP_j8MT_Nc_SoZE/edit?usp=sharing"
+                            slideDuration={5}
+                            showControls
+                            loop
+                        />
+                    </div>}
+                />
+                <ButtonContainer 
+                    items={[
+                    {name: "Project Documentation", href: "/camp/day1"}
+                    ]}/>
+            </div>
 
+            <div className="semi-hide-div">
                 <div style={{display:"flex", flexDirection:"column", gap:"20px", padding: "40px 10vw"}}>
                     <Paragraph heading={"DAY 2"} />
                     <Collapsible 
