@@ -21,6 +21,23 @@ First things first, let's stream the camera in Python. To do this, we will need 
 ```bash
 $ python3 -c "import picamera"
 ```
+
+Install the following
+```Bash
+$ pip3 install opencv-python 
+$ sudo apt-get install libcblas-dev 
+$ sudo apt-get install libhdf5-dev 
+$ sudo apt-get install libhdf5-serial-dev 
+$ sudo apt-get install libatlas-base-dev 
+$ sudo apt-get install libjasper-dev 
+$ sudo apt-get install libqtgui4 
+$ sudo apt-get install libqt4-test
+$ sudo pip3 install flask
+$ sudo pip3 install numpy
+$ sudo pip3 install opencv-contrib-python==4.5.3.56
+$ sudo pip3 install imutils
+$ sudo pip3 install opencv-python
+```
 ### a) Access Single Images
 
 Let's start by accessing a single image from the camera stream. Create a new Python file called `motion_detection.py`

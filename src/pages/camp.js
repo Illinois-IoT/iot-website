@@ -149,46 +149,46 @@ const CampPage = () => {
                     ]}/>
             </div>
 
-            <div className="semi-hide-div">
+            
 
-                <div className="lightblue-div" style={{display:"flex", flexDirection:"column", gap:"20px"}}>
-                    <Paragraph heading={"DAY 3"} />
-                    <Collapsible 
-                        header_light={true}
-                        header={"Lecture Slides"}
-                        detail={
+            <div className="lightblue-div" style={{display:"flex", flexDirection:"column", gap:"20px"}}>
+                <Paragraph heading={"DAY 3"} />
+                <Collapsible 
+                    header_light={true}
+                    header={"Lecture Slides"}
+                    detail={
+                    <div>
+                        <ReactGoogleSlides
+                            height="400px"
+                            width="100%"
+                            slidesLink="https://docs.google.com/presentation/d/1NPFkR9vfGw0gxU3Jr-4HoCo5rlcg4JD-/edit?usp=sharing&ouid=115923064281253178961&rtpof=true&sd=true"
+                            slideDuration={5}
+                            showControls
+                            loop
+                        />
+                    </div>}
+                />
+                <Collapsible 
+                    header_light={true}
+                    header={"Mini Lab Slides"}
+                    detail={
                         <div>
-                            <ReactGoogleSlides
-                                height="400px"
-                                width="100%"
-                                slidesLink="https://docs.google.com/presentation/d/1NPFkR9vfGw0gxU3Jr-4HoCo5rlcg4JD-/edit?usp=sharing&ouid=115923064281253178961&rtpof=true&sd=true"
-                                slideDuration={5}
-                                showControls
-                                loop
-                            />
-                        </div>}
-                    />
-                    <Collapsible 
-                        header_light={true}
-                        header={"Mini Lab Slides"}
-                        detail={
-                            <div>
-                            <ReactGoogleSlides
-                                height="400px"
-                                width="100%"
-                                slidesLink="https://docs.google.com/presentation/d/1tNtvQ8F9R1-71sDQC2QSeybqRUdqJGT5WHKioMPCYbs/edit?usp=sharing"
-                                slideDuration={5}
-                                showControls
-                                loop
-                            />
-                        </div>}
-                    />
-                    <ButtonContainer 
-                        items={[
-                        {name: "Project Documentation", href: "/camp/day3"}
-                        ]}/>
-                </div>
-
+                        <ReactGoogleSlides
+                            height="400px"
+                            width="100%"
+                            slidesLink="https://docs.google.com/presentation/d/1tNtvQ8F9R1-71sDQC2QSeybqRUdqJGT5WHKioMPCYbs/edit?usp=sharing"
+                            slideDuration={5}
+                            showControls
+                            loop
+                        />
+                    </div>}
+                />
+                <ButtonContainer 
+                    items={[
+                    {name: "Project Documentation", href: "/camp/day3"}
+                    ]}/>
+            </div>
+            <div className="semi-hide-div">
                 <div style={{display:"flex", flexDirection:"column", gap:"20px", padding: "40px 10vw"}}>
                     <Paragraph heading={"DAY 4"} />
                     <Collapsible 
