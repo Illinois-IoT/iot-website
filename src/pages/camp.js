@@ -79,6 +79,7 @@ const CampPage = () => {
                     </div>}
                 />
                 <Collapsible 
+                    header_light={true}
                     header={"Speaker Slides"}
                     detail={
                         <div>
