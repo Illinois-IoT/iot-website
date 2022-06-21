@@ -14,19 +14,23 @@
 <p>First things first, let's stream the camera in Python. To do this, we will need the <code class="language-text">picamera</code> module. Run the following in the terminal to download the necessary packages:</p>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ python3 -c <span class="token string">"import picamera"</span></code></pre></div>
 <p>Install the following</p>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ pip3 <span class="token function">install</span> opencv-python 
-$ <span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> libcblas-dev 
-$ <span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> libhdf5-dev 
-$ <span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> libhdf5-serial-dev 
-$ <span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> libatlas-base-dev 
-$ <span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> libjasper-dev 
-$ <span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> libqtgui4 
-$ <span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> libqt4-test
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ <span class="token function">sudo</span> <span class="token function">apt-get</span> update
+$ <span class="token function">sudo</span> <span class="token function">apt-get</span> upgrade
+
+$ <span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> libatlas-base-dev
+$ <span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> libjasper-dev
+$ <span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> libqt5gui5 
+$ <span class="token function">sudo</span> <span class="token function">apt</span> libqt5webkit5 
+$ <span class="token function">sudo</span> <span class="token function">apt</span> libqt5test5 
+$ <span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> libhdf5-dev
+
 $ <span class="token function">sudo</span> pip3 <span class="token function">install</span> flask
 $ <span class="token function">sudo</span> pip3 <span class="token function">install</span> numpy
 $ <span class="token function">sudo</span> pip3 <span class="token function">install</span> opencv-contrib-python<span class="token operator">==</span><span class="token number">4.5</span>.3.56
 $ <span class="token function">sudo</span> pip3 <span class="token function">install</span> imutils
-$ <span class="token function">sudo</span> pip3 <span class="token function">install</span> opencv-python</code></pre></div>
+$ <span class="token function">sudo</span> pip3 <span class="token function">install</span> opencv-python
+
+$ pip3 <span class="token function">install</span> numpy --upgrade</code></pre></div>
 <h3>a) Access Single Images</h3>
 <p>Let's start by accessing a single image from the camera stream. Create a new Python file called <code class="language-text">motion_detection.py</code></p>
 <p>First, import the required libraries</p>
