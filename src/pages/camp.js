@@ -78,6 +78,20 @@ const CampPage = () => {
                         />
                     </div>}
                 />
+                <Collapsible 
+                    header={"Speaker Slides"}
+                    detail={
+                        <div>
+                        <ReactGoogleSlides
+                            height="400px"
+                            width="100%"
+                            slidesLink="https://docs.google.com/presentation/d/10t0y1wtVo_1InOhNjRJ3gQwd9fJCcw5O/edit?usp=sharing&ouid=115923064281253178961&rtpof=true&sd=true"
+                            slideDuration={5}
+                            showControls
+                            loop
+                        />
+                    </div>}
+                />
                 <ButtonContainer 
                     items={[
                     {name: "Project Documentation", href: "/camp/day1"}
@@ -108,6 +122,20 @@ const CampPage = () => {
                             height="400px"
                             width="100%"
                             slidesLink="https://docs.google.com/presentation/d/1Ndy1pxWrA8abEsNsLol_7eREYb43GXQdqYPws-ntsO0/edit?usp=sharing"
+                            slideDuration={5}
+                            showControls
+                            loop
+                        />
+                    </div>}
+                />
+                <Collapsible 
+                    header={"Speaker Slides"}
+                    detail={
+                        <div>
+                        <ReactGoogleSlides
+                            height="400px"
+                            width="100%"
+                            slidesLink="https://docs.google.com/presentation/d/1XeQZSNK3e7uTCk9ioEWZffup5gKqqfj6/edit?usp=sharing&ouid=115923064281253178961&rtpof=true&sd=true"
                             slideDuration={5}
                             showControls
                             loop
