@@ -30,8 +30,8 @@ $ sudo apt-get upgrade
 $ sudo apt-get install libatlas-base-dev
 $ sudo apt-get install libjasper-dev
 $ sudo apt install libqt5gui5 
-$ sudo apt libqt5webkit5 
-$ sudo apt libqt5test5 
+$ sudo apt install libqt5webkit5 
+$ sudo apt install libqt5test5 
 $ sudo apt-get install libhdf5-dev
 
 $ sudo pip3 install flask
