@@ -331,6 +331,16 @@ And that's it! You have just created a web app using Flask that streams the feed
 $ python3 main.py
 ```
 
+### 7/22 edit
+
+Before you are able to serve your website and have it available on another device, you have to change the `main` function to the following
+``` Python
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', debug=False)
+```
+
+Do a quick Google search and answer for yourself why you have to add this!
+
 Now, if you visit `http://127.0.0.1:5000` on your Raspberry Pi, you should see a real-time stream of your camera! 
 
 To access this page from your phone, you will need the IP address of your Raspbery Pi (revisit how to do so above). Make sure your phone is on the same Wi-Fi network as your Raspberry Pi. Then all you need to do is visit `http://<Raspberry Pi's IP>:5000` on your device!
