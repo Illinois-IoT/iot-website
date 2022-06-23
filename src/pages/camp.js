@@ -221,7 +221,8 @@ const CampPage = () => {
                 />
                 <ButtonContainer 
                     items={[
-                    {name: "Project Documentation", href: "/camp/day4"}
+                    {name: "Project Documentation", href: "/camp/day4"},
+                    {name: "Resume Template", href:"https://docs.google.com/document/d/1wHvnxUcmGbjS8MenNsxd0wOnYmgZPsy3/edit?usp=sharing&ouid=115923064281253178961&rtpof=true&sd=true", new_tab:true}
                     ]}/>
             </div>
             <div className="semi-hide-div">
