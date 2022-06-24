@@ -11,7 +11,7 @@ export default function Template({
   return (
     <body>
       <Helmet
-        title="IoT@Illinois - Lab Assistant Application"
+        title="IoT@Illinois - Camp"
         meta={[
             { name: 'description', content: 'The official website for The Illinois Center for Internet of Things.' },
             { name: 'keywords', content: 'Illinois IoT' },

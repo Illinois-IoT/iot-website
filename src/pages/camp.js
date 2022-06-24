@@ -15,7 +15,35 @@ import { Paragraph } from "../templates/paragraph/Paragraph";
 import { ButtonContainer } from "../templates/buttons/buttons";
 
 import ReactGoogleSlides from "react-google-slides";
+import { PeopleTable } from "../templates/people/people";
 
+import caesar from "../images/caesar2.png"
+import camille_cobb from "../images/camp/camille_cobb.jpeg"
+import melissa_chen from "../images/camp/melissa_chen.jpeg"
+import lucas_flygare from "../images/camp/lucas_flygare.jpeg"
+import morgan_fong from "../images/camp/morgan_fong.jpeg"
+import anthony_leapo from "../images/camp/anthony_leapo.jpeg"
+import erin_wang from "../images/camp/erin_wang.jpeg"
+import snehal_pachingar from "../images/camp/snehal_pachingar.jpeg"
+import keshav_shivam from "../images/camp/keshav_shivam.jpeg"
+import nathan_handler from "../images/camp/nathan_handler.jpeg"
+import calina_shaw from "../images/camp/calina_shaw.jpeg"
+import arnav_mishra from "../images/camp/arnav_mishra.jpeg"
+
+const people_arr = [
+    {name:"Matthew Caesar", bio:"Professor", involvement:"caesar@illinois.edu", img: caesar, linkedin: "https://www.linkedin.com/in/matthew-caesar/"},
+    {name:"Camille Cobb", bio:"Professor", involvement:"camillec@illinois.edu", img: camille_cobb},
+    {name:"Melissa Chen", bio:"B.S. Computer Science, 2022", involvement:"myc2@illinois.edu", img: melissa_chen, linkedin:"https://www.linkedin.com/in/mychen2022/"},
+    {name:"Lucas Flygare", bio:"PhD Computer Science", involvement:"lucasmf2@illinois.edu", img: lucas_flygare, linkedin:"https://www.linkedin.com/in/lucasflygare/"},
+    {name:"Morgan Fong", bio:"PhD Computer Science", involvement:"mmfong2@illinois.edu", img: morgan_fong, linkedin:"https://www.linkedin.com/in/morgan-fong/"},
+    {name:"Anthony Leapo", bio:"B.S. Computer Engineering, 2024", involvement:"aleapo2@illinois.edu", img: anthony_leapo, linkedin:"https://www.linkedin.com/in/anthonyleapo/"},
+    {name:"Erin Wang", bio:"B.S. CS+Stats, 2024", involvement:"yiranw8@illinois.edu", img: erin_wang, linkedin:"https://www.linkedin.com/in/erin-wang0327/"},
+    {name:"Snehal Pachingar", bio:"Senior Software Engineer, LinkedIn", involvement:"ss.pachigar@gmail.com", img: snehal_pachingar, linkedin:"https://www.linkedin.com/in/snehalpachigar/", youtube:"https://www.youtube.com/c/ItsNotThatComplicated", instagram:"https://www.instagram.com/sspachigar/"},
+    {name:"Keshav Shivam", bio:"Software Engineer, Google", involvement:"keshavshivam18@gmail.com", img: keshav_shivam, linkedin:"https://www.linkedin.com/in/keshav-shivam-684717100/"},
+    {name:"Nathan Handler", bio:"Site Reliability Engineer, Reddit", involvement:"nathan.handler@gmail.com", img: nathan_handler, linkedin:"https://www.linkedin.com/in/nhandler/"},
+    {name:"Calina Shaw", bio:"Associate Software Engineer, Sprout Social", involvement:"cshaw16@gmail.com", img: calina_shaw, linkedin:"https://www.linkedin.com/in/calinashaw/"},
+    {name:"Arnav Mishra", bio:"Software Engineer, Siteline", involvement:"arnmishra@gmail.com", img: arnav_mishra, linkedin:"https://www.linkedin.com/in/arnav-mishra/"},
+]
 const CampPage = () => {
   return (
     <body>
@@ -234,45 +262,48 @@ const CampPage = () => {
                     {name: "Lily's Example Resume", href:"https://drive.google.com/file/d/1lW9ZR_UYNecvNqI33ay8RYw4KVHWDIww/view?usp=sharing", new_tab:true}
                     ]}/>
             </div>
-            <div className="semi-hide-div">
-                <div className="lightblue-div" style={{display:"flex", flexDirection:"column", gap:"20px"}}>
-                    <Paragraph heading={"DAY 5"} />
-                    <Collapsible 
-                        header_light={true}
-                        header={"Lecture Slides"}
-                        detail={
+            <div className="lightblue-div" style={{display:"flex", flexDirection:"column", gap:"20px"}}>
+                <Paragraph heading={"DAY 5"} />
+                <Collapsible 
+                    header_light={true}
+                    header={"Lecture Slides"}
+                    detail={
+                    <div>
+                        <ReactGoogleSlides
+                            height="400px"
+                            width="100%"
+                            slidesLink="https://docs.google.com/presentation/d/1n5AIgXRRHqZ-qdDdZs8J4UWr90vOQQLe/edit?usp=sharing&ouid=115923064281253178961&rtpof=true&sd=true"
+                            slideDuration={5}
+                            showControls
+                            loop
+                        />
+                    </div>}
+                />
+                <Collapsible 
+                    header_light={true}
+                    header={"Mini Lab Slides"}
+                    detail={
                         <div>
-                            <ReactGoogleSlides
-                                height="400px"
-                                width="100%"
-                                slidesLink="https://docs.google.com/presentation/d/1n5AIgXRRHqZ-qdDdZs8J4UWr90vOQQLe/edit?usp=sharing&ouid=115923064281253178961&rtpof=true&sd=true"
-                                slideDuration={5}
-                                showControls
-                                loop
-                            />
-                        </div>}
-                    />
-                    <Collapsible 
-                        header_light={true}
-                        header={"Mini Lab Slides"}
-                        detail={
-                            <div>
-                            <ReactGoogleSlides
-                                height="400px"
-                                width="100%"
-                                slidesLink="https://docs.google.com/presentation/d/1DrropJwo9KCWSrPL4OshorrOC0fuaHnmI2FIMfYO4kE/edit?usp=sharing"
-                                slideDuration={5}
-                                showControls
-                                loop
-                            />
-                        </div>}
-                    />
-                    <ButtonContainer 
-                        items={[
-                        {name: "Project Documentation", href: "/camp/day5"}
-                        ]}/>
-                </div>
-                </div>
+                        <ReactGoogleSlides
+                            height="400px"
+                            width="100%"
+                            slidesLink="https://docs.google.com/presentation/d/1DrropJwo9KCWSrPL4OshorrOC0fuaHnmI2FIMfYO4kE/edit?usp=sharing"
+                            slideDuration={5}
+                            showControls
+                            loop
+                        />
+                    </div>}
+                />
+                <ButtonContainer 
+                    items={[
+                    {name: "Project Documentation", href: "/camp/day5"}
+                    ]}/>
+            </div>
+            <div className="lightblue-div" style={{display:"flex", flexDirection:"column", gap:"20px"}}>
+                <Paragraph heading={"Speaker Contact Info"} 
+                    subheading={"When emailing, you MUST CC Max (mfowler5@illinois.edu) & Lara (lhebert2@illinois.edu)"} />
+                <PeopleTable people={people_arr}/>
+            </div>
             </div>
         </div>
     </body>

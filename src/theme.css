@@ -492,6 +492,12 @@ height: auto;
   justify-content: space-between;
 }
 
+.center-align {
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px;
+}
+
 .circle-div {
   border-radius: 50%;
 }
