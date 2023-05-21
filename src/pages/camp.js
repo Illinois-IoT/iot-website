@@ -58,7 +58,7 @@ const CampPage = () => {
             ]}
         />
         <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", padding:"0vw"}}>
-            <SubPageHero no_margin={true} hero_img={hero}  title={"Welcome to IoT@Illinois"} subtitle={"2022 Camp Material"}/>
+            <SubPageHero no_margin={true} hero_img={hero}  title={"Welcome to IoT@Illinois"} subtitle={"2023 Camp Material"}/>
             <div style={{width:"100vw", display:"flex", flexDirection:"column", gap:"20px"}}>
             <div style={{display:"flex", flexDirection:"column", gap:"20px", padding: "40px 10vw"}}>
                     <Paragraph heading={"DAY 0"} />
