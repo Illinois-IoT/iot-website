@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-templates-camp-curriculum-js",
-    "path": "/camp/ews-credentials",
-    "result": {"data":{"markdownRemark":{"html":"<p><img src=\"/static/EWS_Guest_Accounts-21a331600609af879bd076ba05224d62.jpg\" alt=\"credentials\"></p>","frontmatter":{"date":"June 19, 2022","slug":"/camp/ews-credentials","title":"EWS Credentials"}}},"pageContext":{"slug":"/camp/ews-credentials"}},
-    "staticQueryHashes": []}
+{"componentChunkName":"component---src-templates-camp-curriculum-js","path":"/camp/ews-credentials","result":{"data":{"markdownRemark":{"html":"<p><img src=\"/static/EWS_Guest_Accounts-21a331600609af879bd076ba05224d62.jpg\" alt=\"credentials\"></p>","frontmatter":{"date":"June 19, 2022","slug":"/camp/ews-credentials","title":"EWS Credentials"}}},"pageContext":{"slug":"/camp/ews-credentials"}},"staticQueryHashes":[]}
