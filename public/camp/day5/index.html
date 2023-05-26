@@ -396,8 +396,8 @@ app <span class="token operator">=</span> Flask<span class="token punctuation">(
 
 <span class="token decorator annotation punctuation">@app<span class="token punctuation">.</span>route</span><span class="token punctuation">(</span><span class="token string">'/listen'</span><span class="token punctuation">)</span>
 <span class="token keyword">def</span> <span class="token function">transcribe_audio</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token keyword">with</span> mic <span class="token keyword">as</span> source<span class="token punctuation">:</span>
-        audio <span class="token operator">=</span> recognizer<span class="token punctuation">.</span>listen<span class="token punctuation">(</span>source<span class="token punctuation">)</span>
+    <span class="token keyword">with</span> mic <span class="token keyword">as</span> s<span class="token punctuation">:</span>
+        audio <span class="token operator">=</span> recognizer<span class="token punctuation">.</span>listen<span class="token punctuation">(</span>s<span class="token punctuation">)</span>
     <span class="token keyword">try</span><span class="token punctuation">:</span>
         <span class="token keyword">return</span> recognizer<span class="token punctuation">.</span>recognize_google<span class="token punctuation">(</span>audio<span class="token punctuation">)</span>
     <span class="token keyword">except</span> sr<span class="token punctuation">.</span>UnknownValueError<span class="token punctuation">:</span>
