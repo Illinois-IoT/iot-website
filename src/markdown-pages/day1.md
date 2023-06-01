@@ -8,7 +8,7 @@ title: "Day 1"
 
 A Raspberry Pi is a simple, mini computer. It is a "single-board computer" because it is a single circuit board. On it, there is a microprocessor that computes logical and arithmetic operations (just like any computer). Then, there are also ports for you to plug in any I/O (input or out) devices.
 
-![parts of a Raspberry Pi](./day1_pi_parts.png "parts of a Raspberry Pi")
+![parts of a Raspberry Pi](day1_pi_parts.png "parts of a Raspberry Pi")
 
 Examples of input devices are the standard keyboard and mouse, or external sensors like a camera or microphone. Output devices are the ones transforming anything coming from the computer into a human-perceptible form. This can include a monitor (which visualizes the state of the computer), or a speaker (which provides auditory feedback).
 
@@ -16,7 +16,7 @@ Examples of input devices are the standard keyboard and mouse, or external senso
 
 GPIO stands for "general-purpose input/output". This consists of two rows of pins along the side of the Raspberry Pi.
 
-![GPIO pinout](./day1_gpio_pinout.png "GPIO pinout")
+![GPIO pinout](day1_gpio_pinout.png "GPIO pinout")
 
 Each pin has different uses:
 
@@ -47,47 +47,46 @@ We will achieve this through several parts. Today, you will begin by learning ab
 
 ## 1. Take a picture
 
-To take a picture, we will use the built-in library `libcamera`. It is a software library aimed at supporting complex camera systems directly from the Linux operating system.
+To take a picture, we will use the built-in library `raspistill`. It is a software library aimed at supporting complex camera systems directly from the Linux operating system.
 
 Let's check to make sure that everything works. Run
 ``` Bash
-$ libcamera-hello
+$ raspistill -t
 ```
 in the terminal. You should see a camera preview window for about 5 seconds.
 
 To set how many seconds the preview window will be shown, add a tag `-t <duration>` to specify the number of milliseconds. We can also show the preview indefinitely by running
 
 ``` Bash
-$ libcamera-hello -t 0
+$ raspistill -t 0
 ```
 To exit the preview, click the window's close button, or use `Ctrl-C` in the terminal.
 
-Now, let's capture a photo. To accomplish this, we will use the built-in `libcamera-still` application.
+Now, let's capture a photo. To accomplish this, we will use another input argument of the built-in `raspistill` application.
 
 To capture a full resolution JPEG images, run
 ``` Bash
-$ libcamera-still -o test.jpg
+$ raspistill -o test.jpg
 ```
 
 This will display a preview for about 5 seconds, and then capture a full resolution JPEG image to the file `test.jpg`.
 
 The `-t <duration>` option can be used to alter the length of time the preview shows, and the `--width` and `--height` options will change the resolution of the captured still image. For example
 ``` Bash
-$ libcamera-still -o test.jpg -t 2000 --width 640 --height 480
+$ raspistill -o test.jpg -t 2000 --width 640 --height 480
 ```
 
-`libcamera-still` allows files to be saved in a number of different formats:
+`raspistill` allows files to be saved in a number of different formats:
 ``` Bash
-$ libcamera-still -e png -o test.png
-$ libcamera-still -e bmp -o test.bmp
-$ libcamera-still -e rgb -o test.data
-$ libcamera-still -e yuv420 -o test.data
+$ raspistill -e png -o test.png
+$ raspistill -e bmp -o test.bmp
+$ raspistill -e gif -o test.gif
 ```
 Note that the format in which the image is saved depends on the `-e` (equivalently `--encoding`) option and is not selected automatically based on the output file name.
 
 ## 2. Automate Picture Taking
 
-Now, we know that we can use the built-in `libcamera-still` application to take images, let's wrap it up in a Bash script.
+Now, we know that we can use the built-in `raspistill` application to take images, let's wrap it up in a Bash script.
 
 A Bash script is a file that contains a series of shell commands. Anything you can run normally on the command line can be put into a Bash script and it does exactly the same thing. Similarly, anything you can put into a Bash script can also be run normally in the command line and do exactly the same thing.
 
@@ -123,23 +122,23 @@ For our purpose, we will create a script called `capture.sh` with the following:
 ``` Bash
 #!/bin/bash
 
-libcamera-still -o test.jpg
+raspistill -o test.jpg
 ```
 
 Can you guess what this script will do?
 
-You'd be correct if you said that it would do the exact same thing as running the `libcamera-still -o test.jpg` command directly in the terminal!
+You'd be correct if you said that it would do the exact same thing as running the `raspistill -o test.jpg` command directly in the terminal!
 
 Now, to execute this script, we can go back to the terminal and run
 ``` Bash
 ./capture.sh
 ```
 
-You'll notice that a new `test.jpg` file was created in your final project folder. It's the image just captured! Try running the command again. You'll see that `test.jpg` is replaced with a new image. Let's fix this.
+You'll notice that a new `test.jpg` file was created in your main project folder. It's the image just captured! Try running the command again. You'll see that `test.jpg` is replaced with a new image. Let's fix this.
 
 Inside `capture.sh`, replacing the existing line with
 ``` bash
-libcamera-still -o $1.jpg
+raspistill -o $1.jpg
 ```
 instead. Instead of storing the image in the file `test.jpg`, we've replaced it with `$1.jpg`. What does this mean?
 
@@ -166,7 +165,7 @@ We connect one side of the switch to an input pin on the Raspberry Pi, in this c
 
 It should look like the following:
 
-![Push Button Circuit](./day1_pushbutton_circuit.jpeg "Push Button Circuit")
+![Push Button Circuit](day1_pushbutton_circuit.jpeg "Push Button Circuit")
 
 The idea is that the input pin will be low (0V) when the button is not pushed. When the button is pushed it will connect the pin to 3.3V and change the state to high (3.3V).
 
@@ -188,7 +187,7 @@ First we import the GPIO library and then setup the library to use board numberi
 
 The initialization codes are like the following:
 
-```python {numberLines: true}
+``` Python
 import RPi.GPIO as GPIO
 GPIO.setwarnings(False) # Ignore warning for now
 GPIO.setmode(GPIO.BOARD) # Use physical pin numbering
@@ -233,7 +232,7 @@ def button_callback(channel):
 ```
 
 Next, we will initialize the pin
-``` Python {numberLines: true}
+``` Python
 GPIO.setwarnings(False) # Ignore warning for now
 GPIO.setmode(GPIO.BOARD) # Use physical pin numbering
 GPIO.setup(10, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # Set pin 10 to be an input pin and set initial value to be pulled low (off)
@@ -251,7 +250,7 @@ GPIO.cleanup() # Clean up
 ```
 
 In summary, your `push_button_capture.py` should now look like the following:
-``` Python {numberLines: true}
+``` Python
 import RPi.GPIO as GPIO # Import Raspberry Pi GPIO library
 def button_callback(channel):
     print("Button was pushed!")
@@ -326,7 +325,7 @@ os.system("./capture.sh 6_20_2022--10_03_02.jpg")
 
 The final version of `push_button_capture.py` should be the following.
 
-``` Python {numberLines: true}
+``` Python
 import RPi.GPIO as GPIO # Import Raspberry Pi GPIO library
 import datetime
 import os
@@ -335,7 +334,7 @@ def button_callback(channel):
     print("Button was pushed!")
     current_time = datetime.datetime.now()
     time_formatted = current_time.strftime("%m_%d_%Y--%H_%M_%S")
-    os.system("./capture2.sh " + time_formatted + ".jpg")
+    os.system("./capture.sh " + time_formatted + ".jpg")
 
 GPIO.setwarnings(False) # Ignore warning for now
 GPIO.setmode(GPIO.BOARD) # Use physical pin numbering
