@@ -1,6 +1,6 @@
 ---
 slug: "/camp/day4"
-date: "2022-06-23"
+date: "2023-06-22"
 title: "Day 4"
 ---
 ## Introduction
