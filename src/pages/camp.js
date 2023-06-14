@@ -35,7 +35,7 @@ import yan_chen from "../images/camp/yan_chen.jpeg"
 
 const people_arr = [
     {name:"Matthew Caesar", bio:"Professor", involvement:"caesar@illinois.edu", img: caesar, linkedin: "https://www.linkedin.com/in/matthew-caesar/"},
-    {name:"Yan Chen", bio:"Professor", involvement:"ychen@northwestern.edu", img: keshav_shivam, linkedin:"https://www.linkedin.com/in/yan-chen-057b123/"},
+    {name:"Yan Chen", bio:"Professor", involvement:"ychen@northwestern.edu", img: yan_chen, linkedin:"https://www.linkedin.com/in/yan-chen-057b123/"},
     {name:"Keshav Shivam", bio:"Software Engineer, Google", involvement:"keshavshivam18@gmail.com", img: keshav_shivam, linkedin:"https://www.linkedin.com/in/keshav-shivam-684717100/"},
 ]
 
