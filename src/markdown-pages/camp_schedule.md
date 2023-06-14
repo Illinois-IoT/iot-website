@@ -1,6 +1,6 @@
 ---
 slug: "/camp/camp-schedule"
-date: "2022-06-19"
+date: "2023-06-18"
 title: "Camp Schedule"
 ---
 ![credentials](./camp_schedule.png)
