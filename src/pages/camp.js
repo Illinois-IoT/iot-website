@@ -248,7 +248,7 @@ const CampPage = () => {
                     items={[
                     {name: "Project Documentation", href: "/camp/day4"}
                     ]}/>
-                <ButtonContainer 
+                {/* <ButtonContainer 
                     items={[
                     {name: "Resume Template (Word)", href:"https://docs.google.com/document/d/1wHvnxUcmGbjS8MenNsxd0wOnYmgZPsy3/edit?usp=sharing&ouid=115923064281253178961&rtpof=true&sd=true", new_tab:true},
                     {name: "Resume Template (Google Doc)", href:"https://docs.google.com/document/d/1QANkJZoyQGQ5QAzApE2vUN2YBzMlGxCguAlL-pkdVc0/edit?usp=sharing", new_tab:true}
@@ -257,7 +257,7 @@ const CampPage = () => {
                     items={[
                     {name: "Kush's Example Resume", href:"https://drive.google.com/file/d/1W7TYpmjWPYByR4moFsKwMx2W4n9LpQgO/view?usp=sharing", new_tab:true},
                     {name: "Lily's Example Resume", href:"https://drive.google.com/file/d/1lW9ZR_UYNecvNqI33ay8RYw4KVHWDIww/view?usp=sharing", new_tab:true}
-                    ]}/>
+                    ]}/> */}
             </div>
             <div className="lightblue-div" style={{display:"flex", flexDirection:"column", gap:"20px"}}>
                 <Paragraph heading={"DAY 5"} />
