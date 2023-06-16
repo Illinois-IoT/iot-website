@@ -103,7 +103,7 @@ const CampPage = () => {
                         />
                     </div>}
                 />
-                <Collapsible 
+                {/* <Collapsible 
                     header_light={true}
                     header={"Speaker Slides"}
                     detail={
@@ -117,7 +117,7 @@ const CampPage = () => {
                             loop
                         />
                     </div>}
-                />
+                /> */}
                 <ButtonContainer 
                     items={[
                     {name: "Project Documentation", href: "/camp/day1"}
@@ -154,7 +154,7 @@ const CampPage = () => {
                         />
                     </div>}
                 />
-                <Collapsible 
+                {/* <Collapsible 
                     header={"Speaker Slides"}
                     detail={
                         <div>
@@ -167,7 +167,7 @@ const CampPage = () => {
                             loop
                         />
                     </div>}
-                />
+                /> */}
                 <ButtonContainer 
                     items={[
                     {name: "Project Documentation", href: "https://colab.research.google.com/drive/1BPWM5vd7DAHiVtBY5D_yrY4u_D0njd_1?usp=sharing"}
