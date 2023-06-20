@@ -21,6 +21,10 @@ import caesar from "../images/caesar2.png"
 import keshav_shivam from "../images/camp/keshav_shivam.jpeg"
 import yan_chen from "../images/camp/yan_chen.jpeg"
 import juan_diego from "../images/camp/juan_diego.jpg"
+import frank_salamone from "../images/camp/frank_salamone.jpg"
+import shilan_he from "../images/camp/shilan_he.jpg"
+import liz_hayes from "../images/camp/liz_hayes.jpg"
+import yi_liu from "../images/camp/yi_liu.jpg"
 
 // If you want to delete them, go ahead and delete them
 // import camille_cobb from "../images/camp/camille_cobb.jpeg"
@@ -38,6 +42,10 @@ const people_arr = [
     {name:"Matthew Caesar", bio:"Professor", involvement:"caesar@illinois.edu", img: caesar, linkedin: "https://www.linkedin.com/in/matthew-caesar/"},
     {name:"Yan Chen", bio:"Professor", involvement:"ychen@northwestern.edu", img: yan_chen, linkedin:"https://www.linkedin.com/in/yan-chen-057b123/"},
     {name:"Juan Diego", bio:"PhD Civil and Environmental Engineering", involvement:"jdnunez2@illinois.edu", img: juan_diego, linkedin:"https://www.linkedin.com/in/juandiegonm/"},
+    {name:"Yi Liu", bio:"Technology Development Engineer, Samsung Austin Semiconductor (CS 437 Student)", involvement:"yiliu2@illinois.edu", img: yi_liu},
+    {name:"Frank Salamone", bio:"Physician (CS 437 Student)", involvement:"frankns2@illinois.edu", img: frank_salamone, linkedin:"https://www.linkedin.com/in/frank-salamone-05b9bb96/"},
+    {name:"Shilan He", bio:"M.S. Computer Engineering (CS 437 Student)", involvement:"shilanh2@illinois.edu", img: shilan_he, linkedin:"https://www.linkedin.com/in/shilan-he-aa665a249/?trk=public_profile_browsemap"},
+    {name:"Liz Hayes", bio:"Master of Computer Science (CS 437 Student)", involvement:"eahayes3@illinois.edu", img: liz_hayes, linkedin:"https://www.linkedin.com/in/liz-hayes-64787214a/"},
     {name:"Keshav Shivam", bio:"Software Engineer, Google", involvement:"keshavshivam18@gmail.com", img: keshav_shivam, linkedin:"https://www.linkedin.com/in/keshav-shivam-684717100/"},
 ]
 
