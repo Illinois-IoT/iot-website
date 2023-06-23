@@ -18,7 +18,7 @@ import ReactGoogleSlides from "react-google-slides";
 import { PeopleTable } from "../templates/people/people";
 
 import caesar from "../images/caesar2.png"
-import keshav_shivam from "../images/camp/keshav_shivam.jpeg"
+import keshav_shivam from "../images/camp/keshav_shivam_2.jpeg"
 import yan_chen from "../images/camp/yan_chen.jpeg"
 import juan_diego from "../images/camp/juan_diego.jpg"
 import frank_salamone from "../images/camp/frank_salamone.jpg"
