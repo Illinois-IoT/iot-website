@@ -38,9 +38,8 @@ $ sudo pip3 install flask
 $ sudo pip3 install numpy
 $ sudo pip3 install opencv-contrib-python==4.5.3.56
 $ sudo pip3 install imutils
-$ pip3 install opencv-python==4.5.3.56
 
-$ sudo apt-get install portaudio19-dev python-all-dev python3-all-dev && sudo pip install pyaudio
+$ sudo apt-get install portaudio19-dev python-all-dev python3-all-dev && sudo pip3 install pyaudio
 $ pip3 install SpeechRecognition
 $ sudo apt-get install flac
 
