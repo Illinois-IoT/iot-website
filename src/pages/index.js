@@ -44,28 +44,17 @@ const IndexPage = () => {
                     ]}/>
           <ButtonContainer 
             items={[
-              {name: "Research", href: "/research"},
               {name: "Makerspace", href: "/makerspace"},
               {name: "Outreach", href: "/outreach"}
             ]}/>
         </div>
-        <TableRowCircleImg 
+      </div>
+      <TableRowCircleImg 
           img_src={CaesarProfile}
           header={<h5>Hi there!</h5>}
           detail={<p>I am Matthew Caesar, a Professor in the Department of Computer Science at UIUC. Here at the Illinois Center for IoT, we are embarking on an exploration of a new world, one which we are building ourselves, and learning more about every day. What we will create, and what we will discover, will be an adventure unlike anything humanity has done before. Here, we are developing foundational technologies to fundamentally accelerate the development of this Internet of Things. Our mission is to build platforms with strong and rigorous guarantees, with high performance and service quality, that are practically useful and remain resilient in the face of adversaries and unreliable conditions, and that serve to meet societal and ethical principles while advancing equality and viability of our society. I hope you will join us!</p>}
           blue_background={true}
         />
-        <div>
-          <Paragraph heading={"CURRENT RESEARCH PROJECTS"} />
-          <CircleTable 
-            items={[
-              {heading: "Autonomy", href: "research/autonomy"},
-              {heading: "IoT Simulation", href: "research/iot-simulation"},
-              {heading: "AI Drone", href: "research/ai-drone"},
-              {heading: "IoT Verification", href: "research/iot-verification"}
-            ]}/>
-        </div>
-      </div>
       <Footer />
     </body>
   )
