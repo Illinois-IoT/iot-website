@@ -8,6 +8,10 @@ import { PageHero } from "../templates/hero/hero"
 import about_hero from "../images/hero2.jpeg"
 import texture from "../images/texture.jpeg"
 import makerspace_map from "../images/iot-makerspace-map.jpg"
+import makerspace_printers from "../images/makerspace-3d-printers.jpg"
+import makerspace_busy from "../images/makerspace-busy.jpg"
+import makerspace_wideshot from "../images/makerspace-wideshot.jpg"
+import makerspace_workbench from "../images/makerspace-workbench.jpg"
 
 import Footer from "../templates/footer/footer";
 import { List, Paragraph } from "../templates/paragraph/Paragraph";
@@ -54,7 +58,9 @@ const MakerspacePage = () => {
                   "Multimeters",
                   "Books (networking, security, IoT, wireless security, foundational algorithms/math/theory, networking theory, ML, data mining) for checkout"
                 ]}
-                />}/>
+                />}
+            />
+        
         <div className="lightblue-div img-div">
             <Paragraph 
                 heading="LOCATION" 
@@ -74,11 +80,34 @@ const MakerspacePage = () => {
                 "5. You are allowed to bring friends and colleagues into the lab but try to make sure they're careful and follow these rules too."
             ]}
         />
-        <div className="lightblue-div img-div">
-            <Paragraph
-              heading="ACCESS REQUEST FORM" />
-            <a href="https://forms.gle/kT1r3MWvfP7reLLS8">Fill out this form!</a>
+        
+        <div className="lightblue-div" style={{display: "flex", flexDirection: "column", alignItems:"center", justifyContent:"center"}}>
+        <div style={{display:"flex", justifyContent:"space-between", marginBottom: "5vw"}}>
+            <div>
+              <img style={{width: "95%", height: "auto"}} src={makerspace_printers}/>
+            </div>
+            <div>
+              <img style={{width: "95%", height: "auto"}} src={makerspace_busy}/>
+            </div>
+            <div>
+              <img style={{width: "95%", height: "auto"}} src={makerspace_wideshot}/>
+            </div>
+            <div>
+              <img style={{width: "95%", height: "auto"}} src={makerspace_workbench}/>
+            </div>
         </div>
+          <Paragraph
+            heading="ACCESS REQUEST FORM" />
+          <a href="https://forms.gle/kT1r3MWvfP7reLLS8">Fill out this form!</a>
+        </div>
+        <Paragraph 
+            heading="ACCESS PROCEDURE" 
+            subheading="Timeline for access and steps to take"
+            paragraphs={[
+                "First fill out the form above. In the form there is a link to a training document that outlines the lab equipments and related safety information. Please read this document and watch the linked videos before filling out the form, as you will be asked some questions on it.",
+                "After reading through the lab policies and agreeing to them, you will be asked to choose a time for the lab orientation. This orientation will be held in the Makerspace (Siebel 1109) every Saturday and will take about 30 minutes. During this orientation, we will go over the lab policies and procedures. We will also go over the equipment in the lab and how to use it. After the orientation, you will be given access to the lab."
+              ]}
+        />
       </div>
       <Footer />
     </body>
