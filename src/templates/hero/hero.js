@@ -41,12 +41,21 @@ function SubPageHero(props) {
     );
 }
 
-function PageHero(props){
-    return(
-        <div style={{position:"relative", height:"60vh", width:"100vw", backgroundColor:"var(--cloud)"}}>
-            <img src={props.texture_img} alt="texture background image" id="subpage_texture_img" fixed="top"/>
-            <div id="subpage_heading_section" style={{backgroundImage:`url(${props.hero_img})`}}>
-                <header style={{zIndex:'500', opacity:"1", color:"var(--illini-blue)"}}>{props.title}</header>
+function PageHero(props) {
+    return (
+        <div style={{ position: "relative", height: "60vh", width: "100vw", backgroundColor: "var(--cloud)", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+            <img src={props.texture_img} alt="texture background image" id="subpage_texture_img" fixed="top" />
+            <div id="subpage_heading_section" style={{ backgroundImage: `url(${props.hero_img})`, textAlign: "center" }}>
+                <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                    <header style={{ zIndex: '500', opacity: "1", color: "var(--illini-blue)" }}>{props.title}</header>
+                    <p style={{ zIndex: '500', opacity: "1", color: "var(--illini-blue)", margin: 0 }}>
+                        {props.subtitleLink ? (
+                            <a href={props.subtitleLink} style={{ color: "var(--illini-blue)", textDecoration: "underline" }}>{props.subtitle}</a>
+                        ) : (
+                            <span style={{ color: "var(--illini-blue)" }}>{props.subtitle}</span>
+                        )}
+                    </p>
+                </div>
             </div>
         </div>
     );

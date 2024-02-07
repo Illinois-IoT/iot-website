@@ -6,7 +6,9 @@ import Navigation from "../templates/navigation/navigation"
 import { PageHero } from "../templates/hero/hero"
 
 import about_hero from "../images/hero2.jpeg"
-import texture from "../images/texture.jpeg"
+import texture from "../images/iotlabpano.png"
+import labimg1 from "../images/labimg1.png"
+import labimg2 from "../images/labimg2.png"
 import makerspace_map from "../images/iot-makerspace-map.jpg"
 import makerspace_printers from "../images/makerspace-3d-printers.jpg"
 import makerspace_busy from "../images/makerspace-busy.jpg"
@@ -34,8 +36,29 @@ const MakerspacePage = () => {
         ]}
       />
       <Navigation />
+      
       <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", padding:"0vw 10vw"}}>
-        <PageHero texture_img={texture} hero_img={about_hero} title={"MAKERSPACE"}/>      
+        <PageHero texture_img={texture} hero_img={about_hero} title={"MAKERSPACE"} subtitle={"Fill out this form to request access!"} subtitleLink={"https://forms.gle/BKq6QW5Y7QVYF6jy9"} />
+        <div style={{ overflowX: "scroll", whiteSpace: "nowrap", width: "100%", maxWidth: "100vw" }}>
+          <div style={{ display: "inline-block", marginRight: "10px" }}>
+              <img style={{ width: "500px", height: "auto" }} src={makerspace_busy} alt="Makerspace Busy" />
+          </div>
+          <div style={{ display: "inline-block", marginRight: "10px" }}>
+              <img style={{ width: "500px", height: "auto" }} src={labimg2} alt="Lab 2" />
+          </div>
+          <div style={{ display: "inline-block", marginRight: "10px" }}>
+              <img style={{ width: "500px", height: "auto" }} src={makerspace_printers} alt="Makerspace Printers" />
+          </div>
+          <div style={{ display: "inline-block", marginRight: "10px" }}>
+              <img style={{ width: "500px", height: "auto" }} src={makerspace_wideshot} alt="Makerspace Wideshot" />
+          </div>
+          <div style={{ display: "inline-block", marginRight: "10px" }}>
+              <img style={{ width: "500px", height: "auto" }} src={labimg1} alt="Lab 1" />
+          </div>
+          <div style={{ display: "inline-block", marginRight: "10px" }}>
+              <img style={{ width: "500px", height: "auto" }} src={makerspace_workbench} alt="Makerspace Workbench" />
+          </div>
+      </div>
         <Paragraph 
             heading="SIEBEL ROOM 1109" 
             subheading="A place in the Siebel Center for Comp Science to explore"
@@ -60,16 +83,9 @@ const MakerspacePage = () => {
                 ]}
                 />}
             />
-        
-        <div className="lightblue-div img-div">
-            <Paragraph 
-                heading="LOCATION" 
-                subheading="Find Room 1109 in the North-East corner of the Siebel Center for Comp Science" />
-            <img src={makerspace_map}/>
-        </div>
         <Paragraph 
             heading="NORMS & GUIDELINES" 
-            subheading="Please read the following before request access"
+            subheading="Please read the following before requesting access"
             paragraphs={[
                 "To access the Makerspace, we need to provide access via your i-Card. If you want to request access, please read the following in full before filling out the form.",
                 "The Makerspace is a shared lab with valuable equipment in it, so we all need to work together to make sure the room is protected.  We are not going to be super uptight, and in fact, we do want you to mess around and experiment with the space, so please don't feel constrained. But with that being said, we do have the following norms and guidelines we want everyone to follow:",
@@ -80,25 +96,14 @@ const MakerspacePage = () => {
                 "5. You are allowed to bring friends and colleagues into the lab but try to make sure they're careful and follow these rules too."
             ]}
         />
-        
-        <div className="lightblue-div" style={{display: "flex", flexDirection: "column", alignItems:"center", justifyContent:"center"}}>
-        <div style={{display:"flex", justifyContent:"space-between", marginBottom: "5vw"}}>
-            <div>
-              <img style={{width: "95%", height: "auto"}} src={makerspace_printers}/>
+        <div className="lightblue-div img-div">
+            <Paragraph 
+                heading="LOCATION" 
+                subheading="Find Room 1109 in the North-East corner of the Siebel Center for Comp Science" />
+            <img src={makerspace_map}/>
+            <div style={{ marginTop: "20px", textAlign: "center" }}>
+                <a href="https://forms.gle/BKq6QW5Y7QVYF6jy9" style={{ textDecoration: "underline", color: "#007bff", fontSize: "18px", fontWeight: "bold" }}>Request Access Here!</a>
             </div>
-            <div>
-              <img style={{width: "95%", height: "auto"}} src={makerspace_busy}/>
-            </div>
-            <div>
-              <img style={{width: "95%", height: "auto"}} src={makerspace_wideshot}/>
-            </div>
-            <div>
-              <img style={{width: "95%", height: "auto"}} src={makerspace_workbench}/>
-            </div>
-        </div>
-          <Paragraph
-            heading="ACCESS REQUEST FORM" />
-          <a href="https://forms.gle/kT1r3MWvfP7reLLS8">Fill out this form!</a>
         </div>
         <Paragraph 
             heading="ACCESS PROCEDURE" 
