@@ -41,6 +41,7 @@
     "react-dom": "^17.0.1",
     "react-google-slides": "^3.1.1",
     "react-helmet": "^6.1.0",
-    "react-markdown": "^8.0.3"
+    "react-markdown": "^8.0.3",
+    "react-router-dom": "^6.22.1"
   }
 }

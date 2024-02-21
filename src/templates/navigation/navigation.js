@@ -109,10 +109,10 @@ export default class Navigation extends React.Component {
                               <NavDropdown.Item href="/mission" className="dropdown-item"><p>Mission</p></NavDropdown.Item>
                               <NavDropdown.Item href="/support" className="dropdown-item"><p>Support Us</p></NavDropdown.Item>
                           </NavDropdown>
-                          <NavDropdown onClick={()=>this.open("/people")} href="/people" id="nav-dropdown" style={{whiteSpace:"nowrap"}} title={<p id="navbar-item">People &#9660;</p>} renderMenuOnMount={true} style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}>
-                              <NavDropdown.Item href="/people/caesar" className="dropdown-item"><p>Professor Caesar</p></NavDropdown.Item>
-                              <NavDropdown.Item href="/people/elahe" className="dropdown-item"><p>Professor Elahe</p></NavDropdown.Item>
-                          </NavDropdown>
+                          <Nav.Link href="/people" style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}><p id="navbar-item">People</p></Nav.Link>
+                              {/* <NavDropdown.Item href="/people/caesar" className="dropdown-item"><p>Professor Caesar</p></NavDropdown.Item>
+                              <NavDropdown.Item href="/people/elahe" className="dropdown-item"><p>Professor Elahe</p></NavDropdown.Item> */}
+                          {/* </Nav></NavDropdown> */}
                           <Nav.Link href="/makerspace" style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}><p id="navbar-item">Makerspace</p></Nav.Link>
                           <NavDropdown onClick={()=>this.open("/outreach")} href="/outreach" id="nav-dropdown" style={{whiteSpace:"nowrap"}} title={<p id="navbar-item">Outreach &#9660;</p>} renderMenuOnMount={true} style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}>
                               <NavDropdown.Item href="/outreach/local-outreach" className="dropdown-item"><p>Local Outreach</p></NavDropdown.Item>

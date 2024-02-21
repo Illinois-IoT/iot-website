@@ -189,6 +189,25 @@ h6{ /* circle text */
   font-weight: lighter;
 }
 
+.people-table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.person-card {
+  width: 250px;
+  text-align: center;
+}
+
+.person-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+
 .paragraph-italics{
   font-family: 'Montserrat';
   font-style: italics !important; 
