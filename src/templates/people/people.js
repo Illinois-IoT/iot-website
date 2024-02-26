@@ -23,7 +23,8 @@ function PeopleTable(props) {
             large={props.large}
             instagram={props.people[p].instagram}
             linkedin={props.people[p].linkedin}
-            youtube={props.people[p].youtube}/>);
+            youtube={props.people[p].youtube}
+            link={props.people[p].link}/>);
     }
     return(
         <div id={props.large ? "people-large-div" : "people-div"}>
@@ -36,7 +37,7 @@ function Person(props) {
     return(
         <div id={props.large ? "person-large-div" : "person-div"}>
             <img src={props.img} id="person-img"/>
-            <h4 style={{color:"var(--illini-blue)"}}>{props.name}</h4>
+            <h4 style={{color:"var(--illini-blue)"}}><a href={props.link}>{props.name}</a></h4>
             <p style={{color:"var(--industrial-blue)"}}>{props.bio}</p>
             <p>{props.involvement}</p>
             <div className='flex-row center-align'>

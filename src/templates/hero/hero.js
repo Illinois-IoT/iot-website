@@ -16,8 +16,9 @@ function MainHero(props) {
         animate={{ y:0 }}
         transition={{ duration: 0.5 }}
         >
-            <div id="main-hero-div">
-                <img src={props.hero_img} alt="hero image" fixed="top" style={{height:"100vh", width:"100vw", left:"0", top:"0",objectFit: "cover", opacity:"0.3"}}/>
+            <div id="main-hero-div" align="center">
+                <video src={props.video} autoPlay muted>
+                </video>
             </div>
             <div id="main-hero-quote-div">
                 <h3 className="medium-header" style={{opacity:'1', color:"var(--cloud)", zIndex:'100'}}>University of Illinois Center for</h3>

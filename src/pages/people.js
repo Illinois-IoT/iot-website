@@ -44,8 +44,8 @@ const people_arr = [
 ]
 
 const staff_arr = [
-  {name:"Professor Matthew Caesar", bio:"Ph.D., Computer Science, University of California, Berkeley, 2007", img: CaesarProfile},
-  {name:"Professor Elahé Soltanaghai", bio:"Ph.D., Computer Science, University of Virginia, 2019", img: ElaheProfile},
+  {name:"Professor Matthew Caesar", bio:"Ph.D., Computer Science, University of California, Berkeley, 2007", img: CaesarProfile, link:"caesar"},
+  {name:"Professor Elahé Soltanaghai", bio:"Ph.D., Computer Science, University of Virginia, 2019", img: ElaheProfile, link:"elahe"},
 ]
 const ConnectPage = () => {
   return (

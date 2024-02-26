@@ -12,6 +12,7 @@ import { ButtonContainer } from "../templates/buttons/buttons";
 import { CircleTable } from "../templates/table/circletable";
 import Slides from "../templates/carousel/carousel";
 import {TableRowCircleImg} from "../templates/table/tablerow";
+import wirelessviz from "../videos/WirelessSimulation.mp4"
 
 import slide1 from "../images/slide1.jpeg";
 import slide2 from "../images/slide2.jpeg";
@@ -35,7 +36,7 @@ const IndexPage = () => {
       />
       <Navigation />
       <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", padding:"0vw 10vw"}}>
-      <MainHero hero_img={main_hero}/>
+      <MainHero video={wirelessviz}/>
         <div style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100%", gap: "20px"}}>
           <Paragraph heading="HERE AT ILLINOIS CENTER FOR IOT" subheading="We are the IoT research lab at University of Illinois" 
                   paragraphs={[
