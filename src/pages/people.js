@@ -29,23 +29,32 @@ import sushruth_booma from "../images/people/sushruth_booma.jpg"
 import alec_zhang from "../images/people/alec_zhang.jpeg"
 import aryaman_dwivedi from "../images/people/aryamandwivedi.jpeg"
 import nikunj_tyagi from "../images/people/nikunjt2.jpg"
+import gabriella_xue from "../images/people/gabriella_xue.jpeg"
+import shadman_eusuf from "../images/people/shadman_eusuf.jpeg"
+import avery_plote from "../images/people/avery_plote.jpeg"
 
 const people_arr = [
+    {name:"Milind Sagaram", bio:"BS Computer Engineering, 2025", involvement:"Illinois of Things, AI Drone Research", img: milind_sagaram},
+    {name: "Aryaman Dwivedi", bio: "BS Computer Science 2025", involvement:"CS 598 CA, IoT Makerspace, Research", img: aryaman_dwivedi},
+    {name: "Nikunj Tyagi", bio: "BS Computer Science 2026", involvement:"IoT Makerspace", img: nikunj_tyagi},
+    {name: "Gabriella Xue", bio: "PhD Computer Science 2028", involvement:"IoT Systems Research Group", img: gabriella_xue},
+    {name: "Shadman Saqib Eusuf", bio: "PhD Computer Science 2028", involvement:"IoT Graduate Research Assistant", img: shadman_eusuf},
+    {name: "Avery Plote", bio: "BS Computer Science + Crop Science 2024", involvement:"IoT Forest Soil Moisture Research Assistant", img: avery_plote}
+]
+
+const alumni_arr = [
     {name:"Rishabh Bassi", bio:"BS Computer Science, 2019", involvement:"Explain Net, NLP in Network systems", img: rishabh_bassi},
-    {name:"Daniel Abdoue", bio:"BS Computer Engineering, 2022", involvement:"mmWave Research", img: daniel_abdoue},
     {name:"Lily Li", bio:"BS Computer Science, 2022", involvement:"Website Manager, Illinois of Things Coordinator", img: lily_li},
-    {name:"Shrirang Bagdi", bio:"BS Statistics & Computer Science , 2023", involvement:"ML-algorithms", img: shrirang_bagdi},
+    {name:"Daniel Abdoue", bio:"BS Computer Engineering, 2022", involvement:"mmWave Research", img: daniel_abdoue},
     {name:"Max Fan", bio:"BS CS + Philosophy, 2024", involvement:"IoT security", img:max_fan},
     {name: "Sushruth Booma", bio:"BS Mathematics & Computer Science, 2024", involvement:"ML-Algorithms", img: sushruth_booma},
-    {name:"Milind Sagaram", bio:"BS Computer Engineering, 2025", involvement:"Illinois of Things, AI Drone Research", img: milind_sagaram},
-    {name:"Alec Zhang", bio:"BS Computer Science, 2022", involvement:"Illinois of Things", img: alec_zhang},
-    {name: "Aryaman Dwivedi", bio: "BS Computer Science 2025", involvement:"CS 598 CA, IoT Makerspace, Research", img: aryaman_dwivedi},
-    {name: "Nikunj Tyagi", bio: "BS Computer Science 2026", involvement:"IoT Makerspace", img: nikunj_tyagi}
+    {name:"Shrirang Bagdi", bio:"BS Statistics & Computer Science , 2023", involvement:"ML-algorithms", img: shrirang_bagdi},
+    {name:"Alec Zhang", bio:"BS Computer Science, 2022", involvement:"Illinois of Things", img: alec_zhang}
 ]
 
 const staff_arr = [
-  {name:"Professor Matthew Caesar", bio:"Ph.D., Computer Science, University of California, Berkeley, 2007", img: CaesarProfile, link:"caesar"},
   {name:"Professor Elahé Soltanaghai", bio:"Ph.D., Computer Science, University of Virginia, 2019", img: ElaheProfile, link:"elahe"},
+  {name:"Professor Matthew Caesar", bio:"Ph.D., Computer Science, University of California, Berkeley, 2007", img: CaesarProfile, link:"caesar"}
 ]
 const ConnectPage = () => {
   return (
@@ -68,6 +77,10 @@ const ConnectPage = () => {
         <div className="lightblue-div">
           <Paragraph heading="STUDENTS" subheading="Meet some of the undergraduate, graduate, and PhD students at IoT@Illinois" />
           <PeopleTable people={people_arr}/>
+        </div>
+        <div className="white-div">
+          <Paragraph heading="ALUMNI" subheading="Past students who have helped make IoT@Illinois into what it is today!" />
+          <PeopleTable people={alumni_arr}/>
         </div>
       </div>
       <Footer />

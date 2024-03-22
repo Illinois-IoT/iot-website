@@ -3,7 +3,7 @@ import * as React from "react"
 import "../theme.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from "../templates/navigation/navigation"
-import { MainHero } from "../templates/hero/hero"
+import { MainHero, SubPageHero } from "../templates/hero/hero"
 
 import main_hero from "../images/hero1.jpeg"
 import Footer from "../templates/footer/footer";
@@ -13,6 +13,7 @@ import { CircleTable } from "../templates/table/circletable";
 import Slides from "../templates/carousel/carousel";
 import {TableRowCircleImg} from "../templates/table/tablerow";
 import wirelessviz from "../videos/WirelessSimulation.mp4"
+import texture from "../images/illinois.png"
 
 import slide1 from "../images/slide1.jpeg";
 import slide2 from "../images/slide2.jpeg";
@@ -20,6 +21,19 @@ import CaesarProfile from "../images/caesar2.png"
 
 import { Helmet } from "react-helmet"
 import favicon from '../images/block-i.png';
+// import video1 from "../videos/video1.mp4";
+// import video2 from "../videos/video2.mp4";
+// import video3 from "../videos/video3.mp4";
+
+// const VideoStrip = () => {
+//     return (
+//         <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginTop: "20px" }}>
+//             <video src={video1} controls style={{ margin: "0 10px" }} />
+//             <video src={video2} controls style={{ margin: "0 10px" }} />
+//             <video src={video3} controls style={{ margin: "0 10px" }} />
+//         </div>
+//     );
+// }
 
 const IndexPage = () => {
   return (
@@ -36,7 +50,7 @@ const IndexPage = () => {
       />
       <Navigation />
       <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", padding:"0vw 10vw"}}>
-      <MainHero video={wirelessviz}/>
+      <SubPageHero hero_img={texture} title={"University of Illinois Urbana Champaign"} subtitle={"Internet of Things"}/>
         <div style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100%", gap: "20px"}}>
           <Paragraph heading="HERE AT ILLINOIS CENTER FOR IOT" subheading="We are the IoT research lab at University of Illinois" 
                   paragraphs={[

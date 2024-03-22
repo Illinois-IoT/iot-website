@@ -12,20 +12,20 @@ import {motion} from 'framer-motion'
 function MainHero(props) {
     return (
         <motion.div
-        y={"-100%"}
-        animate={{ y:0 }}
-        transition={{ duration: 0.5 }}
+            y={"-100%"}
+            animate={{ y:0 }}
+            transition={{ duration: 0.5 }}
         >
             <div id="main-hero-div" align="center">
-                <video src={props.video} autoPlay muted>
+                <video src={props.video} autoPlay muted style={{ maxHeight: "300px" }}>
                 </video>
             </div>
             <div id="main-hero-quote-div">
-                <h3 className="medium-header" style={{opacity:'1', color:"var(--cloud)", zIndex:'100'}}>University of Illinois Center for</h3>
-                <h1 className="bold-header" style={{opacity:'1', color:"var(--cloud)", zIndex:'100'}}>Internet of Things</h1>
+                <h3 className="medium-header" style={{ opacity: '1', color: "var(--cloud)", zIndex: '100' }}>University of Illinois Center for</h3>
+                <h1 className="bold-header" style={{ opacity: '1', color: "var(--cloud)", zIndex: '100' }}>Internet of Things</h1>
             </div>
         </motion.div>
-    );  
+    );
 }
 
 function SubPageHero(props) {
@@ -41,6 +41,7 @@ function SubPageHero(props) {
         </div>
     );
 }
+
 
 function PageHero(props) {
     return (
