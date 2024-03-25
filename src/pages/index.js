@@ -64,12 +64,18 @@ const IndexPage = () => {
             ]}/>
         </div>
       </div>
-      <TableRowCircleImg 
-          img_src={CaesarProfile}
-          header={<h5>Hi there!</h5>}
-          detail={<p>I am Matthew Caesar, a Professor in the Department of Computer Science at UIUC. Here at the Illinois Center for IoT, we are embarking on an exploration of a new world, one which we are building ourselves, and learning more about every day. What we will create, and what we will discover, will be an adventure unlike anything humanity has done before. Here, we are developing foundational technologies to fundamentally accelerate the development of this Internet of Things. Our mission is to build platforms with strong and rigorous guarantees, with high performance and service quality, that are practically useful and remain resilient in the face of adversaries and unreliable conditions, and that serve to meet societal and ethical principles while advancing equality and viability of our society. I hope you will join us!</p>}
-          blue_background={true}
-        />
+      <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", height: "100vh", padding:"10vh 10vw"}}>
+        <h4 style={{paddingLeft:"20px",paddingRight:"20px"}}>SEE WHAT WE ARE UP TO</h4>
+        <iframe width="100%" 
+                height="100%" 
+                src="https://www.youtube.com/embed/videoseries?si=eC8TNLbZvwg1lTe7&amp;list=PLX5OEonfMsZr1u8KjgrY1cMp8poRRv-LF" 
+                title="YouTube video player" 
+                frameborder="1" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+        </iframe>
+      </div>
       <Footer />
     </body>
   )
