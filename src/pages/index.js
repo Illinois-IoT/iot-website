@@ -21,19 +21,27 @@ import CaesarProfile from "../images/caesar2.png"
 
 import { Helmet } from "react-helmet"
 import favicon from '../images/block-i.png';
-// import video1 from "../videos/video1.mp4";
-// import video2 from "../videos/video2.mp4";
-// import video3 from "../videos/video3.mp4";
+import video1 from "../videos/iotvideo1.mp4";
+import video2 from "../videos/iotvideo2.mp4";
+import video3 from "../videos/iotvideo3.mp4";
+import video4 from "../videos/iotvideo4.mp4";
+import video5 from "../videos/iotvideo5.mp4";
 
-// const VideoStrip = () => {
-//     return (
-//         <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginTop: "20px" }}>
-//             <video src={video1} controls style={{ margin: "0 10px" }} />
-//             <video src={video2} controls style={{ margin: "0 10px" }} />
-//             <video src={video3} controls style={{ margin: "0 10px" }} />
-//         </div>
-//     );
-// }
+const VideoStrip = () => {
+  return (
+      <div style={{ maxWidth: "120%", overflowX: "auto", display: "flex", alignItems: "center", marginTop: "20px" }}>
+          <div style={{ flexShrink: 0, width: "1vw" }}></div> {/* Spacer */}
+          <div style={{ display: "flex", alignItems: "center" }}>
+              <video src={video1} autoPlay loop muted style={{ margin: "0 10px", height: "200px" }} />
+              <video src={video5} autoPlay loop muted style={{ margin: "0 10px", height: "200px" }} />
+              <video src={video3} autoPlay loop muted style={{ margin: "0 10px", height: "200px" }} />
+              <video src={video4} autoPlay loop muted style={{ margin: "0 10px", height: "200px" }} />
+              <video src={video2} autoPlay loop muted style={{ margin: "0 10px", height: "200px" }} />
+          </div>
+          <div style={{ flexShrink: 0, width: "1vw" }}></div> {/* Spacer */}
+      </div>
+  );
+}
 
 const IndexPage = () => {
   return (
@@ -51,6 +59,7 @@ const IndexPage = () => {
       <Navigation />
       <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", padding:"0vw 10vw"}}>
       <SubPageHero hero_img={texture} title={"University of Illinois Urbana Champaign"} subtitle={"Internet of Things"}/>
+      <VideoStrip />
         <div style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100%", gap: "20px"}}>
           <Paragraph heading="HERE AT ILLINOIS CENTER FOR IOT" subheading="We are the IoT research lab at University of Illinois" 
                   paragraphs={[
