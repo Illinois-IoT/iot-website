@@ -14,6 +14,7 @@ import makerspace_printers from "../images/makerspace-3d-printers.jpg"
 import makerspace_busy from "../images/makerspace-busy.jpg"
 import makerspace_wideshot from "../images/makerspace-wideshot.jpg"
 import makerspace_workbench from "../images/makerspace-workbench.jpg"
+import makerspace_threed from "../images/iotlab3Dprinters.png"
 
 import Footer from "../templates/footer/footer";
 import { List, Paragraph } from "../templates/paragraph/Paragraph";
@@ -48,6 +49,9 @@ const MakerspacePage = () => {
           </div>
           <div style={{ display: "inline-block", marginRight: "10px" }}>
               <img style={{ width: "500px", height: "auto" }} src={makerspace_printers} alt="Makerspace Printers" />
+          </div>
+          <div style={{ display: "inline-block", marginRight: "10px" }}>
+              <img style={{ width: "500px", height: "auto" }} src={makerspace_threed} alt="Makerspace 3D Printers" />
           </div>
           <div style={{ display: "inline-block", marginRight: "10px" }}>
               <img style={{ width: "500px", height: "auto" }} src={makerspace_wideshot} alt="Makerspace Wideshot" />
