@@ -39,8 +39,8 @@ const MakerspacePage = () => {
       <Navigation />
       
       <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", padding:"0vw 10vw"}}>
-        {/* <PageHero texture_img={texture} hero_img={about_hero} title={"MAKERSPACE"} subtitle={"Fill out this form to request access!"} subtitleLink={"https://forms.gle/BKq6QW5Y7QVYF6jy9"} /> */}
-        <PageHero texture_img={texture} hero_img={about_hero} title={"MAKERSPACE"} subtitle={"Check back in the fall for access!"} />
+        <PageHero texture_img={texture} hero_img={about_hero} title={"MAKERSPACE"} subtitle={"Fill out this form to request access!"} subtitleLink={"https://forms.gle/BKq6QW5Y7QVYF6jy9"} />
+        {/* <PageHero texture_img={texture} hero_img={about_hero} title={"MAKERSPACE"} subtitle={"Check back in the fall for access!"} /> */}
         <div style={{ overflowX: "scroll", whiteSpace: "nowrap", width: "100%", maxWidth: "100vw" }}>
           <div style={{ display: "inline-block", marginRight: "10px" }}>
               <img style={{ width: "500px", height: "auto" }} src={makerspace_busy} alt="Makerspace Busy" />
@@ -107,8 +107,8 @@ const MakerspacePage = () => {
                 subheading="Find Room 1109 in the North-East corner of the Siebel Center for Comp Science" />
             <img src={makerspace_map}/>
             <div style={{ marginTop: "20px", textAlign: "center" }}>
-                {/* <a href="https://forms.gle/BKq6QW5Y7QVYF6jy9" style={{ textDecoration: "underline", color: "#007bff", fontSize: "18px", fontWeight: "bold" }}>Request Access Here!</a> */}
-                <span style={{ color: "var(--illini-blue)" }}>Check back in the fall for access!</span>
+                <a href="https://forms.gle/BKq6QW5Y7QVYF6jy9" style={{ textDecoration: "underline", color: "#007bff", fontSize: "18px", fontWeight: "bold" }}>Request Access Here!</a>
+                {/* <span style={{ color: "var(--illini-blue)" }}>Check back in the fall for access!</span> */}
             </div>
         </div>
         <Paragraph 
