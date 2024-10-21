@@ -60,7 +60,7 @@ const CapstoneShowcase = () => {
       <Navigation />
       <div className="flex-parent" style={{display:"flex", flexDirection:"column", alignItems:"center", width: "100vw", padding:"0vw 10vw"}}>
         <div className="capstone-hero-wrapper">
-          <PageHero texture_img={texture} hero_img={about_hero} title="CAPSTONE SHOWCASE" subtitle="Explore innovative IoT projects by our students"/>
+          <PageHero texture_img={texture} hero_img={about_hero} title="CAPSTONE SHOWCASE (PAGE UNDERCONSTRUCTION)" subtitle="Explore innovative IoT projects by our students"/>
         </div>
         <Container fluid>
           <Row xs={1} md={2} lg={3} className="g-4 custom-row-spacing">
