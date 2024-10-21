@@ -99,5 +99,13 @@ module.exports = {
         escapeEntities: {},
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `capstone_data`,
+        path: `${__dirname}/src/data`,
+      },
+    },
+    `gatsby-transformer-json`,
   ],
 };

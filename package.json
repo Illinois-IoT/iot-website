@@ -14,12 +14,14 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@emotion/styled": "^11.13.0",
     "@formspree/react": "^2.2.4",
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
+    "@mui/material": "^6.1.4",
     "bootstrap": "^4.5.3",
     "framer-motion": "^5.5.5",
     "gatsby": "^4.4.0",
@@ -31,8 +33,11 @@
     "gatsby-remark-prismjs": "^6.16.0",
     "gatsby-remark-static-images": "^1.2.1",
     "gatsby-source-filesystem": "^4.16.0",
+    "gatsby-transformer-json": "^4.25.0",
     "gatsby-transformer-remark": "^5.16.0",
     "gatsby-transformer-sharp": "^4.16.0",
+    "google-auth-library": "^9.14.2",
+    "google-spreadsheet": "^4.1.4",
     "marked": "^4.0.17",
     "prismjs": "^1.28.0",
     "react": "^17.0.1",
@@ -43,5 +48,8 @@
     "react-helmet": "^6.1.0",
     "react-markdown": "^8.0.3",
     "react-router-dom": "^6.22.1"
-  }
+  },
+  "main": "gatsby-browser.js",
+  "author": "",
+  "license": "ISC"
 }

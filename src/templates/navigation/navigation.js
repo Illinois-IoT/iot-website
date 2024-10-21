@@ -114,6 +114,7 @@ export default class Navigation extends React.Component {
                               <NavDropdown.Item href="/people/elahe" className="dropdown-item"><p>Professor Elahe</p></NavDropdown.Item> */}
                           {/* </Nav></NavDropdown> */}
                           <Nav.Link href="/makerspace" style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}><p id="navbar-item">Makerspace</p></Nav.Link>
+                          <Nav.Link href="/capstone-showcase" style={{...this.state.navbarClass === "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}><p id="navbar-item">Capstone Showcase</p></Nav.Link>
                           <NavDropdown onClick={()=>this.open("/outreach")} href="/outreach" id="nav-dropdown" style={{whiteSpace:"nowrap"}} title={<p id="navbar-item">Outreach &#9660;</p>} renderMenuOnMount={true} style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}>
                               <NavDropdown.Item href="/outreach/local-outreach" className="dropdown-item"><p>Local Outreach</p></NavDropdown.Item>
                               <NavDropdown.Item href="/outreach/summer-camp" className="dropdown-item"><p>Summer Camp</p></NavDropdown.Item>
@@ -150,6 +151,7 @@ export default class Navigation extends React.Component {
                         <Nav.Link href="/outreach/local-outreach" className='mobile-navlink'><h5 id="navbar-item" className="subscript tab">&ndash; Local Outreach</h5></Nav.Link>
                         <Nav.Link href="/outreach/summer-camp" className='mobile-navlink'><h5 id="navbar-item" className="subscript tab">&ndash; Summer Camp</h5></Nav.Link>
                         <Nav.Link href="/connect" className='mobile-navlink'><h5 id="navbar-item" className="subscript">Connect</h5></Nav.Link>
+                        <Nav.Link href="/capstone-showcase" className='mobile-navlink'><h5 id="navbar-item" className="subscript">Capstone Showcase</h5></Nav.Link>
                       </Nav>
                   </Navbar.Collapse>
               </Navbar>

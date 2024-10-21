@@ -1,0 +1,136 @@
+.card-header h3 {
+  font-size: 1.5rem !important;
+  color: #13294B;  /* University of Illinois blue */
+  margin-bottom: 1rem;
+  font-weight: 480;
+  text-align: center;
+}
+
+.team-members {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.team-member-link {
+  color: #E84A27;  /* University of Illinois orange */
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: inline-block;
+  margin: 0 3px;
+}
+
+.team-member-link:hover {
+  color: #13294B;
+  text-decoration: underline;
+}
+
+.embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.embed-responsive::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.custom-row-spacing {
+  row-gap: 2rem !important;
+}
+
+.read-more-link {
+  color: #E84A27;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.read-more-link:hover {
+  color: #13294B;
+  text-decoration: underline;
+  transform: translateX(5px);
+}
+
+.read-more-link::after {
+  content: ' →';
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.read-more-link:hover::after {
+  opacity: 1;
+}
+
+.capstone-hero-wrapper {
+  height: 30vh !important;
+  overflow: hidden;
+  margin-bottom: 0 !important;
+}
+
+.capstone-hero-wrapper > div {
+  height: 100% !important;
+  min-height: unset !important;
+  margin-bottom: 0 !important;
+}
+
+.capstone-hero-wrapper #subpage_texture_img {
+  height: 15vh !important;
+}
+
+.capstone-hero-wrapper #subpage_heading_section {
+  top: 15vh !important;
+  height: 15vh !important;
+  margin-bottom: 0 !important;
+}
+
+.capstone-hero-wrapper #subpage_heading_section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.95;
+  z-index: 1;
+}
+
+.capstone-hero-wrapper header {
+  font-size: 2.5rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.capstone-hero-wrapper p {
+  font-size: 1rem !important;
+  margin-bottom: 0 !important;
+}
