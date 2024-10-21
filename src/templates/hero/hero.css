@@ -9,7 +9,7 @@
      background-color: var(--cloud);
      z-index: 1000;
      height: 100vh;
-     width: 100vw;
+     width: 100vh;
  }
  
  #main-hero-quote-div{
@@ -114,3 +114,9 @@
      background-color: var(--industrial-blue-lightest);
  }
  
+ body, html {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
