@@ -21,13 +21,11 @@
         "email": "timewew@gmail.com"
       }
     ],
-    "demoVideo": "https://www.youtube.com/watch?v=WINVetH4ieg",
-    "award": "Honorable Mention",
-    "read_more": "https://docs.google.com/document/d/1UJoqfUWN6NVATq3yZ2hqSayEcFa0WyAcXU4i42Nubuc/edit?tab=t.0#heading=h.3h12sn913lgh"
+    "demoVideo": "https://www.youtube.com/watch?v=WINVetH4ieg"
   },
   {
     "id": "2",
-    "title": "IoT Weather Station!",
+    "title": "IoT Weather Station",
     "description": "Autonomous drone fleet for precision farming. Equipped with multispectral cameras and environmental sensors. Uses edge computing for real-time processing. Central station plans missions and aggregates data. Machine learning assesses crop health and predicts yields. Integrates with automated irrigation and fertilization systems.",
     "teamMembers": [
       {
@@ -39,8 +37,7 @@
         "email": "timewew@gmail.com"
       }
     ],
-    "demoVideo": "https://www.youtube.com/watch?v=6jzG-BMannc",
-    "read_more": "https://docs.google.com/document/d/1VoYfmABNgYBBUpBzzy1pE7mN0057FCnVe7jw_W7UspQ/edit?tab=t.0#heading=h.4v8y1vdaxu7g"
+    "demoVideo": "https://www.youtube.com/watch?v=6jzG-BMannc"
   },
   {
     "id": "3",
@@ -60,8 +57,7 @@
         "email": "bryanchang1234@gmail.com"
       }
     ],
-    "demoVideo": "https://www.youtube.com/watch?v=Sa6EslOHsI0",
-    "read_more": "https://docs.google.com/document/d/1UJoqfUWN6NVATq3yZ2hqSayEcFa0WyAcXU4i42Nubuc/edit?tab=t.0#heading=h.3h12sn913lgh"
+    "demoVideo": "https://www.youtube.com/watch?v=Sa6EslOHsI0"
   },
   {
     "id": "4",
@@ -73,8 +69,7 @@
         "email": "bryanchang1234@gmail.com"
       }
     ],
-    "demoVideo": "https://www.youtube.com/watch?v=LDTwgjvzu0I",
-    "read_more": "https://docs.google.com/document/d/1UJoqfUWN6NVATq3yZ2hqSayEcFa0WyAcXU4i42Nubuc/edit?tab=t.0#heading=h.3h12sn913lgh"
+    "demoVideo": "https://www.youtube.com/watch?v=LDTwgjvzu0I"
   },
   {
     "id": "5",
@@ -86,8 +81,7 @@
         "email": "bryanchang1234@gmail.com"
       }
     ],
-    "demoVideo": "https://www.youtube.com/watch?v=O7yoa-hwnkI",
-    "read_more": "https://docs.google.com/document/d/1UJoqfUWN6NVATq3yZ2hqSayEcFa0WyAcXU4i42Nubuc/edit?tab=t.0#heading=h.3h12sn913lgh"
+    "demoVideo": "https://www.youtube.com/watch?v=O7yoa-hwnkI"
   },
   {
     "id": "6",
@@ -107,8 +101,6 @@
         "email": "bryanchang1234@gmail.com"
       }
     ],
-    "demoVideo": "https://www.youtube.com/watch?v=Nj_6YykKQG4",
-    "award": "Best Overall",
-    "read_more": "https://docs.google.com/document/d/1UJoqfUWN6NVATq3yZ2hqSayEcFa0WyAcXU4i42Nubuc/edit?tab=t.0#heading=h.3h12sn913lgh"
+    "demoVideo": "https://www.youtube.com/watch?v=Nj_6YykKQG4"
   }
 ]

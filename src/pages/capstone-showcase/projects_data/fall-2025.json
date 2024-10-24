@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "title": "Smart Home Hub 2",
+    "title": "Smart Home Hub 4",
     "description": "IoT-based parking management using ultrasonic sensors and LoRaWAN communication. Features real-time availability on mobile app, smart routing, and seamless payments. Analyzes data to predict parking patterns and monitor environmental impact. Demonstrates IoT's role in improving urban living and sustainability.",
     "teamMembers": [
       {
@@ -21,9 +21,7 @@
         "email": "timewew@gmail.com"
       }
     ],
-    "demoVideo": "https://www.youtube.com/watch?v=WINVetH4ieg",
-    "award": "Honorable Mention",
-    "read_more": "https://docs.google.com/document/d/1UJoqfUWN6NVATq3yZ2hqSayEcFa0WyAcXU4i42Nubuc/edit?tab=t.0#heading=h.3h12sn913lgh"
+    "demoVideo": "https://www.youtube.com/watch?v=WINVetH4ieg"
   },
   {
     "id": "2",
@@ -39,8 +37,7 @@
         "email": "timewew@gmail.com"
       }
     ],
-    "demoVideo": "https://www.youtube.com/watch?v=6jzG-BMannc",
-    "read_more": "https://docs.google.com/document/d/1VoYfmABNgYBBUpBzzy1pE7mN0057FCnVe7jw_W7UspQ/edit?tab=t.0#heading=h.4v8y1vdaxu7g"
+    "demoVideo": "https://www.youtube.com/watch?v=6jzG-BMannc"
   },
   {
     "id": "3",
@@ -60,8 +57,7 @@
         "email": "bryanchang1234@gmail.com"
       }
     ],
-    "demoVideo": "https://www.youtube.com/watch?v=Sa6EslOHsI0",
-    "read_more": "https://docs.google.com/document/d/1UJoqfUWN6NVATq3yZ2hqSayEcFa0WyAcXU4i42Nubuc/edit?tab=t.0#heading=h.3h12sn913lgh"
+    "demoVideo": "https://www.youtube.com/watch?v=Sa6EslOHsI0"
   },
   {
     "id": "4",
@@ -73,8 +69,7 @@
         "email": "bryanchang1234@gmail.com"
       }
     ],
-    "demoVideo": "https://www.youtube.com/watch?v=LDTwgjvzu0I",
-    "read_more": "https://docs.google.com/document/d/1UJoqfUWN6NVATq3yZ2hqSayEcFa0WyAcXU4i42Nubuc/edit?tab=t.0#heading=h.3h12sn913lgh"
+    "demoVideo": "https://www.youtube.com/watch?v=LDTwgjvzu0I"
   },
   {
     "id": "5",
@@ -86,8 +81,7 @@
         "email": "bryanchang1234@gmail.com"
       }
     ],
-    "demoVideo": "https://www.youtube.com/watch?v=O7yoa-hwnkI",
-    "read_more": "https://docs.google.com/document/d/1UJoqfUWN6NVATq3yZ2hqSayEcFa0WyAcXU4i42Nubuc/edit?tab=t.0#heading=h.3h12sn913lgh"
+    "demoVideo": "https://www.youtube.com/watch?v=O7yoa-hwnkI"
   },
   {
     "id": "6",
@@ -107,8 +101,6 @@
         "email": "bryanchang1234@gmail.com"
       }
     ],
-    "demoVideo": "https://www.youtube.com/watch?v=Nj_6YykKQG4",
-    "award": "Best Overall",
-    "read_more": "https://docs.google.com/document/d/1UJoqfUWN6NVATq3yZ2hqSayEcFa0WyAcXU4i42Nubuc/edit?tab=t.0#heading=h.3h12sn913lgh"
+    "demoVideo": "https://www.youtube.com/watch?v=Nj_6YykKQG4"
   }
 ]

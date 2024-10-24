@@ -1,3 +1,6 @@
 .DS_Store
 .cache/
 node_modules/
+
+# Ignore service account credentials
+cs437capstoneshowcase-9cffbeb401f7.json
