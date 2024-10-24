@@ -27,6 +27,6 @@ To upload new projects to the Capstone Showcase, follow these steps:
      ```
 
 5. **Deploy the Project**:
-   - Deploy the project using your preferred deployment method.
+   - Deploy the project via cpanel.
 
 By following these steps, you can successfully upload and showcase new projects in the Capstone Showcase.
