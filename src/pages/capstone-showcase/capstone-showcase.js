@@ -3,13 +3,13 @@ import './capstone-showcase.css'
 import { useStaticQuery, graphql } from 'gatsby'
 import { Container, Row, Col, Card } from 'react-bootstrap'
 import { Link } from 'gatsby'
-import Navigation from "../templates/navigation/navigation"
-import { PageHero } from "../templates/hero/hero"
-import Footer from "../templates/footer/footer"
+import Navigation from "../../templates/navigation/navigation"
+import { PageHero } from "../../templates/hero/hero"
+import Footer from "../../templates/footer/footer"
 import { Helmet } from "react-helmet"
-import favicon from '../images/block-i.png'
-import about_hero from "../images/hero1.jpeg"
-import texture from "../images/hero3.jpeg"
+import favicon from '../../images/block-i.png'
+import about_hero from "../../images/hero1.jpeg"
+import texture from "../../images/hero3.jpeg"
 
 const CapstoneShowcase = () => {
   const capstone_data = useStaticQuery(graphql`

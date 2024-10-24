@@ -103,7 +103,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `capstone_data`,
-        path: `${__dirname}/src/data`,
+        path: `${__dirname}/src/pages/capstone-showcase/projects_data`,
       },
     },
     `gatsby-transformer-json`,

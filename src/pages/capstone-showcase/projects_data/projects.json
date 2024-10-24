@@ -1,6 +1,6 @@
 [
   {
-    "id": "1",
+    "id": "fall-2024-1",
     "title": "Smart Home Hub",
     "description": "IoT-based parking management using ultrasonic sensors and LoRaWAN communication. Features real-time availability on mobile app, smart routing, and seamless payments. Analyzes data to predict parking patterns and monitor environmental impact. Demonstrates IoT's role in improving urban living and sustainability.",
     "teamMembers": [
@@ -26,8 +26,8 @@
     "read_more": "https://docs.google.com/document/d/1UJoqfUWN6NVATq3yZ2hqSayEcFa0WyAcXU4i42Nubuc/edit?tab=t.0#heading=h.3h12sn913lgh"
   },
   {
-    "id": "2",
-    "title": "IoT Weather Station",
+    "id": "spring-2024-2",
+    "title": "IoT Weather Station!",
     "description": "Autonomous drone fleet for precision farming. Equipped with multispectral cameras and environmental sensors. Uses edge computing for real-time processing. Central station plans missions and aggregates data. Machine learning assesses crop health and predicts yields. Integrates with automated irrigation and fertilization systems.",
     "teamMembers": [
       {
