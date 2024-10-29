@@ -116,7 +116,7 @@ const MakerspacePage = () => {
             subheading="Timeline for access and steps to take"
             paragraphs={[
                 "First fill out the form above. In the form there is a link to a training document that outlines the lab equipments and related safety information. Please read this document and watch the linked videos before filling out the form, as you will be asked some questions on it.",
-                "After reading through the lab policies and agreeing to them, you will be asked to choose a time for the lab orientation. This orientation will be held in the Makerspace (Siebel 1109) every Saturday and will take about 30 minutes. During this orientation, we will go over the lab policies and procedures. We will also go over the equipment in the lab and how to use it. After the orientation, you will be given access to the lab."
+                "After reading through the lab policies and agreeing to them, you will be asked to choose a time for the lab orientation. This orientation will be held in the Makerspace (Siebel 1109) every Friday and will take about 15 minutes. During this orientation, we will go over the lab policies and procedures. We will also go over the equipment in the lab and how to use it. After the orientation, you will be given access to the lab."
               ]}
         />
       </div>
