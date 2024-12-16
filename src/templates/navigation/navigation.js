@@ -113,7 +113,7 @@ export default class Navigation extends React.Component {
                           <Nav.Link href="/makerspace" style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}><p id="navbar-item">Makerspace</p></Nav.Link>
                           <NavDropdown onClick={()=>this.open("/capstone-showcase")} href="/capstone-showcase/capstone-showcase" id="nav-dropdown" style={{whiteSpace:"nowrap"}} title={<p id="navbar-item">Capstone Showcase &#9660;</p>} renderMenuOnMount={true} style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}>
                               <NavDropdown.Item href="/capstone-showcase/fall-2024" className="dropdown-item"><p>Fall 2024</p></NavDropdown.Item>
-                              <NavDropdown.Item href="/capstone-showcase/spring-2025" className="dropdown-item"><p>Spring 2025</p></NavDropdown.Item>
+                              {/* <NavDropdown.Item href="/capstone-showcase/spring-2025" className="dropdown-item"><p>Spring 2025</p></NavDropdown.Item> */}
                           </NavDropdown>
                           <NavDropdown onClick={()=>this.open("/outreach")} href="/outreach" id="nav-dropdown" style={{whiteSpace:"nowrap"}} title={<p id="navbar-item">Outreach &#9660;</p>} renderMenuOnMount={true} style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}>
                               <NavDropdown.Item href="/outreach/local-outreach" className="dropdown-item"><p>Local Outreach</p></NavDropdown.Item>
