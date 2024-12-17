@@ -63,5 +63,22 @@
     ],
     "demoVideo": "https://youtu.be/6QM3ldnLdoc?si=-C3UwZ9hZWDOnCJ8",
     "read_more": "https://drive.google.com/file/d/13NRKjZMspz93cnrMZnzgdM1psm_1rpy6/view?usp=sharing"
+  },
+  {
+    "id": "6",
+    "title": "Reliability Optimization and Observability System (ROOS)",
+    "description": "This project enabled request mapping, automated alerts via Azure-Jira, and SLO data storage, improving observability and reliability for Medline's E-Commerce platform.",
+    "teamMembers": [
+      {
+        "name": "Arshad Alam",
+        "email": "aalam27@illinois.edu"
+      },
+      {
+        "name": "Rithvik Yagnamurthy",
+        "email": "ryagn2@illinois.edu"
+      }
+    ],
+    "demoVideo": "https://youtu.be/rdILI6PQANY",
+    "read_more": "https://docs.google.com/document/d/1nVYKep6m1gLQ6uJj6vTzbnOr6w5PYV0UKnOPiBGA0sQ/edit?usp=sharing"
   }
 ]
