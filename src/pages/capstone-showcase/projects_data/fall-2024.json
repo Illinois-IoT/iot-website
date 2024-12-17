@@ -257,5 +257,145 @@
     ],
     "demoVideo": "https://www.youtube.com/watch?v=tTY8NxxpPA4",
     "read_more": "https://docs.google.com/document/d/17rHvYrXIxpgN4o8OeFRs9qF-815fknsEnUG4aikSHHk/edit?usp=sharing"
+  },
+  {
+    "id": "16",
+    "title": "Smart Doorbell",
+    "description": "Our AI-powered smart doorbell features speech recognition, facial detection, and context-aware responses using Llama API, providing dynamic guest interactions. It supports real-time video streaming. Compact and responsive, it prioritizes security, user convenience, and seamless connectivity.",
+    "teamMembers": [
+      {
+        "name": "Anirudh Ramesh",
+        "email": "arame3@illinois.edu"
+      },
+      {
+        "name": "Arthur Huang",
+        "email": "shengya4@illinois.edu"
+      },
+      {
+        "name": "Chidambara Anagani",
+        "email": "canaga2@illinois.edu"
+      },
+      {
+        "name": "Seung Heon Lee",
+        "email": "sl226@illinois.edu"
+      }
+    ],
+    "demoVideo": "https://www.youtube.com/watch?v=x5iw54g5U1I",
+    "read_more": "https://docs.google.com/document/d/1p4I_IzDhkPI0L51STMpzwBMuX1mZodjwyyay_Clxokw/edit?usp=sharing"
+  },
+  {
+    "id": "17",
+    "title": "Smart Fridge IoT System",
+    "description": "The Smart Fridge IoT system optimizes food management within households through real-time tracking of ingredients, expiration dates, and storage conditions. It also recommends recipes through machine learning to encourage households to use up ingredients.\n",
+    "teamMembers": [
+      {
+        "name": "Jeanette Lin",
+        "email": "jl268@illinois.edu"
+      },
+      {
+        "name": "Jonathon Ng",
+        "email": "jn35@illinois.edu"
+      },
+      {
+        "name": "Luine Ito Madeira de Ley",
+        "email": "luinei2@illinois.edu"
+      },
+      {
+        "name": "Sheng-Hao Chen",
+        "email": "sc161@illinois.edu"
+      }
+    ],
+    "demoVideo": "https://youtu.be/PP8PTHSx_64",
+    "read_more": "https://docs.google.com/document/d/13b9hbq-Zlyic4hmLIQgiIsiqp1l1JwUl2mBQODO4u2I/edit?usp=sharing"
+  },
+  {
+    "id": "18",
+    "title": "PokerPro",
+    "description": "PokerPro is a real-time poker odds calculator that uses computer vision to detect cards and a Monte Carlo simulation to calculate winning probabilities. The system provides audio feedback to the player through headphones, helping both novice and experienced players make better decisions.",
+    "teamMembers": [
+      {
+        "name": "Humza Zohair",
+        "email": "hzoha2@illinois.edu"
+      },
+      {
+        "name": "Balaji Balachandran",
+        "email": "balajib2@illinois.edu"
+      }
+    ],
+    "demoVideo": "https://youtu.be/Brtg9bR1UnY?si=NPa2mCqiD-LamU9p",
+    "read_more": "https://drive.google.com/drive/folders/1K5W-AUbBpojvD0IO99t9Kg0nZ6_TO88Q?usp=sharing"
+  },
+  {
+    "id": "19",
+    "title": "Intelligent Pet Monitor System",
+    "description": "An intelligent pet monitor system that tracks your pet's location and activities in real time, delivering instant updates and notifications straight to your mobile device.",
+    "teamMembers": [
+      {
+        "name": "Fátima Sánchez Suárez",
+        "email": "ftimas2@illinois.edu"
+      }
+    ],
+    "demoVideo": "https://youtu.be/B7qWEaBt-b0",
+    "read_more": "https://docs.google.com/document/d/1bYXDX-7YNw3JNv-n19SWi_8usTGvhwX_UxD215V5qKo/edit?usp=sharing"
+  },
+  {
+    "id": "20",
+    "title": "Poker Pro",
+    "description": "The leading solution to taking your friends money in a game of poker",
+    "teamMembers": [
+      {
+        "name": "Balaji Balachandran",
+        "email": "balajib2@illinois.edu"
+      },
+      {
+        "name": "Humza Zohair",
+        "email": "hzoha2@illinois.edu"
+      }
+    ],
+    "demoVideo": "https://youtu.be/FZT155kQ_AQ",
+    "read_more": "https://docs.google.com/document/d/1gIdbVsCQFCQY0O45Ymml2ecNFbkpkfj0jY09LdtlXk0/edit?usp=sharing"
+  },
+  {
+    "id": "21",
+    "title": "Automated Parking with Camera",
+    "description": "Our final project is an automated parking system for the Pycar. Drivers across America are very interested in automated parking due to the challenges they face in parking. We wanted to explore this problem with our pycar to see if we could generate any interesting solutions.",
+    "teamMembers": [
+      {
+        "name": "Taylor Ziegler",
+        "email": "rzieg3@illinois.edu"
+      },
+      {
+        "name": "Junzhe Wu",
+        "email": "junzhew3@illinois.edu"
+      }
+    ],
+    "demoVideo": "https://youtu.be/3B3eQLTghX0",
+    "read_more": "https://uofi.box.com/s/qy67akrejumggt4h55itvi2f7zj7loka"
+  },
+  {
+    "id": "22",
+    "title": "Smart Pantry System",
+    "description": "Ever come home to find out your missing a key ingredient for dinner? Or do you waste food because you buy more of the same produce and it goes bad too quickly? The Smart Pantry give you up to date info about your pantry, so you don't have to second guess.",
+    "teamMembers": [
+      {
+        "name": "Natalie Erjavec",
+        "email": "erjavec2@illinois.edu"
+      }
+    ],
+    "demoVideo": "https://youtu.be/IGcx4qthvp0",
+    "read_more": "https://docs.google.com/document/d/1y8f4EdPBf95nqYRAjeM25avQ5OaRpOecBi5ImbYhPGc/edit?usp=sharing"
+  },
+  {
+    "id": "23",
+    "title": "Smart Breathalyzer",
+    "description": "The Smart Breathalyzer provides a fun and intuitive way of measuring BAC, promoting safe and smart alcohol consumption. The pocketable device connects to the IoT world using Home Assistant, allowing for data storage and a complex IoT interactions.",
+    "teamMembers": [
+      {
+        "name": "Lucas Schmitt",
+        "email": "lucass6@illinois.edu"
+      }
+    ],
+    "demoVideo": "https://youtu.be/uY6qX71FvpQ",
+    "read_more": "https://docs.google.com/document/d/1NwmjRRzvS0W8nQil2B050_r7y7bdseRxuLAOQ6JfNdg/edit?usp=sharing"
   }
 ]
