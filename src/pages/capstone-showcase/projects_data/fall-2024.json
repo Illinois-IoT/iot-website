@@ -125,7 +125,7 @@
   },
   {
     "id": "9",
-    "title": "CS437 Smart Security System",
+    "title": "Smart Security System",
     "description": "Security system utilizing computer vision for person detection.",
     "teamMembers": [
       {
@@ -206,5 +206,56 @@
     ],
     "demoVideo": "https://youtu.be/hsDkxd6MhgY",
     "read_more": "https://drive.google.com/file/d/1LDQPwKSR75mxkNgyNedEBTl7U1PEoX62/view?usp=sharing"
+  },
+  {
+    "id": "13",
+    "title": "Medication Reminder IOT Pill Cap",
+    "description": "Medication reminder bottle cap that is easy to see, easy to understand, which allows 3rd party monitoring, and which can be customized to different medication frequency regimens.",
+    "teamMembers": [
+      {
+        "name": "Christopher Rock",
+        "email": "cmrock2@illinois.edu"
+      }
+    ],
+    "demoVideo": "https://youtu.be/WcgXUEePR90",
+    "read_more": "https://drive.google.com/file/d/1I7muVwet8lNUkWLzxDRKq4yL6pKfhHEN/view?usp=drive_link"
+  },
+  {
+    "id": "14",
+    "title": "NFT Polaroid",
+    "description": "Automatically mint every picture taken by the raspberry pi as NFT in the TON network",
+    "teamMembers": [
+      {
+        "name": "Steven Sukma Limanus",
+        "email": "limanus2@illinois.edu"
+      }
+    ],
+    "demoVideo": "https://youtu.be/xD2sVJN9bXM",
+    "read_more": "https://drive.google.com/file/d/1rRZ3MtK0mR0nihoo3QA932UwQQ-VNJFb/view?usp=drive_link"
+  },
+  {
+    "id": "15",
+    "title": "MoodLight Manager",
+    "description": "This eco-friendly LED lighting system enhances room aesthetics while functioning as a visual calendar. A motion sensor ensures lights activate only when people are present, conserving energy. By syncing with Google Calendar, it displays dynamic light patterns for events, deadlines, and reminders.",
+    "teamMembers": [
+      {
+        "name": "Tanay Pareek",
+        "email": "tpareek2@illinois.edu"
+      },
+      {
+        "name": "Jalen Jiang",
+        "email": "jalenj4@illinois.edu"
+      },
+      {
+        "name": "Shreya Boyapati",
+        "email": "sboyap2@illinois.edu"
+      },
+      {
+        "name": "Shashank Sangireddy",
+        "email": "ssangi2@illinois.edu"
+      }
+    ],
+    "demoVideo": "https://www.youtube.com/watch?v=tTY8NxxpPA4",
+    "read_more": "https://docs.google.com/document/d/17rHvYrXIxpgN4o8OeFRs9qF-815fknsEnUG4aikSHHk/edit?usp=sharing"
   }
 ]
