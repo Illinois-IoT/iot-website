@@ -310,23 +310,6 @@
   },
   {
     "id": "18",
-    "title": "PokerPro",
-    "description": "PokerPro is a real-time poker odds calculator that uses computer vision to detect cards and a Monte Carlo simulation to calculate winning probabilities. The system provides audio feedback to the player through headphones, helping both novice and experienced players make better decisions.",
-    "teamMembers": [
-      {
-        "name": "Humza Zohair",
-        "email": "hzoha2@illinois.edu"
-      },
-      {
-        "name": "Balaji Balachandran",
-        "email": "balajib2@illinois.edu"
-      }
-    ],
-    "demoVideo": "https://youtu.be/Brtg9bR1UnY?si=NPa2mCqiD-LamU9p",
-    "read_more": "https://drive.google.com/drive/folders/1K5W-AUbBpojvD0IO99t9Kg0nZ6_TO88Q?usp=sharing"
-  },
-  {
-    "id": "19",
     "title": "Intelligent Pet Monitor System",
     "description": "An intelligent pet monitor system that tracks your pet's location and activities in real time, delivering instant updates and notifications straight to your mobile device.",
     "teamMembers": [
@@ -339,9 +322,9 @@
     "read_more": "https://docs.google.com/document/d/1bYXDX-7YNw3JNv-n19SWi_8usTGvhwX_UxD215V5qKo/edit?usp=sharing"
   },
   {
-    "id": "20",
+    "id": "19",
     "title": "Poker Pro",
-    "description": "The leading solution to taking your friends money in a game of poker",
+    "description": "PokerPro is a real-time poker odds calculator that uses computer vision to detect cards and a Monte Carlo simulation to calculate winning probabilities. The system provides audio feedback to the player through headphones, helping both novice and experienced players make better decisions.",
     "teamMembers": [
       {
         "name": "Balaji Balachandran",
@@ -356,7 +339,7 @@
     "read_more": "https://docs.google.com/document/d/1gIdbVsCQFCQY0O45Ymml2ecNFbkpkfj0jY09LdtlXk0/edit?usp=sharing"
   },
   {
-    "id": "21",
+    "id": "20",
     "title": "Automated Parking with Camera",
     "description": "Our final project is an automated parking system for the Pycar. Drivers across America are very interested in automated parking due to the challenges they face in parking. We wanted to explore this problem with our pycar to see if we could generate any interesting solutions.",
     "teamMembers": [
@@ -373,7 +356,7 @@
     "read_more": "https://uofi.box.com/s/qy67akrejumggt4h55itvi2f7zj7loka"
   },
   {
-    "id": "22",
+    "id": "21",
     "title": "Smart Pantry System",
     "description": "Ever come home to find out your missing a key ingredient for dinner? Or do you waste food because you buy more of the same produce and it goes bad too quickly? The Smart Pantry give you up to date info about your pantry, so you don't have to second guess.",
     "teamMembers": [
@@ -386,7 +369,7 @@
     "read_more": "https://docs.google.com/document/d/1y8f4EdPBf95nqYRAjeM25avQ5OaRpOecBi5ImbYhPGc/edit?usp=sharing"
   },
   {
-    "id": "23",
+    "id": "22",
     "title": "Smart Breathalyzer",
     "description": "The Smart Breathalyzer provides a fun and intuitive way of measuring BAC, promoting safe and smart alcohol consumption. The pocketable device connects to the IoT world using Home Assistant, allowing for data storage and a complex IoT interactions.",
     "teamMembers": [
