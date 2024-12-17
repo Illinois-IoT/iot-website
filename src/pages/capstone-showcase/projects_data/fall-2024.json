@@ -323,7 +323,7 @@
   },
   {
     "id": "19",
-    "title": "Poker Pro",
+    "title": "Poker Pro ",
     "description": "PokerPro is a real-time poker odds calculator that uses computer vision to detect cards and a Monte Carlo simulation to calculate winning probabilities. The system provides audio feedback to the player through headphones, helping both novice and experienced players make better decisions.",
     "teamMembers": [
       {
