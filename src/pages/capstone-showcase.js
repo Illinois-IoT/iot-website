@@ -52,6 +52,11 @@ const CapstoneShowcase = ({ projects = [] }) => { // Default to an empty array
                 <Card className="h-100">
                   <Card.Header>
                     <h3>{project.title}</h3>
+                    {project.award && (
+                      <div className="project-award" style={{ color: '#B48C00', marginBottom: '10px' }}>
+                        {project.award}
+                      </div>
+                    )}
                     <div className="team-members">
                       {project.teamMembers.map((member, index) => (
                         <a key={index} href={`mailto:${member.email}`} className="team-member-link">

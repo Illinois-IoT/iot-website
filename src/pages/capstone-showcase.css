@@ -135,3 +135,30 @@
   margin-bottom: 0 !important;
 }
 
+@keyframes glow {
+  0% { text-shadow: 0 0 5px #FFD700; }
+  50% { text-shadow: 0 0 20px #FFA500, 0 0 30px #FFD700; }
+  100% { text-shadow: 0 0 5px #FFD700; }
+}
+
+.project-award {
+  color: #B48C00;
+  margin: 10px auto;
+  width: fit-content;
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.project-award:hover {
+  color: #DAA520;
+  animation: glow 2s ease-in-out infinite;
+  cursor: pointer;
+}
+
+.project-award::before {
+  content: "";
+  margin-right: 8px;
+}
+
