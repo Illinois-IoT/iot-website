@@ -111,7 +111,7 @@ export default class Navigation extends React.Component {
                           </NavDropdown>
                           <Nav.Link href="/people" style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}><p id="navbar-item">People</p></Nav.Link>
                           <Nav.Link href="/makerspace" style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}><p id="navbar-item">Makerspace</p></Nav.Link>
-                          <NavDropdown onClick={()=>this.open("/capstone-showcase/fall-2024")} href="/capstone-showcase/fall-2024" id="nav-dropdown" style={{whiteSpace:"nowrap"}} title={<p id="navbar-item">Capstone Showcase &#9660;</p>} renderMenuOnMount={true} style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}>
+                          <NavDropdown onClick={()=>this.open("/capstone-showcase")} href="/capstone-showcase" id="nav-dropdown" style={{whiteSpace:"nowrap"}} title={<p id="navbar-item">Capstone Showcase &#9660;</p>} renderMenuOnMount={true} style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}>
                               <NavDropdown.Item href="/capstone-showcase/fall-2024" className="dropdown-item"><p>Fall 2024</p></NavDropdown.Item>
                               {/* <NavDropdown.Item href="/capstone-showcase/spring-2025" className="dropdown-item"><p>Spring 2025</p></NavDropdown.Item> */}
                           </NavDropdown>
@@ -151,7 +151,7 @@ export default class Navigation extends React.Component {
                         <Nav.Link href="/outreach/local-outreach" className='mobile-navlink'><h5 id="navbar-item" className="subscript tab">&ndash; Local Outreach</h5></Nav.Link>
                         <Nav.Link href="/outreach/summer-camp" className='mobile-navlink'><h5 id="navbar-item" className="subscript tab">&ndash; Summer Camp</h5></Nav.Link>
                         <Nav.Link href="/connect" className='mobile-navlink'><h5 id="navbar-item" className="subscript">Connect</h5></Nav.Link>
-                        <Nav.Link href="/capstone-showcase/fall-2024" className='mobile-navlink'><h5 id="navbar-item" className="subscript">Capstone Showcase</h5></Nav.Link>
+                        <Nav.Link href="/capstone-showcase" className='mobile-navlink'><h5 id="navbar-item" className="subscript">Capstone Showcase</h5></Nav.Link>
                       </Nav>
                   </Navbar.Collapse>
               </Navbar>
