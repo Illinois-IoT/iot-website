@@ -133,19 +133,6 @@
     "read_more": "https://docs.google.com/document/d/1gIdbVsCQFCQY0O45Ymml2ecNFbkpkfj0jY09LdtlXk0/edit?usp=sharing"
   },
   {
-    "id": "4",
-    "title": "Garment Pattern Device",
-    "description": "As a DIY fashion producer, I thought the design process for creating properly-fitting paper patterns could be streamlined. I created a system to collect garment measurements and create a custom printable pattern for a piece of clothing specific to an individual's proportions.",
-    "teamMembers": [
-      {
-        "name": "Samantha Reizes",
-        "email": "sreizes2@illinois.edu"
-      }
-    ],
-    "demoVideo": "https://www.youtube.com/watch?v=pNxutq5FRL0",
-    "read_more": "https://drive.google.com/file/d/1vzAngUgajDXqfZHGnGw1viZ06UdASGPs/view?usp=sharing"
-  },
-  {
     "id": "9",
     "title": "Smart Security System",
     "description": "Security system utilizing computer vision for person detection.",
